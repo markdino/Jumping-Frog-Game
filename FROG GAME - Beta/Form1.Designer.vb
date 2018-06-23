@@ -24,11 +24,13 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.picFrog = New System.Windows.Forms.PictureBox()
-        Me.picLog = New System.Windows.Forms.PictureBox()
+        Me.picLag1 = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.picLag2 = New System.Windows.Forms.PictureBox()
         CType(Me.picFrog, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picLog, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picLag1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picLag2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'picFrog
@@ -40,14 +42,14 @@ Partial Class Form1
         Me.picFrog.TabIndex = 0
         Me.picFrog.TabStop = False
         '
-        'picLog
+        'picLag1
         '
-        Me.picLog.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.picLog.Location = New System.Drawing.Point(413, 237)
-        Me.picLog.Name = "picLog"
-        Me.picLog.Size = New System.Drawing.Size(219, 55)
-        Me.picLog.TabIndex = 1
-        Me.picLog.TabStop = False
+        Me.picLag1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.picLag1.Location = New System.Drawing.Point(413, 237)
+        Me.picLag1.Name = "picLag1"
+        Me.picLag1.Size = New System.Drawing.Size(219, 55)
+        Me.picLag1.TabIndex = 1
+        Me.picLag1.TabStop = False
         '
         'Timer1
         '
@@ -62,6 +64,15 @@ Partial Class Form1
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Label1"
         '
+        'picLag2
+        '
+        Me.picLag2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.picLag2.Location = New System.Drawing.Point(468, 176)
+        Me.picLag2.Name = "picLag2"
+        Me.picLag2.Size = New System.Drawing.Size(219, 55)
+        Me.picLag2.TabIndex = 1
+        Me.picLag2.TabStop = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -69,18 +80,21 @@ Partial Class Form1
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.picFrog)
-        Me.Controls.Add(Me.picLog)
+        Me.Controls.Add(Me.picLag2)
+        Me.Controls.Add(Me.picLag1)
         Me.Name = "Form1"
         Me.Text = "Form1"
         CType(Me.picFrog, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picLog, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picLag1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picLag2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents picFrog As PictureBox
-    Friend WithEvents picLog As PictureBox
+    Friend WithEvents picLag1 As PictureBox
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Label1 As Label
+    Friend WithEvents picLag2 As PictureBox
 End Class
