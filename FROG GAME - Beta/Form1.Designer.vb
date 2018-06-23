@@ -26,6 +26,7 @@ Partial Class Form1
         Me.picFrog = New System.Windows.Forms.PictureBox()
         Me.picLog = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.picFrog, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picLog, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -42,7 +43,7 @@ Partial Class Form1
         'picLog
         '
         Me.picLog.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.picLog.Location = New System.Drawing.Point(569, 274)
+        Me.picLog.Location = New System.Drawing.Point(413, 237)
         Me.picLog.Name = "picLog"
         Me.picLog.Size = New System.Drawing.Size(219, 55)
         Me.picLog.TabIndex = 1
@@ -52,11 +53,21 @@ Partial Class Form1
         '
         Me.Timer1.Enabled = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(490, 72)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(39, 13)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = "Label1"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.picFrog)
         Me.Controls.Add(Me.picLog)
         Me.Name = "Form1"
@@ -64,10 +75,12 @@ Partial Class Form1
         CType(Me.picFrog, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picLog, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents picFrog As PictureBox
     Friend WithEvents picLog As PictureBox
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents Label1 As Label
 End Class
