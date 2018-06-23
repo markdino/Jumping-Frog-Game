@@ -59,6 +59,16 @@
         End If
     End Sub
 
+    Private Sub picLag1_Click(sender As Object, e As EventArgs) Handles picLag1.Click
 
+    End Sub
+
+    Private Sub picLag2_Move(sender As Object, e As EventArgs) Handles picLag1.Move, picLag2.Move
+        If sender.left + sender.width <= 0 Then
+            sender.left = Me.Width
+
+        End If
+
+    End Sub
 
 End Class
