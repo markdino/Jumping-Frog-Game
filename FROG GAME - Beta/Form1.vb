@@ -61,7 +61,7 @@
         ElseIf picFrog.Left + picFrog.Width - 5 >= picLag3.Left And picFrog.Left <= picLag3.Left + picLag3.Width And picFrog.Top + picFrog.Height >= picLag3.Top And
             picFrog.Top <= picLag3.Top + picLag3.Height Then
             Label1.Text = "Inside"
-            If picFrog.Left + picFrog.Width < Me.Width Then
+            If picFrog.Left + picFrog.Width + 15 < Me.Width Then
                 picFrog.Left += 5
             End If
         Else
