@@ -15,14 +15,14 @@
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         'picLog.Left -= 5
-        Lag_MoveLeft(sender, e)
+        Lag_MoveLeft()
         Frog_Ride_To_Lag()
         Lag_MoveRight()
     End Sub
 
 
 
-    Public Sub Lag_MoveLeft(sender As Object, e As EventArgs) Handles picLag1.Validated, picLag2.Validated, picTurtle1.Validated, picTurtle2.Validated, picTurtle4.Validated, picTurtle3.Validated
+    Public Sub Lag_MoveLeft()
         picLag1.Left -= 5
         picLag2.Left -= 5
     End Sub
