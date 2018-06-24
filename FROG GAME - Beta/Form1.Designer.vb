@@ -29,9 +29,11 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.picLag2 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.picLag3 = New System.Windows.Forms.PictureBox()
         CType(Me.picFrog, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picLag1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picLag2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picLag3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'picFrog
@@ -68,7 +70,7 @@ Partial Class Form1
         'picLag2
         '
         Me.picLag2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.picLag2.Location = New System.Drawing.Point(468, 176)
+        Me.picLag2.Location = New System.Drawing.Point(485, 182)
         Me.picLag2.Name = "picLag2"
         Me.picLag2.Size = New System.Drawing.Size(219, 55)
         Me.picLag2.TabIndex = 1
@@ -83,6 +85,15 @@ Partial Class Form1
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Label1"
         '
+        'picLag3
+        '
+        Me.picLag3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.picLag3.Location = New System.Drawing.Point(128, 126)
+        Me.picLag3.Name = "picLag3"
+        Me.picLag3.Size = New System.Drawing.Size(173, 54)
+        Me.picLag3.TabIndex = 1
+        Me.picLag3.TabStop = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -91,6 +102,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.picFrog)
+        Me.Controls.Add(Me.picLag3)
         Me.Controls.Add(Me.picLag2)
         Me.Controls.Add(Me.picLag1)
         Me.Name = "Form1"
@@ -98,6 +110,7 @@ Partial Class Form1
         CType(Me.picFrog, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picLag1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picLag2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picLag3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -109,4 +122,5 @@ Partial Class Form1
     Friend WithEvents Label1 As Label
     Friend WithEvents picLag2 As PictureBox
     Friend WithEvents Label2 As Label
+    Friend WithEvents picLag3 As PictureBox
 End Class
