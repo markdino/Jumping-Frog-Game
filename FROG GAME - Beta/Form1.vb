@@ -79,6 +79,21 @@
             If picFrog.Left + picFrog.Width + 15 < Me.Width Then
                 picFrog.Left += 5
             End If
+
+            'Ride to the Turtle3
+        ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle3.Left And picFrog.Left <= picTurtle3.Left + picTurtle3.Width And picFrog.Top + picFrog.Height >= picTurtle3.Top And
+            picFrog.Top <= picTurtle3.Top + picTurtle3.Height Then
+            Label1.Text = "Inside"
+            If picFrog.Left + picFrog.Width + 15 < Me.Width Then
+                picFrog.Left += 5
+            End If
+            'Ride to the Turtle4
+        ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle4.Left And picFrog.Left <= picTurtle4.Left + picTurtle4.Width And picFrog.Top + picFrog.Height >= picTurtle4.Top And
+            picFrog.Top <= picTurtle4.Top + picTurtle4.Height Then
+            Label1.Text = "Inside"
+            If picFrog.Left + picFrog.Width + 15 < Me.Width Then
+                picFrog.Left += 5
+            End If
         Else
             Label1.Text = "Outside"
         End If
