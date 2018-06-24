@@ -38,22 +38,22 @@
         End If
     End Sub
     Public Sub Frog_Ride_To_Lag()
-        If picFrog.Left > 0 Then
-            If picFrog.Left + picFrog.Width >= picLag1.Left And picFrog.Left <= picLag1.Left + picLag1.Width And picFrog.Top + picFrog.Height >= picLag1.Top And
+
+        If picFrog.Left + picFrog.Width >= picLag1.Left And picFrog.Left <= picLag1.Left + picLag1.Width And picFrog.Top + picFrog.Height >= picLag1.Top And
             picFrog.Top <= picLag1.Top + picLag1.Height Then
+            Label1.Text = "Inside"
+            If picFrog.Left > 0 Then
                 picFrog.Left -= 5
-                Label1.Text = "Inside"
-
-            ElseIf picFrog.Left + picFrog.Width >= picLag2.Left And picFrog.Left <= picLag2.Left + picLag2.Width And picFrog.Top + picFrog.Height >= picLag2.Top And
-                picFrog.Top <= picLag2.Top + picLag2.Height Then
-                picFrog.Left -= 5
-                Label1.Text = "Inside"
-            Else
-
-                Label1.Text = "Outside"
             End If
+        ElseIf picFrog.Left + picFrog.Width >= picLag2.Left And picFrog.Left <= picLag2.Left + picLag2.Width And picFrog.Top + picFrog.Height >= picLag2.Top And
+                picFrog.Top <= picLag2.Top + picLag2.Height Then
+            Label1.Text = "Inside"
+            If picFrog.Left > 0 Then
+                picFrog.Left -= 5
+            End If
+        Else
+            Label1.Text = "Outside"
         End If
-
     End Sub
 
     Private Sub picLag1_Click(sender As Object, e As EventArgs) Handles picLag1.Click
