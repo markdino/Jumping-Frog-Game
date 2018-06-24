@@ -17,14 +17,17 @@
         'picLog.Left -= 5
         Lag_MoveLeft(sender, e)
         Frog_Ride_To_Lag()
-
+        Lag_MoveRight()
     End Sub
 
 
 
-    Public Sub Lag_MoveLeft(sender As Object, e As EventArgs) Handles picLag1.Validated, picLag2.Validated
+    Public Sub Lag_MoveLeft(sender As Object, e As EventArgs) Handles picLag1.Validated, picLag2.Validated, picTurtle1.Validated
         picLag1.Left -= 5
         picLag2.Left -= 5
+    End Sub
+    Public Sub Lag_MoveRight()
+        picTurtle1.Left += 5
     End Sub
     Public Sub Frog_Hotkey(sender As Object, e As KeyEventArgs)
         If e.KeyCode = Keys.Up Then
@@ -38,18 +41,28 @@
         End If
     End Sub
     Public Sub Frog_Ride_To_Lag()
-
-        If picFrog.Left + picFrog.Width >= picLag1.Left And picFrog.Left <= picLag1.Left + picLag1.Width And picFrog.Top + picFrog.Height >= picLag1.Top And
+        'Ride to the lag1
+        If picFrog.Left + picFrog.Width - 5 >= picLag1.Left And picFrog.Left <= picLag1.Left + picLag1.Width And picFrog.Top + picFrog.Height >= picLag1.Top And
             picFrog.Top <= picLag1.Top + picLag1.Height Then
             Label1.Text = "Inside"
             If picFrog.Left > 0 Then
                 picFrog.Left -= 5
             End If
-        ElseIf picFrog.Left + picFrog.Width >= picLag2.Left And picFrog.Left <= picLag2.Left + picLag2.Width And picFrog.Top + picFrog.Height >= picLag2.Top And
+
+            'Ride to the lag2
+        ElseIf picFrog.Left + picFrog.Width - 5 >= picLag2.Left And picFrog.Left <= picLag2.Left + picLag2.Width And picFrog.Top + picFrog.Height >= picLag2.Top And
                 picFrog.Top <= picLag2.Top + picLag2.Height Then
             Label1.Text = "Inside"
             If picFrog.Left > 0 Then
                 picFrog.Left -= 5
+            End If
+
+            'Ride to the Turtle1
+        ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle1.Left And picFrog.Left <= picTurtle1.Left + picTurtle1.Width And picFrog.Top + picFrog.Height >= picTurtle1.Top And
+            picFrog.Top <= picTurtle1.Top + picTurtle1.Height Then
+            Label1.Text = "Inside"
+            If picFrog.Left + picFrog.Width + 15 < Me.Width Then
+                picFrog.Left += 5
             End If
         Else
             Label1.Text = "Outside"
@@ -60,12 +73,15 @@
 
     End Sub
 
-    Private Sub picLag2_Move(sender As Object, e As EventArgs) Handles picLag1.Move, picLag2.Move
+    Private Sub Lag_MoveLeft_Loop(sender As Object, e As EventArgs) Handles picLag1.Move, picLag2.Move
         If sender.left + sender.width <= 0 Then
             sender.left = Me.Width
-
         End If
-
+    End Sub
+    Private Sub Turtle_MoveRight_Loop(sender As Object, e As EventArgs) Handles picTurtle1.Move
+        If sender.left > Me.Width Then
+            sender.left = 0 - sender.Width
+        End If
     End Sub
 
 End Class
