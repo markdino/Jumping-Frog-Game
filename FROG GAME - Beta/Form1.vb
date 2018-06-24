@@ -15,14 +15,14 @@
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         'picLog.Left -= 5
-        Lag_MoveLeft(sender, e)
+        Lag_MoveLeft()
         Frog_Ride_To_Lag()
         Lag_MoveRight()
     End Sub
 
 
 
-    Public Sub Lag_MoveLeft(sender As Object, e As EventArgs) Handles picLag1.Validated, picLag2.Validated, picTurtle1.Validated, picTurtle2.Validated, picTurtle4.Validated, picTurtle3.Validated
+    Public Sub Lag_MoveLeft()
         picLag1.Left -= 5
         picLag2.Left -= 5
     End Sub
@@ -69,7 +69,7 @@
             picFrog.Top <= picTurtle1.Top + picTurtle1.Height Then
             Label1.Text = "Inside"
             If picFrog.Left + picFrog.Width + 15 < Me.Width Then
-                picFrog.Left += 5
+                picFrog.Left += 4
             End If
 
             'Ride to the Turtle2
@@ -77,7 +77,22 @@
             picFrog.Top <= picTurtle2.Top + picTurtle2.Height Then
             Label1.Text = "Inside"
             If picFrog.Left + picFrog.Width + 15 < Me.Width Then
-                picFrog.Left += 5
+                picFrog.Left += 4
+            End If
+
+            'Ride to the Turtle3
+        ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle3.Left And picFrog.Left <= picTurtle3.Left + picTurtle3.Width And picFrog.Top + picFrog.Height >= picTurtle3.Top And
+            picFrog.Top <= picTurtle3.Top + picTurtle3.Height Then
+            Label1.Text = "Inside"
+            If picFrog.Left + picFrog.Width + 15 < Me.Width Then
+                picFrog.Left += 4
+            End If
+            'Ride to the Turtle4
+        ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle4.Left And picFrog.Left <= picTurtle4.Left + picTurtle4.Width And picFrog.Top + picFrog.Height >= picTurtle4.Top And
+            picFrog.Top <= picTurtle4.Top + picTurtle4.Height Then
+            Label1.Text = "Inside"
+            If picFrog.Left + picFrog.Width + 15 < Me.Width Then
+                picFrog.Left += 4
             End If
         Else
             Label1.Text = "Outside"
