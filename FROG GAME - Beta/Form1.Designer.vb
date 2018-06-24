@@ -143,7 +143,7 @@ Partial Class Form1
         'picLag3
         '
         Me.picLag3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.picLag3.Location = New System.Drawing.Point(498, 35)
+        Me.picLag3.Location = New System.Drawing.Point(498, 33)
         Me.picLag3.Name = "picLag3"
         Me.picLag3.Size = New System.Drawing.Size(59, 29)
         Me.picLag3.TabIndex = 1

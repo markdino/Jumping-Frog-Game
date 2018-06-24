@@ -36,21 +36,21 @@
     End Sub
     Public Sub Frog_Hotkey(sender As Object, e As KeyEventArgs)
         If e.KeyCode = Keys.Up Then
-            picFrog.Top -= 10
+            picFrog.Top -= 20
         ElseIf e.KeyCode = Keys.Down Then
-            picFrog.Top += 10
+            picFrog.Top += 20
         ElseIf e.KeyCode = Keys.Left Then
             If picFrog.Left - 5 > 0 Then
-                picFrog.Left -= 10
+                picFrog.Left -= 20
             End If
         ElseIf e.KeyCode = Keys.Right Then
             If picFrog.Left + picFrog.Width + 20 < Me.Width Then
-                picFrog.Left += 10
+                picFrog.Left += 20
             End If
         End If
     End Sub
     Public Sub Frog_Ride_To_Lag()
-        If picFrog.Top < picRiver.Top + picRiver.Height Or picFrog.Top <= picRiver.Top Then
+        If picFrog.Top + picFrog.Height >= picRiver.Top And picFrog.Top <= picRiver.Top + picRiver.Height Then
             'Ride to the lag1
             If picFrog.Left + picFrog.Width - 5 >= picLag1.Left And picFrog.Left <= picLag1.Left + picLag1.Width And picFrog.Top + picFrog.Height >= picLag1.Top And
             picFrog.Top <= picLag1.Top + picLag1.Height Then
