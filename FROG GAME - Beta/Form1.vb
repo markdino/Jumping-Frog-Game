@@ -18,12 +18,6 @@
         Lag_MoveLeft(sender, e)
         Frog_Ride_To_Lag()
 
-
-        If frogMove = True Then
-            picFrog.Left -= 5
-        Else
-            picFrog.Left = picFrog.Left
-        End If
     End Sub
 
 
@@ -44,21 +38,34 @@
         End If
     End Sub
     Public Sub Frog_Ride_To_Lag()
+
         If picFrog.Left + picFrog.Width >= picLag1.Left And picFrog.Left <= picLag1.Left + picLag1.Width And picFrog.Top + picFrog.Height >= picLag1.Top And
             picFrog.Top <= picLag1.Top + picLag1.Height Then
-            frogMove = True
             Label1.Text = "Inside"
-
+            If picFrog.Left > 0 Then
+                picFrog.Left -= 5
+            End If
         ElseIf picFrog.Left + picFrog.Width >= picLag2.Left And picFrog.Left <= picLag2.Left + picLag2.Width And picFrog.Top + picFrog.Height >= picLag2.Top And
-            picFrog.Top <= picLag2.Top + picLag2.Height Then
-            frogMove = True
+                picFrog.Top <= picLag2.Top + picLag2.Height Then
             Label1.Text = "Inside"
+            If picFrog.Left > 0 Then
+                picFrog.Left -= 5
+            End If
         Else
-            frogMove = False
             Label1.Text = "Outside"
         End If
     End Sub
 
+    Private Sub picLag1_Click(sender As Object, e As EventArgs) Handles picLag1.Click
 
+    End Sub
+
+    Private Sub picLag2_Move(sender As Object, e As EventArgs) Handles picLag1.Move, picLag2.Move
+        If sender.left + sender.width <= 0 Then
+            sender.left = Me.Width
+
+        End If
+
+    End Sub
 
 End Class
