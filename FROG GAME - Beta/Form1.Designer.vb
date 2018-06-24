@@ -29,19 +29,19 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.picLag2 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.picLag3 = New System.Windows.Forms.PictureBox()
+        Me.picTurtle1 = New System.Windows.Forms.PictureBox()
         CType(Me.picFrog, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picLag1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picLag2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picLag3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picTurtle1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'picFrog
         '
         Me.picFrog.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.picFrog.Location = New System.Drawing.Point(458, 390)
+        Me.picFrog.Location = New System.Drawing.Point(461, 395)
         Me.picFrog.Name = "picFrog"
-        Me.picFrog.Size = New System.Drawing.Size(33, 32)
+        Me.picFrog.Size = New System.Drawing.Size(30, 27)
         Me.picFrog.TabIndex = 0
         Me.picFrog.TabStop = False
         '
@@ -61,7 +61,7 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(530, 78)
+        Me.Label1.Location = New System.Drawing.Point(740, 347)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(39, 13)
         Me.Label1.TabIndex = 2
@@ -79,30 +79,30 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(284, 96)
+        Me.Label2.Location = New System.Drawing.Point(757, 262)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(39, 13)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Label1"
         '
-        'picLag3
+        'picTurtle1
         '
-        Me.picLag3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.picLag3.Location = New System.Drawing.Point(86, 196)
-        Me.picLag3.Name = "picLag3"
-        Me.picLag3.Size = New System.Drawing.Size(133, 29)
-        Me.picLag3.TabIndex = 1
-        Me.picLag3.TabStop = False
+        Me.picTurtle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.picTurtle1.Location = New System.Drawing.Point(298, 177)
+        Me.picTurtle1.Name = "picTurtle1"
+        Me.picTurtle1.Size = New System.Drawing.Size(41, 34)
+        Me.picTurtle1.TabIndex = 1
+        Me.picTurtle1.TabStop = False
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(832, 493)
+        Me.ClientSize = New System.Drawing.Size(832, 537)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.picFrog)
-        Me.Controls.Add(Me.picLag3)
+        Me.Controls.Add(Me.picTurtle1)
         Me.Controls.Add(Me.picLag2)
         Me.Controls.Add(Me.picLag1)
         Me.Name = "Form1"
@@ -110,7 +110,7 @@ Partial Class Form1
         CType(Me.picFrog, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picLag1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picLag2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picLag3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picTurtle1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -122,5 +122,5 @@ Partial Class Form1
     Friend WithEvents Label1 As Label
     Friend WithEvents picLag2 As PictureBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents picLag3 As PictureBox
+    Friend WithEvents picTurtle1 As PictureBox
 End Class
