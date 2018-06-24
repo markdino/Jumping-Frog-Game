@@ -39,18 +39,18 @@ Partial Class Form1
         'picFrog
         '
         Me.picFrog.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.picFrog.Location = New System.Drawing.Point(441, 374)
+        Me.picFrog.Location = New System.Drawing.Point(458, 390)
         Me.picFrog.Name = "picFrog"
-        Me.picFrog.Size = New System.Drawing.Size(50, 48)
+        Me.picFrog.Size = New System.Drawing.Size(33, 32)
         Me.picFrog.TabIndex = 0
         Me.picFrog.TabStop = False
         '
         'picLag1
         '
         Me.picLag1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.picLag1.Location = New System.Drawing.Point(413, 237)
+        Me.picLag1.Location = New System.Drawing.Point(473, 262)
         Me.picLag1.Name = "picLag1"
-        Me.picLag1.Size = New System.Drawing.Size(219, 55)
+        Me.picLag1.Size = New System.Drawing.Size(159, 30)
         Me.picLag1.TabIndex = 1
         Me.picLag1.TabStop = False
         '
@@ -70,9 +70,9 @@ Partial Class Form1
         'picLag2
         '
         Me.picLag2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.picLag2.Location = New System.Drawing.Point(485, 182)
+        Me.picLag2.Location = New System.Drawing.Point(542, 227)
         Me.picLag2.Name = "picLag2"
-        Me.picLag2.Size = New System.Drawing.Size(219, 55)
+        Me.picLag2.Size = New System.Drawing.Size(150, 29)
         Me.picLag2.TabIndex = 1
         Me.picLag2.TabStop = False
         '
@@ -88,9 +88,9 @@ Partial Class Form1
         'picLag3
         '
         Me.picLag3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.picLag3.Location = New System.Drawing.Point(128, 126)
+        Me.picLag3.Location = New System.Drawing.Point(86, 196)
         Me.picLag3.Name = "picLag3"
-        Me.picLag3.Size = New System.Drawing.Size(173, 54)
+        Me.picLag3.Size = New System.Drawing.Size(133, 29)
         Me.picLag3.TabIndex = 1
         Me.picLag3.TabStop = False
         '
@@ -98,7 +98,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(832, 493)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.picFrog)
