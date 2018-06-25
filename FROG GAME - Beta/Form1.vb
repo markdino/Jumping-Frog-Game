@@ -49,8 +49,10 @@
             End If
         End If
     End Sub
+
+
     Public Sub Frog_Ride_To_Lag()
-        If picFrog.Top + picFrog.Height >= picRiver.Top And picFrog.Top <= picRiver.Top + picRiver.Height Then
+        If picFrog.Top >= picRiver.Top And picFrog.Top <= picRiver.Top + picRiver.Height - picFrog.Height Then
             'Ride to the lag1
             If picFrog.Left + picFrog.Width - 5 >= picLag1.Left And picFrog.Left <= picLag1.Left + picLag1.Width And picFrog.Top + picFrog.Height >= picLag1.Top And
             picFrog.Top <= picLag1.Top + picLag1.Height Then
