@@ -2,7 +2,7 @@
     Dim frogMove As Boolean
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        picTurtle1.Left = 245
     End Sub
 
     Private Sub Form1_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
@@ -44,7 +44,7 @@
                 picFrog.Left -= 20
             End If
         ElseIf e.KeyCode = Keys.Right Then
-            If picFrog.Left + picFrog.Width + 20 < Me.Width Then
+            If picFrog.Left + picFrog.Width + 20 < picRiver.Width Then
                 picFrog.Left += 20
             End If
         End If
@@ -81,7 +81,7 @@
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle1.Left And picFrog.Left <= picTurtle1.Left + picTurtle1.Width And picFrog.Top + picFrog.Height >= picTurtle1.Top And
             picFrog.Top <= picTurtle1.Top + picTurtle1.Height Then
                 Label1.Text = "Inside"
-                If picFrog.Left + picFrog.Width + 15 < Me.Width Then
+                If picFrog.Left + picFrog.Width < picRiver.Width Then
                     picFrog.Left += 4
                 End If
 
@@ -89,7 +89,7 @@
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle2.Left And picFrog.Left <= picTurtle2.Left + picTurtle2.Width And picFrog.Top + picFrog.Height >= picTurtle2.Top And
             picFrog.Top <= picTurtle2.Top + picTurtle2.Height Then
                 Label1.Text = "Inside"
-                If picFrog.Left + picFrog.Width + 15 < Me.Width Then
+                If picFrog.Left + picFrog.Width < picRiver.Width Then
                     picFrog.Left += 4
                 End If
 
@@ -97,14 +97,14 @@
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle3.Left And picFrog.Left <= picTurtle3.Left + picTurtle3.Width And picFrog.Top + picFrog.Height >= picTurtle3.Top And
             picFrog.Top <= picTurtle3.Top + picTurtle3.Height Then
                 Label1.Text = "Inside"
-                If picFrog.Left + picFrog.Width + 15 < Me.Width Then
+                If picFrog.Left + picFrog.Width < picRiver.Width Then
                     picFrog.Left += 4
                 End If
                 'Ride to the Turtle4
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle4.Left And picFrog.Left <= picTurtle4.Left + picTurtle4.Width And picFrog.Top + picFrog.Height >= picTurtle4.Top And
             picFrog.Top <= picTurtle4.Top + picTurtle4.Height Then
                 Label1.Text = "Inside"
-                If picFrog.Left + picFrog.Width + 15 < Me.Width Then
+                If picFrog.Left + picFrog.Width < picRiver.Width Then
                     picFrog.Left += 4
                 End If
             Else
@@ -121,11 +121,11 @@
 
     Private Sub Lag_MoveLeft_Loop(sender As Object, e As EventArgs) Handles picLag1.Move, picLag2.Move, picLag3.Move
         If sender.left + sender.width <= 0 Then
-            sender.left = Me.Width
+            sender.left = picRiver.Width
         End If
     End Sub
     Private Sub Turtle_MoveRight_Loop(sender As Object, e As EventArgs) Handles picTurtle1.Move, picTurtle2.Move, picTurtle4.Move, picTurtle3.Move
-        If sender.left > Me.Width Then
+        If sender.left > picRiver.Width Then
             sender.left = 0 - sender.Width
         End If
     End Sub
