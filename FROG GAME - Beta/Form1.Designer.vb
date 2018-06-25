@@ -37,6 +37,10 @@ Partial Class Form1
         Me.picLag3 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.picLag4 = New System.Windows.Forms.PictureBox()
+        Me.picLag5 = New System.Windows.Forms.PictureBox()
+        Me.picLag6 = New System.Windows.Forms.PictureBox()
+        Me.picLag7 = New System.Windows.Forms.PictureBox()
+        Me.picLag8 = New System.Windows.Forms.PictureBox()
         CType(Me.picFrog, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picLag1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picLag2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -48,6 +52,10 @@ Partial Class Form1
         CType(Me.picLag3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.picLag4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picLag5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picLag6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picLag7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picLag8, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'picFrog
@@ -156,6 +164,10 @@ Partial Class Form1
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.picFrog)
+        Me.GroupBox1.Controls.Add(Me.picLag8)
+        Me.GroupBox1.Controls.Add(Me.picLag7)
+        Me.GroupBox1.Controls.Add(Me.picLag6)
+        Me.GroupBox1.Controls.Add(Me.picLag5)
         Me.GroupBox1.Controls.Add(Me.picLag4)
         Me.GroupBox1.Controls.Add(Me.picLag3)
         Me.GroupBox1.Controls.Add(Me.picLag2)
@@ -181,6 +193,42 @@ Partial Class Form1
         Me.picLag4.TabIndex = 1
         Me.picLag4.TabStop = False
         '
+        'picLag5
+        '
+        Me.picLag5.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.picLag5.Location = New System.Drawing.Point(6, 225)
+        Me.picLag5.Name = "picLag5"
+        Me.picLag5.Size = New System.Drawing.Size(66, 26)
+        Me.picLag5.TabIndex = 1
+        Me.picLag5.TabStop = False
+        '
+        'picLag6
+        '
+        Me.picLag6.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.picLag6.Location = New System.Drawing.Point(669, 225)
+        Me.picLag6.Name = "picLag6"
+        Me.picLag6.Size = New System.Drawing.Size(66, 26)
+        Me.picLag6.TabIndex = 1
+        Me.picLag6.TabStop = False
+        '
+        'picLag7
+        '
+        Me.picLag7.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.picLag7.Location = New System.Drawing.Point(332, 179)
+        Me.picLag7.Name = "picLag7"
+        Me.picLag7.Size = New System.Drawing.Size(66, 26)
+        Me.picLag7.TabIndex = 1
+        Me.picLag7.TabStop = False
+        '
+        'picLag8
+        '
+        Me.picLag8.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.picLag8.Location = New System.Drawing.Point(440, 179)
+        Me.picLag8.Name = "picLag8"
+        Me.picLag8.Size = New System.Drawing.Size(66, 26)
+        Me.picLag8.TabIndex = 1
+        Me.picLag8.TabStop = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -202,6 +250,10 @@ Partial Class Form1
         CType(Me.picLag3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         CType(Me.picLag4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picLag5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picLag6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picLag7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picLag8, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -221,4 +273,8 @@ Partial Class Form1
     Friend WithEvents picLag3 As PictureBox
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents picLag4 As PictureBox
+    Friend WithEvents picLag6 As PictureBox
+    Friend WithEvents picLag5 As PictureBox
+    Friend WithEvents picLag8 As PictureBox
+    Friend WithEvents picLag7 As PictureBox
 End Class
