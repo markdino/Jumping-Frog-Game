@@ -58,9 +58,9 @@ Partial Class Form1
         'picLag1
         '
         Me.picLag1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.picLag1.Location = New System.Drawing.Point(312, 249)
+        Me.picLag1.Location = New System.Drawing.Point(335, 240)
         Me.picLag1.Name = "picLag1"
-        Me.picLag1.Size = New System.Drawing.Size(89, 26)
+        Me.picLag1.Size = New System.Drawing.Size(66, 26)
         Me.picLag1.TabIndex = 1
         Me.picLag1.TabStop = False
         '
@@ -80,9 +80,9 @@ Partial Class Form1
         'picLag2
         '
         Me.picLag2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.picLag2.Location = New System.Drawing.Point(498, 246)
+        Me.picLag2.Location = New System.Drawing.Point(498, 240)
         Me.picLag2.Name = "picLag2"
-        Me.picLag2.Size = New System.Drawing.Size(59, 29)
+        Me.picLag2.Size = New System.Drawing.Size(66, 26)
         Me.picLag2.TabIndex = 1
         Me.picLag2.TabStop = False
         '
@@ -98,54 +98,54 @@ Partial Class Form1
         'picTurtle1
         '
         Me.picTurtle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.picTurtle1.Location = New System.Drawing.Point(278, 216)
+        Me.picTurtle1.Location = New System.Drawing.Point(469, 200)
         Me.picTurtle1.Name = "picTurtle1"
-        Me.picTurtle1.Size = New System.Drawing.Size(33, 26)
+        Me.picTurtle1.Size = New System.Drawing.Size(33, 33)
         Me.picTurtle1.TabIndex = 1
         Me.picTurtle1.TabStop = False
         '
         'picRiver
         '
         Me.picRiver.BackColor = System.Drawing.Color.Aquamarine
-        Me.picRiver.Location = New System.Drawing.Point(-1, 32)
+        Me.picRiver.Location = New System.Drawing.Point(108, 32)
         Me.picRiver.Name = "picRiver"
-        Me.picRiver.Size = New System.Drawing.Size(835, 243)
+        Me.picRiver.Size = New System.Drawing.Size(726, 243)
         Me.picRiver.TabIndex = 3
         Me.picRiver.TabStop = False
         '
         'picTurtle2
         '
         Me.picTurtle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.picTurtle2.Location = New System.Drawing.Point(239, 216)
+        Me.picTurtle2.Location = New System.Drawing.Point(430, 200)
         Me.picTurtle2.Name = "picTurtle2"
-        Me.picTurtle2.Size = New System.Drawing.Size(33, 26)
+        Me.picTurtle2.Size = New System.Drawing.Size(33, 33)
         Me.picTurtle2.TabIndex = 1
         Me.picTurtle2.TabStop = False
         '
         'picTurtle3
         '
         Me.picTurtle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.picTurtle3.Location = New System.Drawing.Point(200, 216)
+        Me.picTurtle3.Location = New System.Drawing.Point(391, 200)
         Me.picTurtle3.Name = "picTurtle3"
-        Me.picTurtle3.Size = New System.Drawing.Size(33, 26)
+        Me.picTurtle3.Size = New System.Drawing.Size(33, 33)
         Me.picTurtle3.TabIndex = 1
         Me.picTurtle3.TabStop = False
         '
         'picTurtle4
         '
         Me.picTurtle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.picTurtle4.Location = New System.Drawing.Point(115, 216)
+        Me.picTurtle4.Location = New System.Drawing.Point(306, 200)
         Me.picTurtle4.Name = "picTurtle4"
-        Me.picTurtle4.Size = New System.Drawing.Size(33, 26)
+        Me.picTurtle4.Size = New System.Drawing.Size(33, 33)
         Me.picTurtle4.TabIndex = 1
         Me.picTurtle4.TabStop = False
         '
         'picLag3
         '
         Me.picLag3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.picLag3.Location = New System.Drawing.Point(498, 33)
+        Me.picLag3.Location = New System.Drawing.Point(498, 46)
         Me.picLag3.Name = "picLag3"
-        Me.picLag3.Size = New System.Drawing.Size(59, 29)
+        Me.picLag3.Size = New System.Drawing.Size(66, 26)
         Me.picLag3.TabIndex = 1
         Me.picLag3.TabStop = False
         '
