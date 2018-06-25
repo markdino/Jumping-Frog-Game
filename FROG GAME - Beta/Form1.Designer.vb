@@ -41,6 +41,13 @@ Partial Class Form1
         Me.picLag6 = New System.Windows.Forms.PictureBox()
         Me.picLag7 = New System.Windows.Forms.PictureBox()
         Me.picLag8 = New System.Windows.Forms.PictureBox()
+        Me.picLag9 = New System.Windows.Forms.PictureBox()
+        Me.picLag10 = New System.Windows.Forms.PictureBox()
+        Me.picTurtle5 = New System.Windows.Forms.PictureBox()
+        Me.picTurtle6 = New System.Windows.Forms.PictureBox()
+        Me.picTurtle7 = New System.Windows.Forms.PictureBox()
+        Me.picTurtle8 = New System.Windows.Forms.PictureBox()
+        Me.picLag11 = New System.Windows.Forms.PictureBox()
         CType(Me.picFrog, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picLag1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picLag2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -56,6 +63,13 @@ Partial Class Form1
         CType(Me.picLag6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picLag7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picLag8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picLag9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picLag10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picTurtle5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picTurtle6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picTurtle7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picTurtle8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picLag11, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'picFrog
@@ -164,6 +178,9 @@ Partial Class Form1
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.picFrog)
+        Me.GroupBox1.Controls.Add(Me.picLag11)
+        Me.GroupBox1.Controls.Add(Me.picLag10)
+        Me.GroupBox1.Controls.Add(Me.picLag9)
         Me.GroupBox1.Controls.Add(Me.picLag8)
         Me.GroupBox1.Controls.Add(Me.picLag7)
         Me.GroupBox1.Controls.Add(Me.picLag6)
@@ -171,11 +188,15 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.picLag4)
         Me.GroupBox1.Controls.Add(Me.picLag3)
         Me.GroupBox1.Controls.Add(Me.picLag2)
+        Me.GroupBox1.Controls.Add(Me.picLag1)
+        Me.GroupBox1.Controls.Add(Me.picTurtle8)
+        Me.GroupBox1.Controls.Add(Me.picTurtle7)
+        Me.GroupBox1.Controls.Add(Me.picTurtle6)
+        Me.GroupBox1.Controls.Add(Me.picTurtle5)
         Me.GroupBox1.Controls.Add(Me.picTurtle4)
         Me.GroupBox1.Controls.Add(Me.picTurtle3)
         Me.GroupBox1.Controls.Add(Me.picTurtle2)
         Me.GroupBox1.Controls.Add(Me.picTurtle1)
-        Me.GroupBox1.Controls.Add(Me.picLag1)
         Me.GroupBox1.Controls.Add(Me.picRiver)
         Me.GroupBox1.Location = New System.Drawing.Point(0, -6)
         Me.GroupBox1.Name = "GroupBox1"
@@ -229,6 +250,69 @@ Partial Class Form1
         Me.picLag8.TabIndex = 1
         Me.picLag8.TabStop = False
         '
+        'picLag9
+        '
+        Me.picLag9.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.picLag9.Location = New System.Drawing.Point(73, 140)
+        Me.picLag9.Name = "picLag9"
+        Me.picLag9.Size = New System.Drawing.Size(66, 26)
+        Me.picLag9.TabIndex = 1
+        Me.picLag9.TabStop = False
+        '
+        'picLag10
+        '
+        Me.picLag10.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.picLag10.Location = New System.Drawing.Point(543, 140)
+        Me.picLag10.Name = "picLag10"
+        Me.picLag10.Size = New System.Drawing.Size(66, 26)
+        Me.picLag10.TabIndex = 1
+        Me.picLag10.TabStop = False
+        '
+        'picTurtle5
+        '
+        Me.picTurtle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.picTurtle5.Location = New System.Drawing.Point(145, 135)
+        Me.picTurtle5.Name = "picTurtle5"
+        Me.picTurtle5.Size = New System.Drawing.Size(33, 35)
+        Me.picTurtle5.TabIndex = 1
+        Me.picTurtle5.TabStop = False
+        '
+        'picTurtle6
+        '
+        Me.picTurtle6.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.picTurtle6.Location = New System.Drawing.Point(184, 135)
+        Me.picTurtle6.Name = "picTurtle6"
+        Me.picTurtle6.Size = New System.Drawing.Size(33, 35)
+        Me.picTurtle6.TabIndex = 1
+        Me.picTurtle6.TabStop = False
+        '
+        'picTurtle7
+        '
+        Me.picTurtle7.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.picTurtle7.Location = New System.Drawing.Point(223, 135)
+        Me.picTurtle7.Name = "picTurtle7"
+        Me.picTurtle7.Size = New System.Drawing.Size(33, 35)
+        Me.picTurtle7.TabIndex = 1
+        Me.picTurtle7.TabStop = False
+        '
+        'picTurtle8
+        '
+        Me.picTurtle8.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.picTurtle8.Location = New System.Drawing.Point(262, 135)
+        Me.picTurtle8.Name = "picTurtle8"
+        Me.picTurtle8.Size = New System.Drawing.Size(33, 35)
+        Me.picTurtle8.TabIndex = 1
+        Me.picTurtle8.TabStop = False
+        '
+        'picLag11
+        '
+        Me.picLag11.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.picLag11.Location = New System.Drawing.Point(471, 140)
+        Me.picLag11.Name = "picLag11"
+        Me.picLag11.Size = New System.Drawing.Size(66, 26)
+        Me.picLag11.TabIndex = 1
+        Me.picLag11.TabStop = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -254,6 +338,13 @@ Partial Class Form1
         CType(Me.picLag6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picLag7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picLag8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picLag9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picLag10, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picTurtle5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picTurtle6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picTurtle7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picTurtle8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picLag11, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -277,4 +368,11 @@ Partial Class Form1
     Friend WithEvents picLag5 As PictureBox
     Friend WithEvents picLag8 As PictureBox
     Friend WithEvents picLag7 As PictureBox
+    Friend WithEvents picTurtle8 As PictureBox
+    Friend WithEvents picTurtle7 As PictureBox
+    Friend WithEvents picTurtle6 As PictureBox
+    Friend WithEvents picTurtle5 As PictureBox
+    Friend WithEvents picLag10 As PictureBox
+    Friend WithEvents picLag9 As PictureBox
+    Friend WithEvents picLag11 As PictureBox
 End Class
