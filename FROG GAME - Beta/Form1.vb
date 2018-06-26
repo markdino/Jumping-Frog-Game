@@ -1,5 +1,5 @@
 ﻿Public Class Form1
-    Dim frogMove As Boolean
+    'Dim frogMove As Boolean
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         picTurtle1.Left = 245
@@ -7,7 +7,6 @@
 
     Private Sub Form1_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
         Frog_Hotkey(sender, e)
-
     End Sub
     Private Sub Form1_KeyUp(sender As Object, e As KeyEventArgs) Handles Me.KeyUp
         'Frog_Ride_To_Lag()
@@ -50,22 +49,16 @@
         picTurtle7.Left -= 6
         picTurtle8.Left -= 6
     End Sub
-    Public Sub Frog_Hotkey(sender As Object, e As KeyEventArgs)
-        If e.KeyCode = Keys.Up Then
-            picFrog.Top -= 20
-        ElseIf e.KeyCode = Keys.Down Then
-            picFrog.Top += 20
-        ElseIf e.KeyCode = Keys.Left Then
-            If picFrog.Left - 5 > 0 Then
-                picFrog.Left -= 20
-            End If
-        ElseIf e.KeyCode = Keys.Right Then
-            If picFrog.Left + picFrog.Width + 8 < picRiver.Width Then
-                picFrog.Left += 20
-            End If
+    Private Sub Lag_MoveLeft_Loop(sender As Object, e As EventArgs) Handles picLag1.Move, picLag2.Move, picLag3.Move, picLag4.Move, picLag6.Move, picLag5.Move, picLag8.Move, picLag7.Move, picTurtle8.Move, picTurtle7.Move, picTurtle6.Move, picTurtle5.Move, picLag9.Move, picLag10.Move, picLag11.Move
+        If sender.left + sender.width <= 0 Then
+            sender.left = picRiver.Width
         End If
     End Sub
-
+    Private Sub Turtle_MoveRight_Loop(sender As Object, e As EventArgs) Handles picTurtle1.Move, picTurtle2.Move, picTurtle4.Move, picTurtle3.Move
+        If sender.left > picRiver.Width Then
+            sender.left = 0 - sender.Width
+        End If
+    End Sub
 
     Public Sub Frog_Ride_To_Lag()
         If picFrog.Top >= picRiver.Top And picFrog.Top <= picRiver.Top + picRiver.Height - picFrog.Height Then
@@ -197,16 +190,21 @@
         End If
 
     End Sub
+    Public Sub Frog_Hotkey(sender As Object, e As KeyEventArgs)
+        If e.KeyCode = Keys.Up Then
+            picFrog.Top -= 20
+        ElseIf e.KeyCode = Keys.Down Then
+            picFrog.Top += 20
+        ElseIf e.KeyCode = Keys.Left Then
+            If picFrog.Left - 5 > 0 Then
+                picFrog.Left -= 20
+            End If
+        ElseIf e.KeyCode = Keys.Right Then
+            If picFrog.Left + picFrog.Width + 8 < picRiver.Width Then
+                picFrog.Left += 20
+            End If
+        End If
+    End Sub
 
-    Private Sub Lag_MoveLeft_Loop(sender As Object, e As EventArgs) Handles picLag1.Move, picLag2.Move, picLag3.Move, picLag4.Move, picLag6.Move, picLag5.Move, picLag8.Move, picLag7.Move, picTurtle8.Move, picTurtle7.Move, picTurtle6.Move, picTurtle5.Move, picLag9.Move, picLag10.Move, picLag11.Move
-        If sender.left + sender.width <= 0 Then
-            sender.left = picRiver.Width
-        End If
-    End Sub
-    Private Sub Turtle_MoveRight_Loop(sender As Object, e As EventArgs) Handles picTurtle1.Move, picTurtle2.Move, picTurtle4.Move, picTurtle3.Move
-        If sender.left > picRiver.Width Then
-            sender.left = 0 - sender.Width
-        End If
-    End Sub
 
 End Class
