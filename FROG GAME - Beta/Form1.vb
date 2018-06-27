@@ -218,55 +218,55 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
                 '************************
 
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle9.Left And picFrog.Left <= picTurtle9.Left + picTurtle9.Width And picFrog.Top + picFrog.Height >= picTurtle9.Top And
-        picFrog.Top <= picTurtle9.Top + picTurtle9.Height Then
+        picFrog.Top <= picTurtle9.Top + picTurtle9.Height And t9 = True Then
                 Label1.Text = "Inside"
                 If picFrog.Left + picFrog.Width < picRiver.Width Then
                     picFrog.Left += 4
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle10.Left And picFrog.Left <= picTurtle10.Left + picTurtle10.Width And picFrog.Top + picFrog.Height >= picTurtle10.Top And
-        picFrog.Top <= picTurtle10.Top + picTurtle10.Height Then
+        picFrog.Top <= picTurtle10.Top + picTurtle10.Height And t10 = True Then
                 Label1.Text = "Inside"
                 If picFrog.Left + picFrog.Width < picRiver.Width Then
                     picFrog.Left += 4
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle11.Left And picFrog.Left <= picTurtle11.Left + picTurtle11.Width And picFrog.Top + picFrog.Height >= picTurtle11.Top And
-        picFrog.Top <= picTurtle11.Top + picTurtle11.Height Then
+        picFrog.Top <= picTurtle11.Top + picTurtle11.Height And t11 = True Then
                 Label1.Text = "Inside"
                 If picFrog.Left + picFrog.Width < picRiver.Width Then
                     picFrog.Left += 4
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle12.Left And picFrog.Left <= picTurtle12.Left + picTurtle12.Width And picFrog.Top + picFrog.Height >= picTurtle12.Top And
-        picFrog.Top <= picTurtle12.Top + picTurtle12.Height Then
+        picFrog.Top <= picTurtle12.Top + picTurtle12.Height And t12 = True Then
                 Label1.Text = "Inside"
                 If picFrog.Left + picFrog.Width < picRiver.Width Then
                     picFrog.Left += 4
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle13.Left And picFrog.Left <= picTurtle13.Left + picTurtle13.Width And picFrog.Top + picFrog.Height >= picTurtle13.Top And
-        picFrog.Top <= picTurtle13.Top + picTurtle13.Height Then
+        picFrog.Top <= picTurtle13.Top + picTurtle13.Height And t13 = True Then
                 Label1.Text = "Inside"
                 If picFrog.Left + picFrog.Width < picRiver.Width Then
                     picFrog.Left += 4
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle14.Left And picFrog.Left <= picTurtle14.Left + picTurtle14.Width And picFrog.Top + picFrog.Height >= picTurtle14.Top And
-        picFrog.Top <= picTurtle14.Top + picTurtle14.Height Then
+        picFrog.Top <= picTurtle14.Top + picTurtle14.Height And t14 = True Then
                 Label1.Text = "Inside"
                 If picFrog.Left + picFrog.Width < picRiver.Width Then
                     picFrog.Left += 4
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle15.Left And picFrog.Left <= picTurtle15.Left + picTurtle15.Width And picFrog.Top + picFrog.Height >= picTurtle15.Top And
-        picFrog.Top <= picTurtle15.Top + picTurtle15.Height Then
+        picFrog.Top <= picTurtle15.Top + picTurtle15.Height And t15 = True Then
                 Label1.Text = "Inside"
                 If picFrog.Left + picFrog.Width < picRiver.Width Then
                     picFrog.Left += 4
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle16.Left And picFrog.Left <= picTurtle16.Left + picTurtle16.Width And picFrog.Top + picFrog.Height >= picTurtle16.Top And
-        picFrog.Top <= picTurtle16.Top + picTurtle16.Height Then
+        picFrog.Top <= picTurtle16.Top + picTurtle16.Height And t16 = True Then
                 Label1.Text = "Inside"
                 If picFrog.Left + picFrog.Width < picRiver.Width Then
                     picFrog.Left += 4
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle17.Left And picFrog.Left <= picTurtle17.Left + picTurtle17.Width And picFrog.Top + picFrog.Height >= picTurtle17.Top And
-        picFrog.Top <= picTurtle17.Top + picTurtle17.Height Then
+        picFrog.Top <= picTurtle17.Top + picTurtle17.Height And t17 = True Then
                 Label1.Text = "Inside"
                 If picFrog.Left + picFrog.Width < picRiver.Width Then
                     picFrog.Left += 4
@@ -300,14 +300,16 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
     Dim intrv3 As Integer = 0
     Dim intrv4 As Integer = 0
     Dim intrv5 As Integer = 0
-    Dim t1, t2, t3, t4, t5, t6, t7, t8 As Boolean
+    Dim t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12, t13, t14, t15, t16, t17 As Boolean
 
     Private Sub TurtleIntrv_Tick(sender As Object, e As EventArgs) Handles TurtleIntrv.Tick
         TurtleIntervals += 1
-        If TurtleIntervals = 3 Then
+        If TurtleIntervals = 20 Then
             TurtleGrp2.Enabled = True
-        ElseIf TurtleIntervals = 10 Then
+        ElseIf TurtleIntervals = 4 Then
             TurtleGrp1.Enabled = True
+        ElseIf TurtleIntervals = 13 Then
+            TurtleGrp3.Enabled = True
         End If
     End Sub
 
@@ -349,7 +351,7 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
         'Turtle sink
         If intrv2 = 1 Then
             picTurtle5.BackColor = Color.Blue
-            t2 = False
+            t5 = False
         ElseIf intrv2 = 2 Then
             picTurtle6.BackColor = Color.Blue
             t6 = False
@@ -375,6 +377,60 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
             t8 = True
         ElseIf intrv2 = 60 Then
             intrv2 = 0
+        End If
+    End Sub
+    Private Sub TurtleGrp3_Tick(sender As Object, e As EventArgs) Handles TurtleGrp3.Tick
+        intrv3 += 1
+        'Turtle sink
+        If intrv3 = 1 Then
+            picTurtle9.BackColor = Color.Blue
+            t9 = False
+        ElseIf intrv3 = 2 Then
+            picTurtle10.BackColor = Color.Blue
+            t10 = False
+        ElseIf intrv3 = 3 Then
+            picTurtle11.BackColor = Color.Blue
+            t11 = False
+
+            'Turtle float
+        ElseIf intrv3 = 25 Then
+            picTurtle9.BackColor = Color.Green
+            t9 = True
+        ElseIf intrv3 = 26 Then
+            picTurtle10.BackColor = Color.Green
+            t10 = True
+        ElseIf intrv3 = 27 Then
+            picTurtle11.BackColor = Color.Green
+            t11 = True
+        ElseIf intrv3 = 60 Then
+            intrv3 = 0
+        End If
+    End Sub
+    Private Sub TurtleGrp4_Tick(sender As Object, e As EventArgs) Handles TurtleGrp4.Tick
+        intrv4 += 1
+        'Turtle sink
+        If intrv4 = 1 Then
+            picTurtle12.BackColor = Color.Blue
+            t12 = False
+        ElseIf intrv4 = 2 Then
+            picTurtle13.BackColor = Color.Blue
+            t13 = False
+        ElseIf intrv4 = 3 Then
+            picTurtle14.BackColor = Color.Blue
+            t14 = False
+
+            'Turtle float
+        ElseIf intrv4 = 25 Then
+            picTurtle12.BackColor = Color.Green
+            t12 = True
+        ElseIf intrv4 = 26 Then
+            picTurtle13.BackColor = Color.Green
+            t13 = True
+        ElseIf intrv4 = 27 Then
+            picTurtle13.BackColor = Color.Green
+            t13 = True
+        ElseIf intrv4 = 60 Then
+            intrv4 = 0
         End If
     End Sub
 

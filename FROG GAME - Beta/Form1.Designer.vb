@@ -63,6 +63,8 @@ Partial Class Form1
         Me.TurtleGrp1 = New System.Windows.Forms.Timer(Me.components)
         Me.TurtleGrp2 = New System.Windows.Forms.Timer(Me.components)
         Me.TurtleIntrv = New System.Windows.Forms.Timer(Me.components)
+        Me.TurtleGrp3 = New System.Windows.Forms.Timer(Me.components)
+        Me.TurtleGrp4 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.picFrog, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picLag1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picLag2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -473,6 +475,14 @@ Partial Class Form1
         Me.TurtleIntrv.Enabled = True
         Me.TurtleIntrv.Interval = 1000
         '
+        'TurtleGrp3
+        '
+        Me.TurtleGrp3.Interval = 500
+        '
+        'TurtleGrp4
+        '
+        Me.TurtleGrp4.Interval = 500
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -562,4 +572,6 @@ Partial Class Form1
     Friend WithEvents TurtleGrp1 As Timer
     Friend WithEvents TurtleGrp2 As Timer
     Friend WithEvents TurtleIntrv As Timer
+    Friend WithEvents TurtleGrp3 As Timer
+    Friend WithEvents TurtleGrp4 As Timer
 End Class
