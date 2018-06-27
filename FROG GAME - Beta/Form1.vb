@@ -194,27 +194,29 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle5.Left And picFrog.Left <= picTurtle5.Left + picTurtle5.Width And picFrog.Top + picFrog.Height >= picTurtle5.Top And
         picFrog.Top <= picTurtle5.Top + picTurtle5.Height Then
                 Label1.Text = "Inside"
-                If picFrog.Left + picFrog.Width < picRiver.Width Then
+                If picFrog.Left > 0 Then
                     picFrog.Left -= 6
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle6.Left And picFrog.Left <= picTurtle6.Left + picTurtle6.Width And picFrog.Top + picFrog.Height >= picTurtle6.Top And
     picFrog.Top <= picTurtle6.Top + picTurtle6.Height Then
                 Label1.Text = "Inside"
-                If picFrog.Left + picFrog.Width < picRiver.Width Then
+                If picFrog.Left > 0 Then
                     picFrog.Left -= 6
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle7.Left And picFrog.Left <= picTurtle7.Left + picTurtle7.Width And picFrog.Top + picFrog.Height >= picTurtle7.Top And
     picFrog.Top <= picTurtle7.Top + picTurtle7.Height Then
                 Label1.Text = "Inside"
-                If picFrog.Left + picFrog.Width < picRiver.Width Then
+                If picFrog.Left > 0 Then
                     picFrog.Left -= 6
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle8.Left And picFrog.Left <= picTurtle8.Left + picTurtle8.Width And picFrog.Top + picFrog.Height >= picTurtle8.Top And
     picFrog.Top <= picTurtle8.Top + picTurtle8.Height Then
                 Label1.Text = "Inside"
-                If picFrog.Left + picFrog.Width < picRiver.Width Then
+                If picFrog.Left > 0 Then
                     picFrog.Left -= 6
                 End If
+                '************************
+
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle9.Left And picFrog.Left <= picTurtle9.Left + picTurtle9.Width And picFrog.Top + picFrog.Height >= picTurtle9.Top And
         picFrog.Top <= picTurtle9.Top + picTurtle9.Height Then
                 Label1.Text = "Inside"
