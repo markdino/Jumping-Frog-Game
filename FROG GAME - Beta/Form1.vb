@@ -13,14 +13,14 @@
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        Lag_MoveLeft()
+        Lag_Move()
+        Turtle_Move()
         Frog_Ride_To_Lag()
-        Lag_MoveRight()
     End Sub
 
 
 
-    Public Sub Lag_MoveLeft()
+    Public Sub Lag_Move()
         picLag1.Left -= 5
         picLag2.Left -= 5
         picLag3.Left -= 5
@@ -41,7 +41,7 @@
         picLag14.Left -= 7
 
     End Sub
-    Public Sub Lag_MoveRight()
+    Public Sub Turtle_Move()
         '--- 2nd row ---
         picTurtle1.Left += 4
         picTurtle2.Left += 4
@@ -52,7 +52,7 @@
         picTurtle6.Left -= 6
         picTurtle7.Left -= 6
         picTurtle8.Left -= 6
-        '--- 3rd row ---
+        '--- 5th row ---
         picTurtle9.Left += 4
         picTurtle10.Left += 4
         picTurtle11.Left += 4
