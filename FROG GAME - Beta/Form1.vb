@@ -35,6 +35,10 @@
         picLag9.Left -= 7
         picLag10.Left -= 7
         picLag11.Left -= 7
+        '--- 5th row --- 
+        picLag12.Left -= 7
+        picLag13.Left -= 7
+        picLag14.Left -= 7
 
     End Sub
     Public Sub Lag_MoveRight()
@@ -61,7 +65,7 @@
 
 
     End Sub
-    Private Sub Lag_MoveLeft_Loop(sender As Object, e As EventArgs) Handles picLag1.Move, picLag2.Move, picLag3.Move, picLag4.Move, picLag6.Move, picLag5.Move, picLag8.Move, picLag7.Move, picTurtle8.Move, picTurtle7.Move, picTurtle6.Move, picTurtle5.Move, picLag9.Move, picLag10.Move, picLag11.Move
+    Private Sub Lag_MoveLeft_Loop(sender As Object, e As EventArgs) Handles picLag1.Move, picLag2.Move, picLag3.Move, picLag4.Move, picLag6.Move, picLag5.Move, picLag8.Move, picLag7.Move, picTurtle8.Move, picTurtle7.Move, picTurtle6.Move, picTurtle5.Move, picLag9.Move, picLag10.Move, picLag11.Move, picLag14.Move, picLag13.Move, picLag12.Move
         If sender.left + sender.width <= 0 Then
             sender.left = picRiver.Width
         End If
@@ -141,7 +145,24 @@
                 If picFrog.Left > 0 Then
                     picFrog.Left -= 7
                 End If
-
+            ElseIf picFrog.Left + picFrog.Width - 5 >= picLag12.Left And picFrog.Left <= picLag12.Left + picLag12.Width And picFrog.Top + picFrog.Height >= picLag12.Top And
+picFrog.Top <= picLag12.Top + picLag12.Height Then
+                Label1.Text = "Inside"
+                If picFrog.Left > 0 Then
+                    picFrog.Left -= 7
+                End If
+            ElseIf picFrog.Left + picFrog.Width - 5 >= picLag13.Left And picFrog.Left <= picLag13.Left + picLag13.Width And picFrog.Top + picFrog.Height >= picLag13.Top And
+        picFrog.Top <= picLag13.Top + picLag13.Height Then
+                Label1.Text = "Inside"
+                If picFrog.Left > 0 Then
+                    picFrog.Left -= 7
+                End If
+            ElseIf picFrog.Left + picFrog.Width - 5 >= picLag14.Left And picFrog.Left <= picLag14.Left + picLag14.Width And picFrog.Top + picFrog.Height >= picLag14.Top And
+        picFrog.Top <= picLag14.Top + picLag14.Height Then
+                Label1.Text = "Inside"
+                If picFrog.Left > 0 Then
+                    picFrog.Left -= 7
+                End If
 
 
                 '*********** Ride to the Turtle *************
