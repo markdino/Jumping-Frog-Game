@@ -48,15 +48,18 @@ Partial Class Form1
         Me.picTurtle7 = New System.Windows.Forms.PictureBox()
         Me.picTurtle6 = New System.Windows.Forms.PictureBox()
         Me.picTurtle5 = New System.Windows.Forms.PictureBox()
-        Me.picTurtle9 = New System.Windows.Forms.PictureBox()
-        Me.picTurtle10 = New System.Windows.Forms.PictureBox()
-        Me.picTurtle11 = New System.Windows.Forms.PictureBox()
-        Me.picTurtle12 = New System.Windows.Forms.PictureBox()
-        Me.picTurtle13 = New System.Windows.Forms.PictureBox()
-        Me.picTurtle14 = New System.Windows.Forms.PictureBox()
-        Me.picTurtle15 = New System.Windows.Forms.PictureBox()
-        Me.picTurtle16 = New System.Windows.Forms.PictureBox()
         Me.picTurtle17 = New System.Windows.Forms.PictureBox()
+        Me.picTurtle16 = New System.Windows.Forms.PictureBox()
+        Me.picTurtle15 = New System.Windows.Forms.PictureBox()
+        Me.picTurtle14 = New System.Windows.Forms.PictureBox()
+        Me.picTurtle13 = New System.Windows.Forms.PictureBox()
+        Me.picTurtle12 = New System.Windows.Forms.PictureBox()
+        Me.picTurtle11 = New System.Windows.Forms.PictureBox()
+        Me.picTurtle10 = New System.Windows.Forms.PictureBox()
+        Me.picTurtle9 = New System.Windows.Forms.PictureBox()
+        Me.picLag12 = New System.Windows.Forms.PictureBox()
+        Me.picLag13 = New System.Windows.Forms.PictureBox()
+        Me.picLag14 = New System.Windows.Forms.PictureBox()
         CType(Me.picFrog, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picLag1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picLag2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -79,21 +82,24 @@ Partial Class Form1
         CType(Me.picTurtle7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picTurtle6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picTurtle5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picTurtle9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picTurtle10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picTurtle11, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picTurtle12, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picTurtle13, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picTurtle14, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picTurtle15, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picTurtle16, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picTurtle17, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picTurtle16, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picTurtle15, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picTurtle14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picTurtle13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picTurtle12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picTurtle11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picTurtle10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picTurtle9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picLag12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picLag13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picLag14, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'picFrog
         '
         Me.picFrog.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.picFrog.Location = New System.Drawing.Point(335, 466)
+        Me.picFrog.Location = New System.Drawing.Point(332, 532)
         Me.picFrog.Name = "picFrog"
         Me.picFrog.Size = New System.Drawing.Size(30, 27)
         Me.picFrog.TabIndex = 0
@@ -196,6 +202,9 @@ Partial Class Form1
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.picFrog)
+        Me.GroupBox1.Controls.Add(Me.picLag14)
+        Me.GroupBox1.Controls.Add(Me.picLag13)
+        Me.GroupBox1.Controls.Add(Me.picLag12)
         Me.GroupBox1.Controls.Add(Me.picLag11)
         Me.GroupBox1.Controls.Add(Me.picLag10)
         Me.GroupBox1.Controls.Add(Me.picLag9)
@@ -340,68 +349,14 @@ Partial Class Form1
         Me.picTurtle5.TabIndex = 1
         Me.picTurtle5.TabStop = False
         '
-        'picTurtle9
+        'picTurtle17
         '
-        Me.picTurtle9.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.picTurtle9.Location = New System.Drawing.Point(471, 89)
-        Me.picTurtle9.Name = "picTurtle9"
-        Me.picTurtle9.Size = New System.Drawing.Size(33, 35)
-        Me.picTurtle9.TabIndex = 1
-        Me.picTurtle9.TabStop = False
-        '
-        'picTurtle10
-        '
-        Me.picTurtle10.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.picTurtle10.Location = New System.Drawing.Point(432, 89)
-        Me.picTurtle10.Name = "picTurtle10"
-        Me.picTurtle10.Size = New System.Drawing.Size(33, 35)
-        Me.picTurtle10.TabIndex = 1
-        Me.picTurtle10.TabStop = False
-        '
-        'picTurtle11
-        '
-        Me.picTurtle11.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.picTurtle11.Location = New System.Drawing.Point(393, 89)
-        Me.picTurtle11.Name = "picTurtle11"
-        Me.picTurtle11.Size = New System.Drawing.Size(33, 35)
-        Me.picTurtle11.TabIndex = 1
-        Me.picTurtle11.TabStop = False
-        '
-        'picTurtle12
-        '
-        Me.picTurtle12.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.picTurtle12.Location = New System.Drawing.Point(290, 89)
-        Me.picTurtle12.Name = "picTurtle12"
-        Me.picTurtle12.Size = New System.Drawing.Size(33, 35)
-        Me.picTurtle12.TabIndex = 1
-        Me.picTurtle12.TabStop = False
-        '
-        'picTurtle13
-        '
-        Me.picTurtle13.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.picTurtle13.Location = New System.Drawing.Point(251, 89)
-        Me.picTurtle13.Name = "picTurtle13"
-        Me.picTurtle13.Size = New System.Drawing.Size(33, 35)
-        Me.picTurtle13.TabIndex = 1
-        Me.picTurtle13.TabStop = False
-        '
-        'picTurtle14
-        '
-        Me.picTurtle14.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.picTurtle14.Location = New System.Drawing.Point(212, 89)
-        Me.picTurtle14.Name = "picTurtle14"
-        Me.picTurtle14.Size = New System.Drawing.Size(33, 35)
-        Me.picTurtle14.TabIndex = 1
-        Me.picTurtle14.TabStop = False
-        '
-        'picTurtle15
-        '
-        Me.picTurtle15.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.picTurtle15.Location = New System.Drawing.Point(82, 89)
-        Me.picTurtle15.Name = "picTurtle15"
-        Me.picTurtle15.Size = New System.Drawing.Size(33, 35)
-        Me.picTurtle15.TabIndex = 1
-        Me.picTurtle15.TabStop = False
+        Me.picTurtle17.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.picTurtle17.Location = New System.Drawing.Point(4, 89)
+        Me.picTurtle17.Name = "picTurtle17"
+        Me.picTurtle17.Size = New System.Drawing.Size(33, 35)
+        Me.picTurtle17.TabIndex = 1
+        Me.picTurtle17.TabStop = False
         '
         'picTurtle16
         '
@@ -412,14 +367,95 @@ Partial Class Form1
         Me.picTurtle16.TabIndex = 1
         Me.picTurtle16.TabStop = False
         '
-        'picTurtle17
+        'picTurtle15
         '
-        Me.picTurtle17.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.picTurtle17.Location = New System.Drawing.Point(4, 89)
-        Me.picTurtle17.Name = "picTurtle17"
-        Me.picTurtle17.Size = New System.Drawing.Size(33, 35)
-        Me.picTurtle17.TabIndex = 1
-        Me.picTurtle17.TabStop = False
+        Me.picTurtle15.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.picTurtle15.Location = New System.Drawing.Point(82, 89)
+        Me.picTurtle15.Name = "picTurtle15"
+        Me.picTurtle15.Size = New System.Drawing.Size(33, 35)
+        Me.picTurtle15.TabIndex = 1
+        Me.picTurtle15.TabStop = False
+        '
+        'picTurtle14
+        '
+        Me.picTurtle14.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.picTurtle14.Location = New System.Drawing.Point(212, 89)
+        Me.picTurtle14.Name = "picTurtle14"
+        Me.picTurtle14.Size = New System.Drawing.Size(33, 35)
+        Me.picTurtle14.TabIndex = 1
+        Me.picTurtle14.TabStop = False
+        '
+        'picTurtle13
+        '
+        Me.picTurtle13.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.picTurtle13.Location = New System.Drawing.Point(251, 89)
+        Me.picTurtle13.Name = "picTurtle13"
+        Me.picTurtle13.Size = New System.Drawing.Size(33, 35)
+        Me.picTurtle13.TabIndex = 1
+        Me.picTurtle13.TabStop = False
+        '
+        'picTurtle12
+        '
+        Me.picTurtle12.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.picTurtle12.Location = New System.Drawing.Point(290, 89)
+        Me.picTurtle12.Name = "picTurtle12"
+        Me.picTurtle12.Size = New System.Drawing.Size(33, 35)
+        Me.picTurtle12.TabIndex = 1
+        Me.picTurtle12.TabStop = False
+        '
+        'picTurtle11
+        '
+        Me.picTurtle11.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.picTurtle11.Location = New System.Drawing.Point(393, 89)
+        Me.picTurtle11.Name = "picTurtle11"
+        Me.picTurtle11.Size = New System.Drawing.Size(33, 35)
+        Me.picTurtle11.TabIndex = 1
+        Me.picTurtle11.TabStop = False
+        '
+        'picTurtle10
+        '
+        Me.picTurtle10.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.picTurtle10.Location = New System.Drawing.Point(432, 89)
+        Me.picTurtle10.Name = "picTurtle10"
+        Me.picTurtle10.Size = New System.Drawing.Size(33, 35)
+        Me.picTurtle10.TabIndex = 1
+        Me.picTurtle10.TabStop = False
+        '
+        'picTurtle9
+        '
+        Me.picTurtle9.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.picTurtle9.Location = New System.Drawing.Point(471, 89)
+        Me.picTurtle9.Name = "picTurtle9"
+        Me.picTurtle9.Size = New System.Drawing.Size(33, 35)
+        Me.picTurtle9.TabIndex = 1
+        Me.picTurtle9.TabStop = False
+        '
+        'picLag12
+        '
+        Me.picLag12.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.picLag12.Location = New System.Drawing.Point(532, 50)
+        Me.picLag12.Name = "picLag12"
+        Me.picLag12.Size = New System.Drawing.Size(66, 26)
+        Me.picLag12.TabIndex = 1
+        Me.picLag12.TabStop = False
+        '
+        'picLag13
+        '
+        Me.picLag13.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.picLag13.Location = New System.Drawing.Point(296, 50)
+        Me.picLag13.Name = "picLag13"
+        Me.picLag13.Size = New System.Drawing.Size(66, 26)
+        Me.picLag13.TabIndex = 1
+        Me.picLag13.TabStop = False
+        '
+        'picLag14
+        '
+        Me.picLag14.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.picLag14.Location = New System.Drawing.Point(32, 50)
+        Me.picLag14.Name = "picLag14"
+        Me.picLag14.Size = New System.Drawing.Size(66, 26)
+        Me.picLag14.TabIndex = 1
+        Me.picLag14.TabStop = False
         '
         'Form1
         '
@@ -453,15 +489,18 @@ Partial Class Form1
         CType(Me.picTurtle7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picTurtle6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picTurtle5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picTurtle9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picTurtle10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picTurtle11, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picTurtle12, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picTurtle13, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picTurtle14, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picTurtle15, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picTurtle16, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picTurtle17, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picTurtle16, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picTurtle15, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picTurtle14, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picTurtle13, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picTurtle12, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picTurtle11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picTurtle10, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picTurtle9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picLag12, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picLag13, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picLag14, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -501,4 +540,7 @@ Partial Class Form1
     Friend WithEvents picTurtle11 As PictureBox
     Friend WithEvents picTurtle10 As PictureBox
     Friend WithEvents picTurtle9 As PictureBox
+    Friend WithEvents picLag14 As PictureBox
+    Friend WithEvents picLag13 As PictureBox
+    Friend WithEvents picLag12 As PictureBox
 End Class
