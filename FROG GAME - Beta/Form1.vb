@@ -2,7 +2,16 @@
     'Dim frogMove As Boolean
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'Fix the position of naugthy turtles
         picTurtle1.Left = 245
+        picTurtle2.Left = 206
+        picTurtle3.Left = 167
+        picTurtle9.Left = 471
+        picTurtle10.Left = 432
+        picTurtle11.Left = 393
+        picTurtle12.Left = 290
+        picTurtle13.Left = 251
+        picTurtle14.Left = 212
     End Sub
 
     Private Sub Form1_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
