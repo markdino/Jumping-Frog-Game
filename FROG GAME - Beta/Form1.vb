@@ -167,25 +167,25 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
 
                 '*********** Ride to the Turtle *************
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle1.Left And picFrog.Left <= picTurtle1.Left + picTurtle1.Width And picFrog.Top + picFrog.Height >= picTurtle1.Top And
-            picFrog.Top <= picTurtle1.Top + picTurtle1.Height Then
+            picFrog.Top <= picTurtle1.Top + picTurtle1.Height And t1 = True Then
                 Label1.Text = "Inside"
                 If picFrog.Left + picFrog.Width < picRiver.Width Then
                     picFrog.Left += 4
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle2.Left And picFrog.Left <= picTurtle2.Left + picTurtle2.Width And picFrog.Top + picFrog.Height >= picTurtle2.Top And
-            picFrog.Top <= picTurtle2.Top + picTurtle2.Height Then
+            picFrog.Top <= picTurtle2.Top + picTurtle2.Height And t2 = True Then
                 Label1.Text = "Inside"
                 If picFrog.Left + picFrog.Width < picRiver.Width Then
                     picFrog.Left += 4
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle3.Left And picFrog.Left <= picTurtle3.Left + picTurtle3.Width And picFrog.Top + picFrog.Height >= picTurtle3.Top And
-            picFrog.Top <= picTurtle3.Top + picTurtle3.Height Then
+            picFrog.Top <= picTurtle3.Top + picTurtle3.Height And t3 = True Then
                 Label1.Text = "Inside"
                 If picFrog.Left + picFrog.Width < picRiver.Width Then
                     picFrog.Left += 4
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle4.Left And picFrog.Left <= picTurtle4.Left + picTurtle4.Width And picFrog.Top + picFrog.Height >= picTurtle4.Top And
-            picFrog.Top <= picTurtle4.Top + picTurtle4.Height Then
+            picFrog.Top <= picTurtle4.Top + picTurtle4.Height And t4 = True Then
                 Label1.Text = "Inside"
                 If picFrog.Left + picFrog.Width < picRiver.Width Then
                     picFrog.Left += 4
