@@ -304,12 +304,14 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
 
     Private Sub TurtleIntrv_Tick(sender As Object, e As EventArgs) Handles TurtleIntrv.Tick
         TurtleIntervals += 1
-        If TurtleIntervals = 20 Then
+        If TurtleIntervals = 32 Then
             TurtleGrp2.Enabled = True
         ElseIf TurtleIntervals = 4 Then
             TurtleGrp1.Enabled = True
         ElseIf TurtleIntervals = 13 Then
             TurtleGrp3.Enabled = True
+        ElseIf TurtleIntervals = 20 Then
+            TurtleGrp4.Enabled = True
         End If
     End Sub
 
@@ -427,7 +429,7 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
             picTurtle13.BackColor = Color.Green
             t13 = True
         ElseIf intrv4 = 27 Then
-            picTurtle13.BackColor = Color.Green
+            picTurtle14.BackColor = Color.Green
             t13 = True
         ElseIf intrv4 = 60 Then
             intrv4 = 0
