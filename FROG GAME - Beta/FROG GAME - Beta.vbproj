@@ -118,5 +118,23 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\water.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TurtleLeftDefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TurtleRightDefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TurtleRightSink.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TurtleLeftSink.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
