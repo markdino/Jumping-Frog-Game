@@ -192,25 +192,25 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
                 End If
                 '*********** Ride to the Turtle moving right *************
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle5.Left And picFrog.Left <= picTurtle5.Left + picTurtle5.Width And picFrog.Top + picFrog.Height >= picTurtle5.Top And
-        picFrog.Top <= picTurtle5.Top + picTurtle5.Height Then
+        picFrog.Top <= picTurtle5.Top + picTurtle5.Height And t5 = True Then
                 Label1.Text = "Inside"
                 If picFrog.Left > 0 Then
                     picFrog.Left -= 6
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle6.Left And picFrog.Left <= picTurtle6.Left + picTurtle6.Width And picFrog.Top + picFrog.Height >= picTurtle6.Top And
-    picFrog.Top <= picTurtle6.Top + picTurtle6.Height Then
+    picFrog.Top <= picTurtle6.Top + picTurtle6.Height And t6 = True Then
                 Label1.Text = "Inside"
                 If picFrog.Left > 0 Then
                     picFrog.Left -= 6
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle7.Left And picFrog.Left <= picTurtle7.Left + picTurtle7.Width And picFrog.Top + picFrog.Height >= picTurtle7.Top And
-    picFrog.Top <= picTurtle7.Top + picTurtle7.Height Then
+    picFrog.Top <= picTurtle7.Top + picTurtle7.Height And t7 = True Then
                 Label1.Text = "Inside"
                 If picFrog.Left > 0 Then
                     picFrog.Left -= 6
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle8.Left And picFrog.Left <= picTurtle8.Left + picTurtle8.Width And picFrog.Top + picFrog.Height >= picTurtle8.Top And
-    picFrog.Top <= picTurtle8.Top + picTurtle8.Height Then
+    picFrog.Top <= picTurtle8.Top + picTurtle8.Height And t8 = True Then
                 Label1.Text = "Inside"
                 If picFrog.Left > 0 Then
                     picFrog.Left -= 6
@@ -294,13 +294,22 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
             End If
         End If
     End Sub
-
+    Dim TurtleIntervals As Integer = 0
     Dim intrv1 As Integer = 0
     Dim intrv2 As Integer = 0
     Dim intrv3 As Integer = 0
     Dim intrv4 As Integer = 0
     Dim intrv5 As Integer = 0
-    Dim t1, t2, t3, t4, t5 As Boolean
+    Dim t1, t2, t3, t4, t5, t6, t7, t8 As Boolean
+
+    Private Sub TurtleIntrv_Tick(sender As Object, e As EventArgs) Handles TurtleIntrv.Tick
+        TurtleIntervals += 1
+        If TurtleIntervals = 3 Then
+            TurtleGrp2.Enabled = True
+        ElseIf TurtleIntervals = 10 Then
+            TurtleGrp1.Enabled = True
+        End If
+    End Sub
 
     Private Sub TurtleGrp1_Tick(sender As Object, e As EventArgs) Handles TurtleGrp1.Tick
         intrv1 += 1
@@ -335,4 +344,38 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
             intrv1 = 0
         End If
     End Sub
+    Private Sub TurtleGrp2_Tick(sender As Object, e As EventArgs) Handles TurtleGrp2.Tick
+        intrv2 += 1
+        'Turtle sink
+        If intrv2 = 1 Then
+            picTurtle5.BackColor = Color.Blue
+            t2 = False
+        ElseIf intrv2 = 2 Then
+            picTurtle6.BackColor = Color.Blue
+            t6 = False
+        ElseIf intrv2 = 3 Then
+            picTurtle7.BackColor = Color.Blue
+            t7 = False
+        ElseIf intrv2 = 4 Then
+            picTurtle8.BackColor = Color.Blue
+            t8 = False
+
+            'Turtle float
+        ElseIf intrv2 = 25 Then
+            picTurtle5.BackColor = Color.Green
+            t5 = True
+        ElseIf intrv2 = 26 Then
+            picTurtle6.BackColor = Color.Green
+            t6 = True
+        ElseIf intrv2 = 27 Then
+            picTurtle7.BackColor = Color.Green
+            t7 = True
+        ElseIf intrv2 = 28 Then
+            picTurtle8.BackColor = Color.Green
+            t8 = True
+        ElseIf intrv2 = 60 Then
+            intrv2 = 0
+        End If
+    End Sub
+
 End Class

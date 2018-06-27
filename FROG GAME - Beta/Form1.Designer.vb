@@ -62,6 +62,7 @@ Partial Class Form1
         Me.picLag14 = New System.Windows.Forms.PictureBox()
         Me.TurtleGrp1 = New System.Windows.Forms.Timer(Me.components)
         Me.TurtleGrp2 = New System.Windows.Forms.Timer(Me.components)
+        Me.TurtleIntrv = New System.Windows.Forms.Timer(Me.components)
         CType(Me.picFrog, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picLag1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picLag2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -461,13 +462,16 @@ Partial Class Form1
         '
         'TurtleGrp1
         '
-        Me.TurtleGrp1.Enabled = True
         Me.TurtleGrp1.Interval = 500
         '
         'TurtleGrp2
         '
-        Me.TurtleGrp2.Enabled = True
         Me.TurtleGrp2.Interval = 500
+        '
+        'TurtleIntrv
+        '
+        Me.TurtleIntrv.Enabled = True
+        Me.TurtleIntrv.Interval = 1000
         '
         'Form1
         '
@@ -557,4 +561,5 @@ Partial Class Form1
     Friend WithEvents picLag12 As PictureBox
     Friend WithEvents TurtleGrp1 As Timer
     Friend WithEvents TurtleGrp2 As Timer
+    Friend WithEvents TurtleIntrv As Timer
 End Class
