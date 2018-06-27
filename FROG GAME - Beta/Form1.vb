@@ -295,5 +295,44 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
         End If
     End Sub
 
+    Dim intrv1 As Integer = 0
+    Dim intrv2 As Integer = 0
+    Dim intrv3 As Integer = 0
+    Dim intrv4 As Integer = 0
+    Dim intrv5 As Integer = 0
+    Dim t1, t2, t3, t4, t5 As Boolean
 
+    Private Sub TurtleGrp1_Tick(sender As Object, e As EventArgs) Handles TurtleGrp1.Tick
+        intrv1 += 1
+        'Turtle sink
+        If intrv1 = 1 Then
+            picTurtle1.BackColor = Color.Blue
+            t1 = False
+        ElseIf intrv1 = 2 Then
+            picTurtle2.BackColor = Color.Blue
+            t2 = False
+        ElseIf intrv1 = 3 Then
+            picTurtle3.BackColor = Color.Blue
+            t3 = False
+        ElseIf intrv1 = 4 Then
+            picTurtle4.BackColor = Color.Blue
+            t4 = False
+
+            'Turtle float
+        ElseIf intrv1 = 25 Then
+            picTurtle1.BackColor = Color.Green
+            t1 = True
+        ElseIf intrv1 = 26 Then
+            picTurtle2.BackColor = Color.Green
+            t2 = True
+        ElseIf intrv1 = 27 Then
+            picTurtle3.BackColor = Color.Green
+            t3 = True
+        ElseIf intrv1 = 28 Then
+            picTurtle4.BackColor = Color.Green
+            t4 = True
+        ElseIf intrv1 = 65 Then
+            intrv1 = 0
+        End If
+    End Sub
 End Class

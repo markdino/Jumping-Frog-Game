@@ -60,6 +60,7 @@ Partial Class Form1
         Me.picLag12 = New System.Windows.Forms.PictureBox()
         Me.picLag13 = New System.Windows.Forms.PictureBox()
         Me.picLag14 = New System.Windows.Forms.PictureBox()
+        Me.TurtleGrp1 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.picFrog, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picLag1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picLag2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -457,6 +458,11 @@ Partial Class Form1
         Me.picLag14.TabIndex = 1
         Me.picLag14.TabStop = False
         '
+        'TurtleGrp1
+        '
+        Me.TurtleGrp1.Enabled = True
+        Me.TurtleGrp1.Interval = 500
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -543,4 +549,5 @@ Partial Class Form1
     Friend WithEvents picLag14 As PictureBox
     Friend WithEvents picLag13 As PictureBox
     Friend WithEvents picLag12 As PictureBox
+    Friend WithEvents TurtleGrp1 As Timer
 End Class
