@@ -36,6 +36,9 @@ Partial Class Form1
         Me.picTurtle4 = New System.Windows.Forms.PictureBox()
         Me.picLag3 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.picLag14 = New System.Windows.Forms.PictureBox()
+        Me.picLag13 = New System.Windows.Forms.PictureBox()
+        Me.picLag12 = New System.Windows.Forms.PictureBox()
         Me.picLag11 = New System.Windows.Forms.PictureBox()
         Me.picLag10 = New System.Windows.Forms.PictureBox()
         Me.picLag9 = New System.Windows.Forms.PictureBox()
@@ -57,9 +60,12 @@ Partial Class Form1
         Me.picTurtle11 = New System.Windows.Forms.PictureBox()
         Me.picTurtle10 = New System.Windows.Forms.PictureBox()
         Me.picTurtle9 = New System.Windows.Forms.PictureBox()
-        Me.picLag12 = New System.Windows.Forms.PictureBox()
-        Me.picLag13 = New System.Windows.Forms.PictureBox()
-        Me.picLag14 = New System.Windows.Forms.PictureBox()
+        Me.TurtleGrp1 = New System.Windows.Forms.Timer(Me.components)
+        Me.TurtleGrp2 = New System.Windows.Forms.Timer(Me.components)
+        Me.TurtleIntrv = New System.Windows.Forms.Timer(Me.components)
+        Me.TurtleGrp3 = New System.Windows.Forms.Timer(Me.components)
+        Me.TurtleGrp4 = New System.Windows.Forms.Timer(Me.components)
+        Me.TurtleGrp5 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.picFrog, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picLag1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picLag2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -70,6 +76,9 @@ Partial Class Form1
         CType(Me.picTurtle4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picLag3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.picLag14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picLag13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picLag12, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picLag11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picLag10, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picLag9, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -91,9 +100,6 @@ Partial Class Form1
         CType(Me.picTurtle11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picTurtle10, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picTurtle9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picLag12, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picLag13, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picLag14, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'picFrog
@@ -240,6 +246,33 @@ Partial Class Form1
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "GroupBox1"
+        '
+        'picLag14
+        '
+        Me.picLag14.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.picLag14.Location = New System.Drawing.Point(32, 50)
+        Me.picLag14.Name = "picLag14"
+        Me.picLag14.Size = New System.Drawing.Size(66, 26)
+        Me.picLag14.TabIndex = 1
+        Me.picLag14.TabStop = False
+        '
+        'picLag13
+        '
+        Me.picLag13.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.picLag13.Location = New System.Drawing.Point(296, 50)
+        Me.picLag13.Name = "picLag13"
+        Me.picLag13.Size = New System.Drawing.Size(66, 26)
+        Me.picLag13.TabIndex = 1
+        Me.picLag13.TabStop = False
+        '
+        'picLag12
+        '
+        Me.picLag12.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.picLag12.Location = New System.Drawing.Point(532, 50)
+        Me.picLag12.Name = "picLag12"
+        Me.picLag12.Size = New System.Drawing.Size(66, 26)
+        Me.picLag12.TabIndex = 1
+        Me.picLag12.TabStop = False
         '
         'picLag11
         '
@@ -430,32 +463,30 @@ Partial Class Form1
         Me.picTurtle9.TabIndex = 1
         Me.picTurtle9.TabStop = False
         '
-        'picLag12
+        'TurtleGrp1
         '
-        Me.picLag12.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.picLag12.Location = New System.Drawing.Point(532, 50)
-        Me.picLag12.Name = "picLag12"
-        Me.picLag12.Size = New System.Drawing.Size(66, 26)
-        Me.picLag12.TabIndex = 1
-        Me.picLag12.TabStop = False
+        Me.TurtleGrp1.Interval = 500
         '
-        'picLag13
+        'TurtleGrp2
         '
-        Me.picLag13.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.picLag13.Location = New System.Drawing.Point(296, 50)
-        Me.picLag13.Name = "picLag13"
-        Me.picLag13.Size = New System.Drawing.Size(66, 26)
-        Me.picLag13.TabIndex = 1
-        Me.picLag13.TabStop = False
+        Me.TurtleGrp2.Interval = 500
         '
-        'picLag14
+        'TurtleIntrv
         '
-        Me.picLag14.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.picLag14.Location = New System.Drawing.Point(32, 50)
-        Me.picLag14.Name = "picLag14"
-        Me.picLag14.Size = New System.Drawing.Size(66, 26)
-        Me.picLag14.TabIndex = 1
-        Me.picLag14.TabStop = False
+        Me.TurtleIntrv.Enabled = True
+        Me.TurtleIntrv.Interval = 1000
+        '
+        'TurtleGrp3
+        '
+        Me.TurtleGrp3.Interval = 500
+        '
+        'TurtleGrp4
+        '
+        Me.TurtleGrp4.Interval = 500
+        '
+        'TurtleGrp5
+        '
+        Me.TurtleGrp5.Interval = 500
         '
         'Form1
         '
@@ -477,6 +508,9 @@ Partial Class Form1
         CType(Me.picTurtle4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picLag3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
+        CType(Me.picLag14, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picLag13, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picLag12, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picLag11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picLag10, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picLag9, System.ComponentModel.ISupportInitialize).EndInit()
@@ -498,9 +532,6 @@ Partial Class Form1
         CType(Me.picTurtle11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picTurtle10, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picTurtle9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picLag12, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picLag13, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picLag14, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -543,4 +574,10 @@ Partial Class Form1
     Friend WithEvents picLag14 As PictureBox
     Friend WithEvents picLag13 As PictureBox
     Friend WithEvents picLag12 As PictureBox
+    Friend WithEvents TurtleGrp1 As Timer
+    Friend WithEvents TurtleGrp2 As Timer
+    Friend WithEvents TurtleIntrv As Timer
+    Friend WithEvents TurtleGrp3 As Timer
+    Friend WithEvents TurtleGrp4 As Timer
+    Friend WithEvents TurtleGrp5 As Timer
 End Class
