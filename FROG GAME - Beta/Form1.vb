@@ -312,6 +312,8 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
             TurtleGrp3.Enabled = True
         ElseIf TurtleIntervals = 20 Then
             TurtleGrp4.Enabled = True
+        ElseIf TurtleIntervals = 40 Then
+            TurtleGrp5.Enabled = True
         End If
     End Sub
 
@@ -435,5 +437,33 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
             intrv4 = 0
         End If
     End Sub
+    Private Sub TurtleGrp5_Tick(sender As Object, e As EventArgs) Handles TurtleGrp5.Tick
+        intrv5 += 1
+        'Turtle sink
+        If intrv5 = 1 Then
+            picTurtle15.BackColor = Color.Blue
+            t15 = False
+        ElseIf intrv5 = 2 Then
+            picTurtle16.BackColor = Color.Blue
+            t16 = False
+        ElseIf intrv5 = 3 Then
+            picTurtle17.BackColor = Color.Blue
+            t17 = False
+
+            'Turtle float
+        ElseIf intrv5 = 25 Then
+            picTurtle15.BackColor = Color.Green
+            t15 = True
+        ElseIf intrv5 = 26 Then
+            picTurtle16.BackColor = Color.Green
+            t16 = True
+        ElseIf intrv5 = 27 Then
+            picTurtle17.BackColor = Color.Green
+            t17 = True
+        ElseIf intrv5 = 60 Then
+            intrv5 = 0
+        End If
+    End Sub
+
 
 End Class
