@@ -345,7 +345,10 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
             TurtleGrp4.Enabled = True
         ElseIf TurtleIntervals = 40 Then
             TurtleGrp5.Enabled = True
+        ElseIf TurtleIntervals = 41 Then
+            TurtleIntrv.Enabled = False
         End If
+
     End Sub
 
     Private Sub TurtleGrp1_Tick(sender As Object, e As EventArgs) Handles TurtleGrp1.Tick
