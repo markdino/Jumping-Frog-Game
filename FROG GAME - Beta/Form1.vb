@@ -7,6 +7,10 @@
     Dim intrv5 As Integer = 0
     Dim t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12, t13, t14, t15, t16, t17 As Boolean
 
+    Private Sub picCar_Click(sender As Object, e As EventArgs) Handles picCar1.Click, picCar5.Click, picCar4.Click, picCar3.Click, picCar2.Click
+
+    End Sub
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Fix the position of naugthy turtles
         picTurtle1.Left = 245
@@ -50,6 +54,7 @@
         Lag_Move()
         Turtle_Move()
         Frog_Ride_To_Lag()
+        Car_MoveLeft()
     End Sub
 
 
@@ -112,6 +117,7 @@
 
     Public Sub Frog_Ride_To_Lag()
         If picFrog.Top >= picRiver.Top And picFrog.Top <= picRiver.Top + picRiver.Height - picFrog.Height Then
+            picFrog.BackColor = Color.DodgerBlue
             '*********** Ride to the lag *********** 
             If picFrog.Left + picFrog.Width - 5 >= picLag1.Left And picFrog.Left <= picLag1.Left + picLag1.Width And picFrog.Top + picFrog.Height >= picLag1.Top And
             picFrog.Top <= picLag1.Top + picLag1.Height Then
@@ -309,7 +315,10 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
             Else
                 Label1.Text = "Outside"
             End If
-
+        ElseIf picFrog.Top >= picRoad.Top And picFrog.Top <= picRoad.Top + picRoad.Height - picFrog.Height Then
+            picFrog.BackColor = Color.DimGray
+        Else
+            picFrog.BackColor = Color.PeachPuff
         End If
 
     End Sub
@@ -498,6 +507,16 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
             intrv5 = 0
         End If
     End Sub
-
-
+    Private Sub Car_MoveLeft()
+        picCar1.Left -= 5
+        picCar2.Left -= 5
+        picCar3.Left -= 5
+        picCar4.Left -= 5
+        picCar5.Left -= 5
+    End Sub
+    Private Sub Car_MoveRight_Loop(sender As Object, e As EventArgs) Handles picCar1.Move, picCar5.Move, picCar4.Move, picCar3.Move, picCar2.Move
+        If sender.left + sender.width <= 0 Then
+            sender.left = picRoad.Width
+        End If
+    End Sub
 End Class
