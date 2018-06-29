@@ -63,6 +63,26 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property frog() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("frog", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property frog1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("frog1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property log() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("log", resourceCulture)

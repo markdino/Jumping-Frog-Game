@@ -193,10 +193,13 @@ Partial Class Form1
         '
         'picFrog
         '
-        Me.picFrog.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.picFrog.Location = New System.Drawing.Point(332, 532)
+        Me.picFrog.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.picFrog.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.picFrog.Image = Global.FROG_GAME___Beta.My.Resources.Resources.frog1
+        Me.picFrog.Location = New System.Drawing.Point(335, 532)
         Me.picFrog.Name = "picFrog"
-        Me.picFrog.Size = New System.Drawing.Size(30, 27)
+        Me.picFrog.Size = New System.Drawing.Size(36, 27)
+        Me.picFrog.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picFrog.TabIndex = 0
         Me.picFrog.TabStop = False
         '
