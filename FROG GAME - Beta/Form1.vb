@@ -1,5 +1,11 @@
 ﻿Public Class Form1
-    'Dim frogMove As Boolean
+    Dim TurtleIntervals As Integer = 0
+    Dim intrv1 As Integer = 0
+    Dim intrv2 As Integer = 0
+    Dim intrv3 As Integer = 0
+    Dim intrv4 As Integer = 0
+    Dim intrv5 As Integer = 0
+    Dim t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12, t13, t14, t15, t16, t17 As Boolean
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Fix the position of naugthy turtles
@@ -12,6 +18,25 @@
         picTurtle12.Left = 290
         picTurtle13.Left = 251
         picTurtle14.Left = 212
+
+        t1 = True
+        t2 = True
+        t3 = True
+        t4 = True
+        t5 = True
+        t6 = True
+        t7 = True
+        t8 = True
+        t9 = True
+        t10 = True
+        t11 = True
+        t12 = True
+        t13 = True
+        t14 = True
+        t15 = True
+        t16 = True
+        t17 = True
+
     End Sub
 
     Private Sub Form1_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
@@ -307,13 +332,6 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
             End If
         End If
     End Sub
-    Dim TurtleIntervals As Integer = 0
-    Dim intrv1 As Integer = 0
-    Dim intrv2 As Integer = 0
-    Dim intrv3 As Integer = 0
-    Dim intrv4 As Integer = 0
-    Dim intrv5 As Integer = 0
-    Dim t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12, t13, t14, t15, t16, t17 As Boolean
 
     Private Sub TurtleIntrv_Tick(sender As Object, e As EventArgs) Handles TurtleIntrv.Tick
         TurtleIntervals += 1
