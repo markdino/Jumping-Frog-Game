@@ -1,5 +1,11 @@
 ﻿Public Class Form1
-    'Dim frogMove As Boolean
+    Dim TurtleIntervals As Integer = 0
+    Dim intrv1 As Integer = 0
+    Dim intrv2 As Integer = 0
+    Dim intrv3 As Integer = 0
+    Dim intrv4 As Integer = 0
+    Dim intrv5 As Integer = 0
+    Dim t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12, t13, t14, t15, t16, t17 As Boolean
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Fix the position of naugthy turtles
@@ -12,6 +18,25 @@
         picTurtle12.Left = 290
         picTurtle13.Left = 251
         picTurtle14.Left = 212
+
+        t1 = True
+        t2 = True
+        t3 = True
+        t4 = True
+        t5 = True
+        t6 = True
+        t7 = True
+        t8 = True
+        t9 = True
+        t10 = True
+        t11 = True
+        t12 = True
+        t13 = True
+        t14 = True
+        t15 = True
+        t16 = True
+        t17 = True
+
     End Sub
 
     Private Sub Form1_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
@@ -291,25 +316,22 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
     Public Sub Frog_Hotkey(sender As Object, e As KeyEventArgs)
         If e.KeyCode = Keys.Up Then
             picFrog.Top -= 20
+            picFrog.Image = My.Resources.frog1
         ElseIf e.KeyCode = Keys.Down Then
             picFrog.Top += 20
+            picFrog.Image = My.Resources.frog1Down
         ElseIf e.KeyCode = Keys.Left Then
+            picFrog.Image = My.Resources.frog1Left
             If picFrog.Left - 5 > 0 Then
                 picFrog.Left -= 20
             End If
         ElseIf e.KeyCode = Keys.Right Then
+            picFrog.Image = My.Resources.frog1Right
             If picFrog.Left + picFrog.Width + 8 < picRiver.Width Then
                 picFrog.Left += 20
             End If
         End If
     End Sub
-    Dim TurtleIntervals As Integer = 0
-    Dim intrv1 As Integer = 0
-    Dim intrv2 As Integer = 0
-    Dim intrv3 As Integer = 0
-    Dim intrv4 As Integer = 0
-    Dim intrv5 As Integer = 0
-    Dim t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12, t13, t14, t15, t16, t17 As Boolean
 
     Private Sub TurtleIntrv_Tick(sender As Object, e As EventArgs) Handles TurtleIntrv.Tick
         TurtleIntervals += 1
@@ -323,7 +345,10 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
             TurtleGrp4.Enabled = True
         ElseIf TurtleIntervals = 40 Then
             TurtleGrp5.Enabled = True
+        ElseIf TurtleIntervals = 41 Then
+            TurtleIntrv.Enabled = False
         End If
+
     End Sub
 
     Private Sub TurtleGrp1_Tick(sender As Object, e As EventArgs) Handles TurtleGrp1.Tick

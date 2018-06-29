@@ -142,5 +142,14 @@
   <ItemGroup>
     <None Include="Resources\frog1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frog1Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frog1Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frog1Right.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

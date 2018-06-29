@@ -193,7 +193,7 @@ Partial Class Form1
         '
         'picFrog
         '
-        Me.picFrog.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.picFrog.BackColor = System.Drawing.Color.DodgerBlue
         Me.picFrog.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.picFrog.Image = Global.FROG_GAME___Beta.My.Resources.Resources.frog1
         Me.picFrog.Location = New System.Drawing.Point(335, 532)
