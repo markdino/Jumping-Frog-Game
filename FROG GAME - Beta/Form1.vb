@@ -7,7 +7,7 @@
     Dim intrv5 As Integer = 0
     Dim t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12, t13, t14, t15, t16, t17 As Boolean
 
-    Private Sub picCar_Click(sender As Object, e As EventArgs) Handles picCar1.Click, picCar5.Click, picCar4.Click, picCar3.Click, picCar2.Click
+    Private Sub picCar_Click(sender As Object, e As EventArgs) Handles picCar1.Click, picCar5.Click, picCar4.Click, picCar3.Click, picCar2.Click, picCar6.Click
 
     End Sub
 
@@ -55,6 +55,7 @@
         Turtle_Move()
         Frog_Ride_To_Lag()
         Car_MoveLeft()
+        Car_MoveRight()
     End Sub
 
 
@@ -514,9 +515,18 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
         picCar4.Left -= 5
         picCar5.Left -= 5
     End Sub
-    Private Sub Car_MoveRight_Loop(sender As Object, e As EventArgs) Handles picCar1.Move, picCar5.Move, picCar4.Move, picCar3.Move, picCar2.Move
+    Private Sub Car_MoveRight()
+        picCar6.Left += 7
+
+    End Sub
+    Private Sub Car_MoveLeft_Loop(sender As Object, e As EventArgs) Handles picCar1.Move, picCar5.Move, picCar4.Move, picCar3.Move, picCar2.Move
         If sender.left + sender.width <= 0 Then
             sender.left = picRoad.Width
+        End If
+    End Sub
+    Private Sub Car_MoveRight_Loop(sender As Object, e As EventArgs) Handles picCar6.Move
+        If sender.left > picRiver.Width Then
+            sender.left = 0 - sender.Width
         End If
     End Sub
 End Class
