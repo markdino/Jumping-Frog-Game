@@ -117,6 +117,7 @@ Partial Class Form1
         'Timer1
         '
         Me.Timer1.Enabled = True
+        Me.Timer1.Interval = 150
         '
         'Label1
         '
@@ -562,9 +563,9 @@ Partial Class Form1
         '
         Me.picRiver.BackColor = System.Drawing.Color.Aquamarine
         Me.picRiver.Image = Global.FROG_GAME___Beta.My.Resources.Resources.water
-        Me.picRiver.Location = New System.Drawing.Point(0, 50)
+        Me.picRiver.Location = New System.Drawing.Point(0, 40)
         Me.picRiver.Name = "picRiver"
-        Me.picRiver.Size = New System.Drawing.Size(675, 243)
+        Me.picRiver.Size = New System.Drawing.Size(675, 253)
         Me.picRiver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picRiver.TabIndex = 3
         Me.picRiver.TabStop = False
