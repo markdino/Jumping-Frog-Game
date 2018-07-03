@@ -27,7 +27,17 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.TurtleGrp1 = New System.Windows.Forms.Timer(Me.components)
+        Me.TurtleGrp2 = New System.Windows.Forms.Timer(Me.components)
+        Me.TurtleIntrv = New System.Windows.Forms.Timer(Me.components)
+        Me.TurtleGrp3 = New System.Windows.Forms.Timer(Me.components)
+        Me.TurtleGrp4 = New System.Windows.Forms.Timer(Me.components)
+        Me.TurtleGrp5 = New System.Windows.Forms.Timer(Me.components)
+        Me.picCar9 = New System.Windows.Forms.PictureBox()
+        Me.picCar8 = New System.Windows.Forms.PictureBox()
+        Me.picCar7 = New System.Windows.Forms.PictureBox()
         Me.picCar6 = New System.Windows.Forms.PictureBox()
+        Me.picCar10 = New System.Windows.Forms.PictureBox()
         Me.picCar5 = New System.Windows.Forms.PictureBox()
         Me.picCar4 = New System.Windows.Forms.PictureBox()
         Me.picCar3 = New System.Windows.Forms.PictureBox()
@@ -67,17 +77,14 @@ Partial Class Form1
         Me.picTurtle2 = New System.Windows.Forms.PictureBox()
         Me.picTurtle1 = New System.Windows.Forms.PictureBox()
         Me.picRiver = New System.Windows.Forms.PictureBox()
-        Me.TurtleGrp1 = New System.Windows.Forms.Timer(Me.components)
-        Me.TurtleGrp2 = New System.Windows.Forms.Timer(Me.components)
-        Me.TurtleIntrv = New System.Windows.Forms.Timer(Me.components)
-        Me.TurtleGrp3 = New System.Windows.Forms.Timer(Me.components)
-        Me.TurtleGrp4 = New System.Windows.Forms.Timer(Me.components)
-        Me.TurtleGrp5 = New System.Windows.Forms.Timer(Me.components)
-        Me.picCar7 = New System.Windows.Forms.PictureBox()
-        Me.picCar8 = New System.Windows.Forms.PictureBox()
-        Me.picCar9 = New System.Windows.Forms.PictureBox()
+        Me.picCar11 = New System.Windows.Forms.PictureBox()
+        Me.picCar12 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.picCar9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picCar8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picCar7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picCar6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picCar10, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picCar5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picCar4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picCar3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -117,9 +124,8 @@ Partial Class Form1
         CType(Me.picTurtle2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picTurtle1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picRiver, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picCar7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picCar8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picCar9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picCar11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picCar12, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Timer1
@@ -152,6 +158,9 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.picCar8)
         Me.GroupBox1.Controls.Add(Me.picCar7)
         Me.GroupBox1.Controls.Add(Me.picCar6)
+        Me.GroupBox1.Controls.Add(Me.picCar12)
+        Me.GroupBox1.Controls.Add(Me.picCar11)
+        Me.GroupBox1.Controls.Add(Me.picCar10)
         Me.GroupBox1.Controls.Add(Me.picCar5)
         Me.GroupBox1.Controls.Add(Me.picCar4)
         Me.GroupBox1.Controls.Add(Me.picCar3)
@@ -198,6 +207,61 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "GroupBox1"
         '
+        'TurtleGrp1
+        '
+        Me.TurtleGrp1.Interval = 500
+        '
+        'TurtleGrp2
+        '
+        Me.TurtleGrp2.Interval = 500
+        '
+        'TurtleIntrv
+        '
+        Me.TurtleIntrv.Enabled = True
+        Me.TurtleIntrv.Interval = 1000
+        '
+        'TurtleGrp3
+        '
+        Me.TurtleGrp3.Interval = 500
+        '
+        'TurtleGrp4
+        '
+        Me.TurtleGrp4.Interval = 500
+        '
+        'TurtleGrp5
+        '
+        Me.TurtleGrp5.Interval = 500
+        '
+        'picCar9
+        '
+        Me.picCar9.Image = Global.FROG_GAME___Beta.My.Resources.Resources.car4
+        Me.picCar9.Location = New System.Drawing.Point(656, 433)
+        Me.picCar9.Name = "picCar9"
+        Me.picCar9.Size = New System.Drawing.Size(79, 30)
+        Me.picCar9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picCar9.TabIndex = 4
+        Me.picCar9.TabStop = False
+        '
+        'picCar8
+        '
+        Me.picCar8.Image = Global.FROG_GAME___Beta.My.Resources.Resources.car4
+        Me.picCar8.Location = New System.Drawing.Point(471, 433)
+        Me.picCar8.Name = "picCar8"
+        Me.picCar8.Size = New System.Drawing.Size(79, 30)
+        Me.picCar8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picCar8.TabIndex = 4
+        Me.picCar8.TabStop = False
+        '
+        'picCar7
+        '
+        Me.picCar7.Image = Global.FROG_GAME___Beta.My.Resources.Resources.car3
+        Me.picCar7.Location = New System.Drawing.Point(283, 433)
+        Me.picCar7.Name = "picCar7"
+        Me.picCar7.Size = New System.Drawing.Size(79, 30)
+        Me.picCar7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picCar7.TabIndex = 4
+        Me.picCar7.TabStop = False
+        '
         'picCar6
         '
         Me.picCar6.Image = Global.FROG_GAME___Beta.My.Resources.Resources.car4
@@ -207,6 +271,16 @@ Partial Class Form1
         Me.picCar6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picCar6.TabIndex = 4
         Me.picCar6.TabStop = False
+        '
+        'picCar10
+        '
+        Me.picCar10.Image = Global.FROG_GAME___Beta.My.Resources.Resources.truck2
+        Me.picCar10.Location = New System.Drawing.Point(532, 378)
+        Me.picCar10.Name = "picCar10"
+        Me.picCar10.Size = New System.Drawing.Size(124, 43)
+        Me.picCar10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picCar10.TabIndex = 4
+        Me.picCar10.TabStop = False
         '
         'picCar5
         '
@@ -220,7 +294,7 @@ Partial Class Form1
         '
         'picCar4
         '
-        Me.picCar4.Image = Global.FROG_GAME___Beta.My.Resources.Resources.car2
+        Me.picCar4.Image = Global.FROG_GAME___Beta.My.Resources.Resources.car1
         Me.picCar4.Location = New System.Drawing.Point(131, 485)
         Me.picCar4.Name = "picCar4"
         Me.picCar4.Size = New System.Drawing.Size(59, 30)
@@ -250,7 +324,7 @@ Partial Class Form1
         '
         'picCar1
         '
-        Me.picCar1.Image = Global.FROG_GAME___Beta.My.Resources.Resources.car2
+        Me.picCar1.Image = Global.FROG_GAME___Beta.My.Resources.Resources.car1
         Me.picCar1.Location = New System.Drawing.Point(577, 485)
         Me.picCar1.Name = "picCar1"
         Me.picCar1.Size = New System.Drawing.Size(59, 30)
@@ -632,60 +706,25 @@ Partial Class Form1
         Me.picRiver.TabIndex = 3
         Me.picRiver.TabStop = False
         '
-        'TurtleGrp1
+        'picCar11
         '
-        Me.TurtleGrp1.Interval = 500
+        Me.picCar11.Image = Global.FROG_GAME___Beta.My.Resources.Resources.truck1
+        Me.picCar11.Location = New System.Drawing.Point(318, 378)
+        Me.picCar11.Name = "picCar11"
+        Me.picCar11.Size = New System.Drawing.Size(124, 43)
+        Me.picCar11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picCar11.TabIndex = 4
+        Me.picCar11.TabStop = False
         '
-        'TurtleGrp2
+        'picCar12
         '
-        Me.TurtleGrp2.Interval = 500
-        '
-        'TurtleIntrv
-        '
-        Me.TurtleIntrv.Enabled = True
-        Me.TurtleIntrv.Interval = 1000
-        '
-        'TurtleGrp3
-        '
-        Me.TurtleGrp3.Interval = 500
-        '
-        'TurtleGrp4
-        '
-        Me.TurtleGrp4.Interval = 500
-        '
-        'TurtleGrp5
-        '
-        Me.TurtleGrp5.Interval = 500
-        '
-        'picCar7
-        '
-        Me.picCar7.Image = Global.FROG_GAME___Beta.My.Resources.Resources.car4
-        Me.picCar7.Location = New System.Drawing.Point(283, 433)
-        Me.picCar7.Name = "picCar7"
-        Me.picCar7.Size = New System.Drawing.Size(79, 30)
-        Me.picCar7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picCar7.TabIndex = 4
-        Me.picCar7.TabStop = False
-        '
-        'picCar8
-        '
-        Me.picCar8.Image = Global.FROG_GAME___Beta.My.Resources.Resources.car4
-        Me.picCar8.Location = New System.Drawing.Point(471, 433)
-        Me.picCar8.Name = "picCar8"
-        Me.picCar8.Size = New System.Drawing.Size(79, 30)
-        Me.picCar8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picCar8.TabIndex = 4
-        Me.picCar8.TabStop = False
-        '
-        'picCar9
-        '
-        Me.picCar9.Image = Global.FROG_GAME___Beta.My.Resources.Resources.car4
-        Me.picCar9.Location = New System.Drawing.Point(656, 433)
-        Me.picCar9.Name = "picCar9"
-        Me.picCar9.Size = New System.Drawing.Size(79, 30)
-        Me.picCar9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picCar9.TabIndex = 4
-        Me.picCar9.TabStop = False
+        Me.picCar12.Image = Global.FROG_GAME___Beta.My.Resources.Resources.truck1
+        Me.picCar12.Location = New System.Drawing.Point(105, 378)
+        Me.picCar12.Name = "picCar12"
+        Me.picCar12.Size = New System.Drawing.Size(124, 43)
+        Me.picCar12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picCar12.TabIndex = 4
+        Me.picCar12.TabStop = False
         '
         'Form1
         '
@@ -698,7 +737,11 @@ Partial Class Form1
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.GroupBox1.ResumeLayout(False)
+        CType(Me.picCar9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picCar8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picCar7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picCar6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picCar10, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picCar5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picCar4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picCar3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -738,9 +781,8 @@ Partial Class Form1
         CType(Me.picTurtle2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picTurtle1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picRiver, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picCar7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picCar8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picCar9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picCar11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picCar12, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -799,4 +841,7 @@ Partial Class Form1
     Friend WithEvents picCar9 As PictureBox
     Friend WithEvents picCar8 As PictureBox
     Friend WithEvents picCar7 As PictureBox
+    Friend WithEvents picCar10 As PictureBox
+    Friend WithEvents picCar12 As PictureBox
+    Friend WithEvents picCar11 As PictureBox
 End Class

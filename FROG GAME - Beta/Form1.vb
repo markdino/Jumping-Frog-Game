@@ -7,7 +7,7 @@
     Dim intrv5 As Integer = 0
     Dim t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12, t13, t14, t15, t16, t17 As Boolean
 
-    Private Sub picCar_Click(sender As Object, e As EventArgs) Handles picCar1.Click, picCar5.Click, picCar4.Click, picCar3.Click, picCar2.Click, picCar6.Click, picCar9.Click, picCar8.Click, picCar7.Click
+    Private Sub picCar_Click(sender As Object, e As EventArgs) Handles picCar1.Click, picCar5.Click, picCar4.Click, picCar3.Click, picCar2.Click, picCar6.Click, picCar9.Click, picCar8.Click, picCar7.Click, picCar10.Click, picCar12.Click, picCar11.Click
 
     End Sub
 
@@ -22,6 +22,10 @@
         picTurtle12.Left = 290
         picTurtle13.Left = 251
         picTurtle14.Left = 212
+
+        'Fix the position of naugthy cars
+        picCar7.Left = 283
+        picCar8.Left = 471
 
         t1 = True
         t2 = True
@@ -514,6 +518,11 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
         picCar3.Left -= 5
         picCar4.Left -= 5
         picCar5.Left -= 5
+
+        'truck
+        picCar10.Left -= 4
+        picCar11.Left -= 4
+        picCar12.Left -= 4
     End Sub
     Private Sub Car_MoveRight()
         picCar6.Left += 7
@@ -522,14 +531,38 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
         picCar9.Left += 7
 
     End Sub
-    Private Sub Car_MoveLeft_Loop(sender As Object, e As EventArgs) Handles picCar1.Move, picCar5.Move, picCar4.Move, picCar3.Move, picCar2.Move
+    Private Sub Car_MoveLeft_Loop(sender As Object, e As EventArgs) Handles picCar1.Move, picCar5.Move, picCar4.Move, picCar3.Move, picCar2.Move, picCar10.Move, picCar12.Move, picCar11.Move
         If sender.left + sender.width <= 0 Then
             sender.left = picRoad.Width
         End If
+        If picFrog.Left + picFrog.Width - 5 >= sender.Left And picFrog.Left <= sender.Left + sender.Width And picFrog.Top + picFrog.Height >= sender.Top And
+        picFrog.Top <= sender.Top + sender.Height Then
+            Label1.Text = "Squashed"
+            TimerAll_Stop()
+
+        End If
+
+
     End Sub
     Private Sub Car_MoveRight_Loop(sender As Object, e As EventArgs) Handles picCar6.Move, picCar9.Move, picCar8.Move, picCar7.Move
         If sender.left > picRiver.Width Then
             sender.left = 0 - sender.Width
         End If
+        If picFrog.Left + picFrog.Width - 5 >= sender.Left And picFrog.Left <= sender.Left + sender.Width And picFrog.Top + picFrog.Height >= sender.Top And
+        picFrog.Top <= sender.Top + sender.Height Then
+            Label1.Text = "Squashed"
+            TimerAll_Stop()
+
+        End If
+    End Sub
+    Private Sub TimerAll_Stop()
+        Timer1.Enabled = False
+        TurtleGrp1.Enabled = False
+        TurtleGrp2.Enabled = False
+        TurtleGrp3.Enabled = False
+        TurtleGrp4.Enabled = False
+        TurtleGrp5.Enabled = False
+        TurtleIntrv.Enabled = False
+
     End Sub
 End Class
