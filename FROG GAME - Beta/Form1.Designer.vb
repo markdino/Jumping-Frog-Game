@@ -79,6 +79,7 @@ Partial Class Form1
         Me.picRiver = New System.Windows.Forms.PictureBox()
         Me.picCar11 = New System.Windows.Forms.PictureBox()
         Me.picCar12 = New System.Windows.Forms.PictureBox()
+        Me.picCar13 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.picCar9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picCar8, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -126,6 +127,7 @@ Partial Class Form1
         CType(Me.picRiver, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picCar11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picCar12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picCar13, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Timer1
@@ -154,6 +156,7 @@ Partial Class Form1
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.PeachPuff
+        Me.GroupBox1.Controls.Add(Me.picCar13)
         Me.GroupBox1.Controls.Add(Me.picCar9)
         Me.GroupBox1.Controls.Add(Me.picCar8)
         Me.GroupBox1.Controls.Add(Me.picCar7)
@@ -726,6 +729,16 @@ Partial Class Form1
         Me.picCar12.TabIndex = 4
         Me.picCar12.TabStop = False
         '
+        'picCar13
+        '
+        Me.picCar13.Image = Global.FROG_GAME___Beta.My.Resources.Resources.car3
+        Me.picCar13.Location = New System.Drawing.Point(4, 340)
+        Me.picCar13.Name = "picCar13"
+        Me.picCar13.Size = New System.Drawing.Size(79, 30)
+        Me.picCar13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picCar13.TabIndex = 4
+        Me.picCar13.TabStop = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -783,6 +796,7 @@ Partial Class Form1
         CType(Me.picRiver, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picCar11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picCar12, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picCar13, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -844,4 +858,5 @@ Partial Class Form1
     Friend WithEvents picCar10 As PictureBox
     Friend WithEvents picCar12 As PictureBox
     Friend WithEvents picCar11 As PictureBox
+    Friend WithEvents picCar13 As PictureBox
 End Class

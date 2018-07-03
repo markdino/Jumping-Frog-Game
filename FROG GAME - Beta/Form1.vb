@@ -7,7 +7,7 @@
     Dim intrv5 As Integer = 0
     Dim t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12, t13, t14, t15, t16, t17 As Boolean
 
-    Private Sub picCar_Click(sender As Object, e As EventArgs) Handles picCar1.Click, picCar5.Click, picCar4.Click, picCar3.Click, picCar2.Click, picCar6.Click, picCar9.Click, picCar8.Click, picCar7.Click, picCar10.Click, picCar12.Click, picCar11.Click
+    Private Sub picCar_Click(sender As Object, e As EventArgs) Handles picCar1.Click, picCar5.Click, picCar4.Click, picCar3.Click, picCar2.Click, picCar6.Click, picCar9.Click, picCar8.Click, picCar7.Click, picCar10.Click, picCar12.Click, picCar11.Click, picCar13.Click
 
     End Sub
 
@@ -529,7 +529,7 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
         picCar7.Left += 7
         picCar8.Left += 7
         picCar9.Left += 7
-
+        picCar13.Left += 10
     End Sub
     Private Sub Car_MoveLeft_Loop(sender As Object, e As EventArgs) Handles picCar1.Move, picCar5.Move, picCar4.Move, picCar3.Move, picCar2.Move, picCar10.Move, picCar12.Move, picCar11.Move
         If sender.left + sender.width <= 0 Then
@@ -544,7 +544,7 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
 
 
     End Sub
-    Private Sub Car_MoveRight_Loop(sender As Object, e As EventArgs) Handles picCar6.Move, picCar9.Move, picCar8.Move, picCar7.Move
+    Private Sub Car_MoveRight_Loop(sender As Object, e As EventArgs) Handles picCar6.Move, picCar9.Move, picCar8.Move, picCar7.Move, picCar13.Move
         If sender.left > picRiver.Width Then
             sender.left = 0 - sender.Width
         End If
