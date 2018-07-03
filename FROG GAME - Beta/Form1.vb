@@ -536,7 +536,7 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
             sender.left = picRoad.Width
         End If
         If picFrog.Left + picFrog.Width - 5 >= sender.Left And picFrog.Left <= sender.Left + sender.Width And picFrog.Top + picFrog.Height >= sender.Top And
-        picFrog.Top <= sender.Top + sender.Height Then
+        picFrog.Top + 5 <= sender.Top + sender.Height Then
             Label1.Text = "Squashed"
             TimerAll_Stop()
 
@@ -548,8 +548,8 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
         If sender.left > picRiver.Width Then
             sender.left = 0 - sender.Width
         End If
-        If picFrog.Left + picFrog.Width - 5 >= sender.Left And picFrog.Left <= sender.Left + sender.Width And picFrog.Top + picFrog.Height >= sender.Top And
-        picFrog.Top <= sender.Top + sender.Height Then
+        If picFrog.Left + picFrog.Width - 5 >= sender.Left And picFrog.Left <= sender.Left + sender.Width And picFrog.Top + picFrog.Height - 5 >= sender.Top And
+        picFrog.Top + 5 <= sender.Top + sender.Height Then
             Label1.Text = "Squashed"
             TimerAll_Stop()
 

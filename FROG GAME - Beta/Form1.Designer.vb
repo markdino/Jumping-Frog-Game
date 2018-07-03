@@ -325,7 +325,7 @@ Partial Class Form1
         'picCar1
         '
         Me.picCar1.Image = Global.FROG_GAME___Beta.My.Resources.Resources.car1
-        Me.picCar1.Location = New System.Drawing.Point(577, 485)
+        Me.picCar1.Location = New System.Drawing.Point(611, 485)
         Me.picCar1.Name = "picCar1"
         Me.picCar1.Size = New System.Drawing.Size(59, 30)
         Me.picCar1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -334,7 +334,7 @@ Partial Class Form1
         '
         'picFrog
         '
-        Me.picFrog.BackColor = System.Drawing.Color.DimGray
+        Me.picFrog.BackColor = System.Drawing.Color.PeachPuff
         Me.picFrog.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.picFrog.Image = Global.FROG_GAME___Beta.My.Resources.Resources.frog1
         Me.picFrog.Location = New System.Drawing.Point(335, 541)
