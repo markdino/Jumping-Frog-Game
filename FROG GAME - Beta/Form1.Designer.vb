@@ -27,6 +27,7 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.picCar6 = New System.Windows.Forms.PictureBox()
         Me.picCar5 = New System.Windows.Forms.PictureBox()
         Me.picCar4 = New System.Windows.Forms.PictureBox()
         Me.picCar3 = New System.Windows.Forms.PictureBox()
@@ -72,8 +73,11 @@ Partial Class Form1
         Me.TurtleGrp3 = New System.Windows.Forms.Timer(Me.components)
         Me.TurtleGrp4 = New System.Windows.Forms.Timer(Me.components)
         Me.TurtleGrp5 = New System.Windows.Forms.Timer(Me.components)
-        Me.picCar6 = New System.Windows.Forms.PictureBox()
+        Me.picCar7 = New System.Windows.Forms.PictureBox()
+        Me.picCar8 = New System.Windows.Forms.PictureBox()
+        Me.picCar9 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.picCar6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picCar5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picCar4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picCar3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -113,7 +117,9 @@ Partial Class Form1
         CType(Me.picTurtle2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picTurtle1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picRiver, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picCar6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picCar7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picCar8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picCar9, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Timer1
@@ -142,6 +148,9 @@ Partial Class Form1
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.PeachPuff
+        Me.GroupBox1.Controls.Add(Me.picCar9)
+        Me.GroupBox1.Controls.Add(Me.picCar8)
+        Me.GroupBox1.Controls.Add(Me.picCar7)
         Me.GroupBox1.Controls.Add(Me.picCar6)
         Me.GroupBox1.Controls.Add(Me.picCar5)
         Me.GroupBox1.Controls.Add(Me.picCar4)
@@ -188,6 +197,16 @@ Partial Class Form1
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "GroupBox1"
+        '
+        'picCar6
+        '
+        Me.picCar6.Image = Global.FROG_GAME___Beta.My.Resources.Resources.car4
+        Me.picCar6.Location = New System.Drawing.Point(92, 433)
+        Me.picCar6.Name = "picCar6"
+        Me.picCar6.Size = New System.Drawing.Size(79, 30)
+        Me.picCar6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picCar6.TabIndex = 4
+        Me.picCar6.TabStop = False
         '
         'picCar5
         '
@@ -638,15 +657,35 @@ Partial Class Form1
         '
         Me.TurtleGrp5.Interval = 500
         '
-        'picCar6
+        'picCar7
         '
-        Me.picCar6.Image = Global.FROG_GAME___Beta.My.Resources.Resources.car4
-        Me.picCar6.Location = New System.Drawing.Point(92, 433)
-        Me.picCar6.Name = "picCar6"
-        Me.picCar6.Size = New System.Drawing.Size(79, 30)
-        Me.picCar6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picCar6.TabIndex = 4
-        Me.picCar6.TabStop = False
+        Me.picCar7.Image = Global.FROG_GAME___Beta.My.Resources.Resources.car4
+        Me.picCar7.Location = New System.Drawing.Point(283, 433)
+        Me.picCar7.Name = "picCar7"
+        Me.picCar7.Size = New System.Drawing.Size(79, 30)
+        Me.picCar7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picCar7.TabIndex = 4
+        Me.picCar7.TabStop = False
+        '
+        'picCar8
+        '
+        Me.picCar8.Image = Global.FROG_GAME___Beta.My.Resources.Resources.car4
+        Me.picCar8.Location = New System.Drawing.Point(471, 433)
+        Me.picCar8.Name = "picCar8"
+        Me.picCar8.Size = New System.Drawing.Size(79, 30)
+        Me.picCar8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picCar8.TabIndex = 4
+        Me.picCar8.TabStop = False
+        '
+        'picCar9
+        '
+        Me.picCar9.Image = Global.FROG_GAME___Beta.My.Resources.Resources.car4
+        Me.picCar9.Location = New System.Drawing.Point(656, 433)
+        Me.picCar9.Name = "picCar9"
+        Me.picCar9.Size = New System.Drawing.Size(79, 30)
+        Me.picCar9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picCar9.TabIndex = 4
+        Me.picCar9.TabStop = False
         '
         'Form1
         '
@@ -659,6 +698,7 @@ Partial Class Form1
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.GroupBox1.ResumeLayout(False)
+        CType(Me.picCar6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picCar5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picCar4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picCar3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -698,7 +738,9 @@ Partial Class Form1
         CType(Me.picTurtle2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picTurtle1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picRiver, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picCar6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picCar7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picCar8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picCar9, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -754,4 +796,7 @@ Partial Class Form1
     Friend WithEvents picCar3 As PictureBox
     Friend WithEvents picCar2 As PictureBox
     Friend WithEvents picCar6 As PictureBox
+    Friend WithEvents picCar9 As PictureBox
+    Friend WithEvents picCar8 As PictureBox
+    Friend WithEvents picCar7 As PictureBox
 End Class
