@@ -7,10 +7,6 @@
     Dim intrv5 As Integer = 0
     Dim t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12, t13, t14, t15, t16, t17 As Boolean
 
-    Private Sub picCar_Click(sender As Object, e As EventArgs) Handles picCar1.Click, picCar5.Click, picCar4.Click, picCar3.Click, picCar2.Click, picCar6.Click, picCar9.Click, picCar8.Click, picCar7.Click, picCar10.Click, picCar12.Click, picCar11.Click, picCar13.Click
-
-    End Sub
-
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Fix the position of naugthy turtles
         picTurtle1.Left = 245
@@ -63,7 +59,6 @@
     End Sub
 
 
-
     Public Sub Lag_Move()
         picLag1.Left -= 5
         picLag2.Left -= 5
@@ -85,6 +80,7 @@
         picLag14.Left -= 7
 
     End Sub
+
     Public Sub Turtle_Move()
         '--- 2nd row ---
         picTurtle1.Left += 4
@@ -126,85 +122,85 @@
             '*********** Ride to the lag *********** 
             If picFrog.Left + picFrog.Width - 5 >= picLag1.Left And picFrog.Left <= picLag1.Left + picLag1.Width And picFrog.Top + picFrog.Height >= picLag1.Top And
             picFrog.Top <= picLag1.Top + picLag1.Height Then
-                Label1.Text = "Inside"
+                lblStat.Text = "Inside"
                 If picFrog.Left > 0 Then
                     picFrog.Left -= 5
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picLag2.Left And picFrog.Left <= picLag2.Left + picLag2.Width And picFrog.Top + picFrog.Height >= picLag2.Top And
                 picFrog.Top <= picLag2.Top + picLag2.Height Then
-                Label1.Text = "Inside"
+                lblStat.Text = "Inside"
                 If picFrog.Left > 0 Then
                     picFrog.Left -= 5
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picLag3.Left And picFrog.Left <= picLag3.Left + picLag3.Width And picFrog.Top + picFrog.Height >= picLag3.Top And
                 picFrog.Top <= picLag3.Top + picLag3.Height Then
-                Label1.Text = "Inside"
+                lblStat.Text = "Inside"
                 If picFrog.Left > 0 Then
                     picFrog.Left -= 5
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picLag4.Left And picFrog.Left <= picLag4.Left + picLag4.Width And picFrog.Top + picFrog.Height >= picLag4.Top And
             picFrog.Top <= picLag4.Top + picLag4.Height Then
-                Label1.Text = "Inside"
+                lblStat.Text = "Inside"
                 If picFrog.Left > 0 Then
                     picFrog.Left -= 5
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picLag5.Left And picFrog.Left <= picLag5.Left + picLag5.Width And picFrog.Top + picFrog.Height >= picLag5.Top And
         picFrog.Top <= picLag5.Top + picLag5.Height Then
-                Label1.Text = "Inside"
+                lblStat.Text = "Inside"
                 If picFrog.Left > 0 Then
                     picFrog.Left -= 7
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picLag6.Left And picFrog.Left <= picLag6.Left + picLag6.Width And picFrog.Top + picFrog.Height >= picLag6.Top And
         picFrog.Top <= picLag6.Top + picLag6.Height Then
-                Label1.Text = "Inside"
+                lblStat.Text = "Inside"
                 If picFrog.Left > 0 Then
                     picFrog.Left -= 7
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picLag7.Left And picFrog.Left <= picLag7.Left + picLag7.Width And picFrog.Top + picFrog.Height >= picLag7.Top And
             picFrog.Top <= picLag7.Top + picLag7.Height Then
-                Label1.Text = "Inside"
+                lblStat.Text = "Inside"
                 If picFrog.Left > 0 Then
                     picFrog.Left -= 5
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picLag8.Left And picFrog.Left <= picLag8.Left + picLag8.Width And picFrog.Top + picFrog.Height >= picLag8.Top And
             picFrog.Top <= picLag8.Top + picLag8.Height Then
-                Label1.Text = "Inside"
+                lblStat.Text = "Inside"
                 If picFrog.Left > 0 Then
                     picFrog.Left -= 5
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picLag9.Left And picFrog.Left <= picLag9.Left + picLag9.Width And picFrog.Top + picFrog.Height >= picLag9.Top And
     picFrog.Top <= picLag9.Top + picLag9.Height Then
-                Label1.Text = "Inside"
+                lblStat.Text = "Inside"
                 If picFrog.Left > 0 Then
                     picFrog.Left -= 7
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picLag10.Left And picFrog.Left <= picLag10.Left + picLag10.Width And picFrog.Top + picFrog.Height >= picLag10.Top And
         picFrog.Top <= picLag10.Top + picLag10.Height Then
-                Label1.Text = "Inside"
+                lblStat.Text = "Inside"
                 If picFrog.Left > 0 Then
                     picFrog.Left -= 7
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picLag11.Left And picFrog.Left <= picLag11.Left + picLag11.Width And picFrog.Top + picFrog.Height >= picLag11.Top And
         picFrog.Top <= picLag11.Top + picLag11.Height Then
-                Label1.Text = "Inside"
+                lblStat.Text = "Inside"
                 If picFrog.Left > 0 Then
                     picFrog.Left -= 7
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picLag12.Left And picFrog.Left <= picLag12.Left + picLag12.Width And picFrog.Top + picFrog.Height >= picLag12.Top And
 picFrog.Top <= picLag12.Top + picLag12.Height Then
-                Label1.Text = "Inside"
+                lblStat.Text = "Inside"
                 If picFrog.Left > 0 Then
                     picFrog.Left -= 7
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picLag13.Left And picFrog.Left <= picLag13.Left + picLag13.Width And picFrog.Top + picFrog.Height >= picLag13.Top And
         picFrog.Top <= picLag13.Top + picLag13.Height Then
-                Label1.Text = "Inside"
+                lblStat.Text = "Inside"
                 If picFrog.Left > 0 Then
                     picFrog.Left -= 7
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picLag14.Left And picFrog.Left <= picLag14.Left + picLag14.Width And picFrog.Top + picFrog.Height >= picLag14.Top And
         picFrog.Top <= picLag14.Top + picLag14.Height Then
-                Label1.Text = "Inside"
+                lblStat.Text = "Inside"
                 If picFrog.Left > 0 Then
                     picFrog.Left -= 7
                 End If
@@ -213,50 +209,50 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
                 '*********** Ride to the Turtle *************
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle1.Left And picFrog.Left <= picTurtle1.Left + picTurtle1.Width And picFrog.Top + picFrog.Height >= picTurtle1.Top And
             picFrog.Top <= picTurtle1.Top + picTurtle1.Height And t1 = True Then
-                Label1.Text = "Inside"
+                lblStat.Text = "Inside"
                 If picFrog.Left + picFrog.Width < picRiver.Width Then
                     picFrog.Left += 4
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle2.Left And picFrog.Left <= picTurtle2.Left + picTurtle2.Width And picFrog.Top + picFrog.Height >= picTurtle2.Top And
             picFrog.Top <= picTurtle2.Top + picTurtle2.Height And t2 = True Then
-                Label1.Text = "Inside"
+                lblStat.Text = "Inside"
                 If picFrog.Left + picFrog.Width < picRiver.Width Then
                     picFrog.Left += 4
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle3.Left And picFrog.Left <= picTurtle3.Left + picTurtle3.Width And picFrog.Top + picFrog.Height >= picTurtle3.Top And
             picFrog.Top <= picTurtle3.Top + picTurtle3.Height And t3 = True Then
-                Label1.Text = "Inside"
+                lblStat.Text = "Inside"
                 If picFrog.Left + picFrog.Width < picRiver.Width Then
                     picFrog.Left += 4
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle4.Left And picFrog.Left <= picTurtle4.Left + picTurtle4.Width And picFrog.Top + picFrog.Height >= picTurtle4.Top And
             picFrog.Top <= picTurtle4.Top + picTurtle4.Height And t4 = True Then
-                Label1.Text = "Inside"
+                lblStat.Text = "Inside"
                 If picFrog.Left + picFrog.Width < picRiver.Width Then
                     picFrog.Left += 4
                 End If
                 '*********** Ride to the Turtle moving right *************
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle5.Left And picFrog.Left <= picTurtle5.Left + picTurtle5.Width And picFrog.Top + picFrog.Height >= picTurtle5.Top And
         picFrog.Top <= picTurtle5.Top + picTurtle5.Height And t5 = True Then
-                Label1.Text = "Inside"
+                lblStat.Text = "Inside"
                 If picFrog.Left > 0 Then
                     picFrog.Left -= 6
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle6.Left And picFrog.Left <= picTurtle6.Left + picTurtle6.Width And picFrog.Top + picFrog.Height >= picTurtle6.Top And
     picFrog.Top <= picTurtle6.Top + picTurtle6.Height And t6 = True Then
-                Label1.Text = "Inside"
+                lblStat.Text = "Inside"
                 If picFrog.Left > 0 Then
                     picFrog.Left -= 6
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle7.Left And picFrog.Left <= picTurtle7.Left + picTurtle7.Width And picFrog.Top + picFrog.Height >= picTurtle7.Top And
     picFrog.Top <= picTurtle7.Top + picTurtle7.Height And t7 = True Then
-                Label1.Text = "Inside"
+                lblStat.Text = "Inside"
                 If picFrog.Left > 0 Then
                     picFrog.Left -= 6
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle8.Left And picFrog.Left <= picTurtle8.Left + picTurtle8.Width And picFrog.Top + picFrog.Height >= picTurtle8.Top And
     picFrog.Top <= picTurtle8.Top + picTurtle8.Height And t8 = True Then
-                Label1.Text = "Inside"
+                lblStat.Text = "Inside"
                 If picFrog.Left > 0 Then
                     picFrog.Left -= 6
                 End If
@@ -264,61 +260,61 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
 
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle9.Left And picFrog.Left <= picTurtle9.Left + picTurtle9.Width And picFrog.Top + picFrog.Height >= picTurtle9.Top And
         picFrog.Top <= picTurtle9.Top + picTurtle9.Height And t9 = True Then
-                Label1.Text = "Inside"
+                lblStat.Text = "Inside"
                 If picFrog.Left + picFrog.Width < picRiver.Width Then
                     picFrog.Left += 4
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle10.Left And picFrog.Left <= picTurtle10.Left + picTurtle10.Width And picFrog.Top + picFrog.Height >= picTurtle10.Top And
         picFrog.Top <= picTurtle10.Top + picTurtle10.Height And t10 = True Then
-                Label1.Text = "Inside"
+                lblStat.Text = "Inside"
                 If picFrog.Left + picFrog.Width < picRiver.Width Then
                     picFrog.Left += 4
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle11.Left And picFrog.Left <= picTurtle11.Left + picTurtle11.Width And picFrog.Top + picFrog.Height >= picTurtle11.Top And
         picFrog.Top <= picTurtle11.Top + picTurtle11.Height And t11 = True Then
-                Label1.Text = "Inside"
+                lblStat.Text = "Inside"
                 If picFrog.Left + picFrog.Width < picRiver.Width Then
                     picFrog.Left += 4
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle12.Left And picFrog.Left <= picTurtle12.Left + picTurtle12.Width And picFrog.Top + picFrog.Height >= picTurtle12.Top And
         picFrog.Top <= picTurtle12.Top + picTurtle12.Height And t12 = True Then
-                Label1.Text = "Inside"
+                lblStat.Text = "Inside"
                 If picFrog.Left + picFrog.Width < picRiver.Width Then
                     picFrog.Left += 4
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle13.Left And picFrog.Left <= picTurtle13.Left + picTurtle13.Width And picFrog.Top + picFrog.Height >= picTurtle13.Top And
         picFrog.Top <= picTurtle13.Top + picTurtle13.Height And t13 = True Then
-                Label1.Text = "Inside"
+                lblStat.Text = "Inside"
                 If picFrog.Left + picFrog.Width < picRiver.Width Then
                     picFrog.Left += 4
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle14.Left And picFrog.Left <= picTurtle14.Left + picTurtle14.Width And picFrog.Top + picFrog.Height >= picTurtle14.Top And
         picFrog.Top <= picTurtle14.Top + picTurtle14.Height And t14 = True Then
-                Label1.Text = "Inside"
+                lblStat.Text = "Inside"
                 If picFrog.Left + picFrog.Width < picRiver.Width Then
                     picFrog.Left += 4
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle15.Left And picFrog.Left <= picTurtle15.Left + picTurtle15.Width And picFrog.Top + picFrog.Height >= picTurtle15.Top And
         picFrog.Top <= picTurtle15.Top + picTurtle15.Height And t15 = True Then
-                Label1.Text = "Inside"
+                lblStat.Text = "Inside"
                 If picFrog.Left + picFrog.Width < picRiver.Width Then
                     picFrog.Left += 4
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle16.Left And picFrog.Left <= picTurtle16.Left + picTurtle16.Width And picFrog.Top + picFrog.Height >= picTurtle16.Top And
         picFrog.Top <= picTurtle16.Top + picTurtle16.Height And t16 = True Then
-                Label1.Text = "Inside"
+                lblStat.Text = "Inside"
                 If picFrog.Left + picFrog.Width < picRiver.Width Then
                     picFrog.Left += 4
                 End If
             ElseIf picFrog.Left + picFrog.Width - 5 >= picTurtle17.Left And picFrog.Left <= picTurtle17.Left + picTurtle17.Width And picFrog.Top + picFrog.Height >= picTurtle17.Top And
         picFrog.Top <= picTurtle17.Top + picTurtle17.Height And t17 = True Then
-                Label1.Text = "Inside"
+                lblStat.Text = "Inside"
                 If picFrog.Left + picFrog.Width < picRiver.Width Then
                     picFrog.Left += 4
                 End If
 
             Else
-                Label1.Text = "Outside"
+                lblStat.Text = "Outside"
             End If
         ElseIf picFrog.Top >= picRoad.Top And picFrog.Top <= picRoad.Top + picRoad.Height - picFrog.Height Then
             picFrog.BackColor = Color.DimGray
@@ -537,7 +533,7 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
         End If
         If picFrog.Left + picFrog.Width - 5 >= sender.Left And picFrog.Left <= sender.Left + sender.Width And picFrog.Top + picFrog.Height >= sender.Top And
         picFrog.Top + 5 <= sender.Top + sender.Height Then
-            Label1.Text = "Squashed"
+            lblStat.Text = "Squashed"
             TimerAll_Stop()
 
         End If
@@ -550,7 +546,7 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
         End If
         If picFrog.Left + picFrog.Width - 5 >= sender.Left And picFrog.Left <= sender.Left + sender.Width And picFrog.Top + picFrog.Height - 5 >= sender.Top And
         picFrog.Top + 5 <= sender.Top + sender.Height Then
-            Label1.Text = "Squashed"
+            lblStat.Text = "Squashed"
             TimerAll_Stop()
 
         End If
@@ -563,6 +559,37 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
         TurtleGrp4.Enabled = False
         TurtleGrp5.Enabled = False
         TurtleIntrv.Enabled = False
+    End Sub
+    Private Sub TimerAll_Start()
+        Timer1.Enabled = True
+        TurtleGrp1.Enabled = True
+        TurtleGrp2.Enabled = True
+        TurtleGrp3.Enabled = True
+        TurtleGrp4.Enabled = True
+        TurtleGrp5.Enabled = True
+    End Sub
+
+    Private Sub Status_TextChanged(sender As Object, e As EventArgs) Handles lblStat.TextChanged
+        If sender.text = "Squashed" Then
+            TimerAll_Stop()
+            'MsgBox("Squashed!")
+        ElseIf sender.text = "Outside" Then
+            TimerAll_Stop()
+            'MsgBox("Drown")
+        End If
+        'TimerAll_Start()
+        'Frog_BackToStart()
+        'Refresh()
 
     End Sub
+    Private Sub Frog_BackToStart()
+        picFrog.Left = (GroupBox1.Width / 2) - (picFrog.Width / 2)
+        picFrog.Top = GroupBox1.Height - picFrog.Height
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+        TimerAll_Start()
+        Frog_BackToStart()
+    End Sub
+
 End Class
