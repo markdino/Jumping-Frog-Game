@@ -535,10 +535,21 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
         If sender.left + sender.width <= 0 Then
             sender.left = picRoad.Width
         End If
+        If picFrog.Left + picFrog.Width - 5 >= sender.Left And sender.Left <= sender.Left + sender.Width And picFrog.Top + picFrog.Height >= sender.Top And
+        picFrog.Top <= sender.Top + sender.Height Then
+            Label1.Text = "Squashed"
+
+        End If
+
     End Sub
     Private Sub Car_MoveRight_Loop(sender As Object, e As EventArgs) Handles picCar6.Move, picCar9.Move, picCar8.Move, picCar7.Move
         If sender.left > picRiver.Width Then
             sender.left = 0 - sender.Width
+        End If
+        If picFrog.Left + picFrog.Width - 5 >= sender.Left And sender.Left <= sender.Left + sender.Width And picFrog.Top + picFrog.Height >= sender.Top And
+        picFrog.Top <= sender.Top + sender.Height Then
+            Label1.Text = "Squashed"
+
         End If
     End Sub
 End Class
