@@ -538,7 +538,7 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
         If picFrog.Left + picFrog.Width - 5 >= sender.Left And sender.Left <= sender.Left + sender.Width And picFrog.Top + picFrog.Height >= sender.Top And
         picFrog.Top <= sender.Top + sender.Height Then
             Label1.Text = "Squashed"
-
+            TimerAll_Stop()
         End If
 
     End Sub
@@ -549,7 +549,17 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
         If picFrog.Left + picFrog.Width - 5 >= sender.Left And sender.Left <= sender.Left + sender.Width And picFrog.Top + picFrog.Height >= sender.Top And
         picFrog.Top <= sender.Top + sender.Height Then
             Label1.Text = "Squashed"
-
+            TimerAll_Stop()
         End If
+    End Sub
+    Private Sub TimerAll_Stop()
+        Timer1.Enabled = False
+        TurtleGrp1.Enabled = False
+        TurtleGrp2.Enabled = False
+        TurtleGrp3.Enabled = False
+        TurtleGrp4.Enabled = False
+        TurtleGrp5.Enabled = False
+        TurtleIntrv.Enabled = False
+
     End Sub
 End Class
