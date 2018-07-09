@@ -325,14 +325,17 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
     End Sub
     Public Sub Frog_Hotkey(sender As Object, e As KeyEventArgs)
         If e.KeyCode = Keys.Up Then
-            picFrog.Top -= 20
+
             picFrog.Image = My.Resources.frog1
-        ElseIf e.KeyCode = Keys.Down Then
-            picFrog.Image = My.Resources.frog1Down
-            If picFrog.Top + picFrog.Height < GroupBox1.Height Then
-                picFrog.Top += 20
+            If picFrog.Top > 5 Then
+                picFrog.Top -= 20
             End If
-        ElseIf e.KeyCode = Keys.Left Then
+        ElseIf e.KeyCode = Keys.Down Then
+                picFrog.Image = My.Resources.frog1Down
+                If picFrog.Top + picFrog.Height < GroupBox1.Height Then
+                    picFrog.Top += 20
+                End If
+            ElseIf e.KeyCode = Keys.Left Then
                 picFrog.Image = My.Resources.frog1Left
                 If picFrog.Left - 5 > 0 Then
                     picFrog.Left -= 20
