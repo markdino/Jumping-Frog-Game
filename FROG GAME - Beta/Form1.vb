@@ -602,6 +602,7 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
         alive = True
         Frog_BackToStart()
         picFrog.Image = My.Resources.frog1
+        lblStat.Text = ""
     End Sub
     Private Sub Heart_Count()
         If life = 4 Then
