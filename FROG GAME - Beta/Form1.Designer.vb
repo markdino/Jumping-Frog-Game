@@ -33,6 +33,10 @@ Partial Class Form1
         Me.TurtleGrp3 = New System.Windows.Forms.Timer(Me.components)
         Me.TurtleGrp4 = New System.Windows.Forms.Timer(Me.components)
         Me.TurtleGrp5 = New System.Windows.Forms.Timer(Me.components)
+        Me.heart5 = New System.Windows.Forms.PictureBox()
+        Me.heart4 = New System.Windows.Forms.PictureBox()
+        Me.heart3 = New System.Windows.Forms.PictureBox()
+        Me.heart2 = New System.Windows.Forms.PictureBox()
         Me.heart1 = New System.Windows.Forms.PictureBox()
         Me.picCar13 = New System.Windows.Forms.PictureBox()
         Me.picCar9 = New System.Windows.Forms.PictureBox()
@@ -81,11 +85,11 @@ Partial Class Form1
         Me.picTurtle2 = New System.Windows.Forms.PictureBox()
         Me.picTurtle1 = New System.Windows.Forms.PictureBox()
         Me.picRiver = New System.Windows.Forms.PictureBox()
-        Me.heart2 = New System.Windows.Forms.PictureBox()
-        Me.heart3 = New System.Windows.Forms.PictureBox()
-        Me.heart4 = New System.Windows.Forms.PictureBox()
-        Me.heart5 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.heart5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.heart4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.heart3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.heart2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.heart1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picCar13, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picCar9, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -134,10 +138,6 @@ Partial Class Form1
         CType(Me.picTurtle2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picTurtle1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picRiver, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.heart2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.heart3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.heart4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.heart5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Timer1
@@ -254,6 +254,46 @@ Partial Class Form1
         'TurtleGrp5
         '
         Me.TurtleGrp5.Interval = 500
+        '
+        'heart5
+        '
+        Me.heart5.Image = Global.FROG_GAME___Beta.My.Resources.Resources.heart
+        Me.heart5.Location = New System.Drawing.Point(132, 539)
+        Me.heart5.Name = "heart5"
+        Me.heart5.Size = New System.Drawing.Size(30, 28)
+        Me.heart5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.heart5.TabIndex = 6
+        Me.heart5.TabStop = False
+        '
+        'heart4
+        '
+        Me.heart4.Image = Global.FROG_GAME___Beta.My.Resources.Resources.heart
+        Me.heart4.Location = New System.Drawing.Point(100, 540)
+        Me.heart4.Name = "heart4"
+        Me.heart4.Size = New System.Drawing.Size(30, 28)
+        Me.heart4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.heart4.TabIndex = 6
+        Me.heart4.TabStop = False
+        '
+        'heart3
+        '
+        Me.heart3.Image = Global.FROG_GAME___Beta.My.Resources.Resources.heart
+        Me.heart3.Location = New System.Drawing.Point(68, 540)
+        Me.heart3.Name = "heart3"
+        Me.heart3.Size = New System.Drawing.Size(30, 28)
+        Me.heart3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.heart3.TabIndex = 6
+        Me.heart3.TabStop = False
+        '
+        'heart2
+        '
+        Me.heart2.Image = Global.FROG_GAME___Beta.My.Resources.Resources.heart
+        Me.heart2.Location = New System.Drawing.Point(36, 540)
+        Me.heart2.Name = "heart2"
+        Me.heart2.Size = New System.Drawing.Size(30, 28)
+        Me.heart2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.heart2.TabIndex = 6
+        Me.heart2.TabStop = False
         '
         'heart1
         '
@@ -773,46 +813,6 @@ Partial Class Form1
         Me.picRiver.TabIndex = 3
         Me.picRiver.TabStop = False
         '
-        'heart2
-        '
-        Me.heart2.Image = Global.FROG_GAME___Beta.My.Resources.Resources.heart
-        Me.heart2.Location = New System.Drawing.Point(36, 540)
-        Me.heart2.Name = "heart2"
-        Me.heart2.Size = New System.Drawing.Size(30, 28)
-        Me.heart2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.heart2.TabIndex = 6
-        Me.heart2.TabStop = False
-        '
-        'heart3
-        '
-        Me.heart3.Image = Global.FROG_GAME___Beta.My.Resources.Resources.heart
-        Me.heart3.Location = New System.Drawing.Point(68, 540)
-        Me.heart3.Name = "heart3"
-        Me.heart3.Size = New System.Drawing.Size(30, 28)
-        Me.heart3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.heart3.TabIndex = 6
-        Me.heart3.TabStop = False
-        '
-        'heart4
-        '
-        Me.heart4.Image = Global.FROG_GAME___Beta.My.Resources.Resources.heart
-        Me.heart4.Location = New System.Drawing.Point(100, 540)
-        Me.heart4.Name = "heart4"
-        Me.heart4.Size = New System.Drawing.Size(30, 28)
-        Me.heart4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.heart4.TabIndex = 6
-        Me.heart4.TabStop = False
-        '
-        'heart5
-        '
-        Me.heart5.Image = Global.FROG_GAME___Beta.My.Resources.Resources.heart
-        Me.heart5.Location = New System.Drawing.Point(132, 539)
-        Me.heart5.Name = "heart5"
-        Me.heart5.Size = New System.Drawing.Size(30, 28)
-        Me.heart5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.heart5.TabIndex = 6
-        Me.heart5.TabStop = False
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -825,6 +825,10 @@ Partial Class Form1
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         Me.GroupBox1.ResumeLayout(False)
+        CType(Me.heart5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.heart4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.heart3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.heart2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.heart1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picCar13, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picCar9, System.ComponentModel.ISupportInitialize).EndInit()
@@ -873,10 +877,6 @@ Partial Class Form1
         CType(Me.picTurtle2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picTurtle1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picRiver, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.heart2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.heart3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.heart4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.heart5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
