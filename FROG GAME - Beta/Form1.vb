@@ -589,6 +589,7 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
             life -= 1
             'TimerAll_Stop()
         End If
+        Heart_Count()
 
     End Sub
     Private Sub Frog_BackToStart()
@@ -603,6 +604,14 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
         picFrog.Image = My.Resources.frog1
     End Sub
     Private Sub Heart_Count()
-
+        If life = 4 Then
+            heart5.Visible = False
+        ElseIf life = 3 Then
+            heart4.Visible = False
+        ElseIf life = 2 Then
+            heart3.Visible = False
+        ElseIf life = 1 Then
+            heart2.Visible = False
+        End If
     End Sub
 End Class
