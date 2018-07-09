@@ -6,6 +6,8 @@
     Dim intrv4 As Integer = 0
     Dim intrv5 As Integer = 0
     Dim t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12, t13, t14, t15, t16, t17 As Boolean
+    Dim life As Integer = 5
+    Dim alive As Boolean = True
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Fix the position of naugthy turtles
@@ -117,7 +119,7 @@
     End Sub
 
     Public Sub Frog_Ride_To_Lag()
-        If picFrog.Top >= picRiver.Top And picFrog.Top <= picRiver.Top + picRiver.Height - picFrog.Height Then
+        If picFrog.Top >= picRiver.Top And picFrog.Top <= picRiver.Top + picRiver.Height - picFrog.Height And alive = True Then
             picFrog.BackColor = Color.DodgerBlue
             '*********** Ride to the lag *********** 
             If picFrog.Left + picFrog.Width - 5 >= picLag1.Left And picFrog.Left <= picLag1.Left + picLag1.Width And picFrog.Top + picFrog.Height >= picLag1.Top And
@@ -324,13 +326,14 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
 
     End Sub
     Public Sub Frog_Hotkey(sender As Object, e As KeyEventArgs)
-        If e.KeyCode = Keys.Up Then
 
-            picFrog.Image = My.Resources.frog1
-            If picFrog.Top > 5 Then
-                picFrog.Top -= 20
-            End If
-        ElseIf e.KeyCode = Keys.Down Then
+        If alive = True Then
+            If e.KeyCode = Keys.Up Then
+                picFrog.Image = My.Resources.frog1
+                If picFrog.Top > 5 Then
+                    picFrog.Top -= 20
+                End If
+            ElseIf e.KeyCode = Keys.Down Then
                 picFrog.Image = My.Resources.frog1Down
                 If picFrog.Top + picFrog.Height < GroupBox1.Height Then
                     picFrog.Top += 20
@@ -342,10 +345,12 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
                 End If
             ElseIf e.KeyCode = Keys.Right Then
                 picFrog.Image = My.Resources.frog1Right
-            If picFrog.Left + picFrog.Width + 8 < picRiver.Width Then
-                picFrog.Left += 20
+                If picFrog.Left + picFrog.Width + 8 < picRiver.Width Then
+                    picFrog.Left += 20
+                End If
             End If
         End If
+
     End Sub
 
     Private Sub TurtleIntrv_Tick(sender As Object, e As EventArgs) Handles TurtleIntrv.Tick
@@ -539,7 +544,6 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
         If picFrog.Left + picFrog.Width - 5 >= sender.Left And picFrog.Left <= sender.Left + sender.Width And picFrog.Top + picFrog.Height >= sender.Top And
         picFrog.Top + 5 <= sender.Top + sender.Height Then
             lblStat.Text = "Squashed"
-            TimerAll_Stop()
 
         End If
 
@@ -552,7 +556,6 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
         If picFrog.Left + picFrog.Width - 5 >= sender.Left And picFrog.Left <= sender.Left + sender.Width And picFrog.Top + picFrog.Height - 5 >= sender.Top And
         picFrog.Top + 5 <= sender.Top + sender.Height Then
             lblStat.Text = "Squashed"
-            TimerAll_Stop()
 
         End If
     End Sub
@@ -576,15 +579,17 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
 
     Private Sub Status_TextChanged(sender As Object, e As EventArgs) Handles lblStat.TextChanged
         If sender.text = "Squashed" Then
-            TimerAll_Stop()
-            'MsgBox("Squashed!")
+            picFrog.Image = My.Resources.FrogDied
+            alive = False
+            life -= 1
+            'TimerAll_Stop()
         ElseIf sender.text = "Outside" Then
-            TimerAll_Stop()
-            'MsgBox("Drown")
+            picFrog.Image = My.Resources.frogDrown
+            alive = False
+            life -= 1
+            'TimerAll_Stop()
         End If
-        'TimerAll_Start()
-        'Frog_BackToStart()
-        'Refresh()
+        Heart_Count()
 
     End Sub
     Private Sub Frog_BackToStart()
@@ -593,8 +598,21 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
     End Sub
 
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
-        TimerAll_Start()
+        'TimerAll_Start()
+        alive = True
         Frog_BackToStart()
+        picFrog.Image = My.Resources.frog1
+        lblStat.Text = ""
     End Sub
-
+    Private Sub Heart_Count()
+        If life = 4 Then
+            heart5.Visible = False
+        ElseIf life = 3 Then
+            heart4.Visible = False
+        ElseIf life = 2 Then
+            heart3.Visible = False
+        ElseIf life = 1 Then
+            heart2.Visible = False
+        End If
+    End Sub
 End Class
