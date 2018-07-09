@@ -119,7 +119,7 @@
     End Sub
 
     Public Sub Frog_Ride_To_Lag()
-        If picFrog.Top >= picRiver.Top And picFrog.Top <= picRiver.Top + picRiver.Height - picFrog.Height Then
+        If picFrog.Top >= picRiver.Top And picFrog.Top <= picRiver.Top + picRiver.Height - picFrog.Height And alive = True Then
             picFrog.BackColor = Color.DodgerBlue
             '*********** Ride to the lag *********** 
             If picFrog.Left + picFrog.Width - 5 >= picLag1.Left And picFrog.Left <= picLag1.Left + picLag1.Width And picFrog.Top + picFrog.Height >= picLag1.Top And
@@ -581,10 +581,12 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
         If sender.text = "Squashed" Then
             picFrog.Image = My.Resources.FrogDied
             alive = False
+            life -= 1
             'TimerAll_Stop()
         ElseIf sender.text = "Outside" Then
-            picFrog.Image = My.Resources.FrogDied
+            picFrog.Image = My.Resources.frogDrown
             alive = False
+            life -= 1
             'TimerAll_Stop()
         End If
 
@@ -600,5 +602,7 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
         Frog_BackToStart()
         picFrog.Image = My.Resources.frog1
     End Sub
+    Private Sub Heart_Count()
 
+    End Sub
 End Class
