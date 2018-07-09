@@ -211,7 +211,6 @@ Partial Class Form1
         Me.GroupBox1.Size = New System.Drawing.Size(676, 568)
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "GroupBox1"
         '
         'picCar13
         '
