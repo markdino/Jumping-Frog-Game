@@ -153,6 +153,7 @@ Partial Class Form1
         Me.lblStat.Size = New System.Drawing.Size(39, 13)
         Me.lblStat.TabIndex = 2
         Me.lblStat.Text = "Label1"
+        Me.lblStat.Visible = False
         '
         'Label2
         '

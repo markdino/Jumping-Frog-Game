@@ -613,6 +613,10 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
             heart3.Visible = False
         ElseIf life = 1 Then
             heart2.Visible = False
+        ElseIf life = 0 Then
+            heart1.Visible = False
+            MsgBox("Game over!")
+            End
         End If
     End Sub
 End Class
