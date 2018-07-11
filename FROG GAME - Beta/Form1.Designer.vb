@@ -25,13 +25,7 @@ Partial Class Form1
         Me.components = New System.ComponentModel.Container()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.lblStat = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.AnsD = New System.Windows.Forms.Label()
-        Me.AnsC = New System.Windows.Forms.Label()
-        Me.AnsB = New System.Windows.Forms.Label()
-        Me.AnsA = New System.Windows.Forms.Label()
-        Me.AnsField = New System.Windows.Forms.PictureBox()
         Me.heart5 = New System.Windows.Forms.PictureBox()
         Me.heart4 = New System.Windows.Forms.PictureBox()
         Me.heart3 = New System.Windows.Forms.PictureBox()
@@ -84,6 +78,11 @@ Partial Class Form1
         Me.picTurtle2 = New System.Windows.Forms.PictureBox()
         Me.picTurtle1 = New System.Windows.Forms.PictureBox()
         Me.picRiver = New System.Windows.Forms.PictureBox()
+        Me.AnsD = New System.Windows.Forms.Label()
+        Me.AnsC = New System.Windows.Forms.Label()
+        Me.AnsB = New System.Windows.Forms.Label()
+        Me.AnsA = New System.Windows.Forms.Label()
+        Me.AnsField = New System.Windows.Forms.PictureBox()
         Me.TurtleGrp1 = New System.Windows.Forms.Timer(Me.components)
         Me.TurtleGrp2 = New System.Windows.Forms.Timer(Me.components)
         Me.TurtleIntrv = New System.Windows.Forms.Timer(Me.components)
@@ -92,7 +91,6 @@ Partial Class Form1
         Me.TurtleGrp5 = New System.Windows.Forms.Timer(Me.components)
         Me.tmrRespawn = New System.Windows.Forms.Timer(Me.components)
         Me.GroupBox1.SuspendLayout()
-        CType(Me.AnsField, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.heart5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.heart4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.heart3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -145,6 +143,7 @@ Partial Class Form1
         CType(Me.picTurtle2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picTurtle1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picRiver, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AnsField, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Timer1
@@ -161,19 +160,6 @@ Partial Class Form1
         Me.lblStat.TabIndex = 2
         Me.lblStat.Text = "Label1"
         Me.lblStat.Visible = False
-        '
-        'Label2
-        '
-        Me.Label2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label2.BackColor = System.Drawing.Color.Green
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.Yellow
-        Me.Label2.Location = New System.Drawing.Point(727, 243)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(127, 44)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Try Again"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'GroupBox1
         '
@@ -243,53 +229,6 @@ Partial Class Form1
         Me.GroupBox1.Size = New System.Drawing.Size(676, 568)
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
-        '
-        'AnsD
-        '
-        Me.AnsD.Location = New System.Drawing.Point(442, 6)
-        Me.AnsD.Name = "AnsD"
-        Me.AnsD.Size = New System.Drawing.Size(49, 31)
-        Me.AnsD.TabIndex = 8
-        Me.AnsD.Text = "D"
-        Me.AnsD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'AnsC
-        '
-        Me.AnsC.Location = New System.Drawing.Point(329, 6)
-        Me.AnsC.Name = "AnsC"
-        Me.AnsC.Size = New System.Drawing.Size(49, 31)
-        Me.AnsC.TabIndex = 8
-        Me.AnsC.Text = "C"
-        Me.AnsC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'AnsB
-        '
-        Me.AnsB.Location = New System.Drawing.Point(207, 6)
-        Me.AnsB.Name = "AnsB"
-        Me.AnsB.Size = New System.Drawing.Size(49, 31)
-        Me.AnsB.TabIndex = 8
-        Me.AnsB.Text = "B"
-        Me.AnsB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'AnsA
-        '
-        Me.AnsA.Location = New System.Drawing.Point(89, 6)
-        Me.AnsA.Name = "AnsA"
-        Me.AnsA.Size = New System.Drawing.Size(49, 31)
-        Me.AnsA.TabIndex = 8
-        Me.AnsA.Text = "A"
-        Me.AnsA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'AnsField
-        '
-        Me.AnsField.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.AnsField.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.AnsField.Location = New System.Drawing.Point(0, 6)
-        Me.AnsField.Name = "AnsField"
-        Me.AnsField.Size = New System.Drawing.Size(675, 27)
-        Me.AnsField.TabIndex = 7
-        Me.AnsField.TabStop = False
         '
         'heart5
         '
@@ -854,6 +793,53 @@ Partial Class Form1
         Me.picRiver.TabIndex = 3
         Me.picRiver.TabStop = False
         '
+        'AnsD
+        '
+        Me.AnsD.Location = New System.Drawing.Point(442, 6)
+        Me.AnsD.Name = "AnsD"
+        Me.AnsD.Size = New System.Drawing.Size(49, 31)
+        Me.AnsD.TabIndex = 8
+        Me.AnsD.Text = "D"
+        Me.AnsD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'AnsC
+        '
+        Me.AnsC.Location = New System.Drawing.Point(329, 6)
+        Me.AnsC.Name = "AnsC"
+        Me.AnsC.Size = New System.Drawing.Size(49, 31)
+        Me.AnsC.TabIndex = 8
+        Me.AnsC.Text = "C"
+        Me.AnsC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'AnsB
+        '
+        Me.AnsB.Location = New System.Drawing.Point(207, 6)
+        Me.AnsB.Name = "AnsB"
+        Me.AnsB.Size = New System.Drawing.Size(49, 31)
+        Me.AnsB.TabIndex = 8
+        Me.AnsB.Text = "B"
+        Me.AnsB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'AnsA
+        '
+        Me.AnsA.Location = New System.Drawing.Point(89, 6)
+        Me.AnsA.Name = "AnsA"
+        Me.AnsA.Size = New System.Drawing.Size(49, 31)
+        Me.AnsA.TabIndex = 8
+        Me.AnsA.Text = "A"
+        Me.AnsA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'AnsField
+        '
+        Me.AnsField.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.AnsField.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.AnsField.Location = New System.Drawing.Point(0, 6)
+        Me.AnsField.Name = "AnsField"
+        Me.AnsField.Size = New System.Drawing.Size(675, 27)
+        Me.AnsField.TabIndex = 7
+        Me.AnsField.TabStop = False
+        '
         'TurtleGrp1
         '
         Me.TurtleGrp1.Interval = 500
@@ -889,14 +875,12 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1003, 565)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.lblStat)
         Me.MinimumSize = New System.Drawing.Size(1019, 604)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         Me.GroupBox1.ResumeLayout(False)
-        CType(Me.AnsField, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.heart5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.heart4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.heart3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -949,6 +933,7 @@ Partial Class Form1
         CType(Me.picTurtle2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picTurtle1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picRiver, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AnsField, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -959,7 +944,6 @@ Partial Class Form1
     Friend WithEvents Timer1 As Timer
     Friend WithEvents lblStat As Label
     Friend WithEvents picLag2 As PictureBox
-    Friend WithEvents Label2 As Label
     Friend WithEvents picTurtle1 As PictureBox
     Friend WithEvents picRiver As PictureBox
     Friend WithEvents picTurtle2 As PictureBox
