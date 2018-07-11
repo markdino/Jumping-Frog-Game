@@ -27,12 +27,6 @@ Partial Class Form1
         Me.lblStat = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.TurtleGrp1 = New System.Windows.Forms.Timer(Me.components)
-        Me.TurtleGrp2 = New System.Windows.Forms.Timer(Me.components)
-        Me.TurtleIntrv = New System.Windows.Forms.Timer(Me.components)
-        Me.TurtleGrp3 = New System.Windows.Forms.Timer(Me.components)
-        Me.TurtleGrp4 = New System.Windows.Forms.Timer(Me.components)
-        Me.TurtleGrp5 = New System.Windows.Forms.Timer(Me.components)
         Me.heart5 = New System.Windows.Forms.PictureBox()
         Me.heart4 = New System.Windows.Forms.PictureBox()
         Me.heart3 = New System.Windows.Forms.PictureBox()
@@ -85,6 +79,12 @@ Partial Class Form1
         Me.picTurtle2 = New System.Windows.Forms.PictureBox()
         Me.picTurtle1 = New System.Windows.Forms.PictureBox()
         Me.picRiver = New System.Windows.Forms.PictureBox()
+        Me.TurtleGrp1 = New System.Windows.Forms.Timer(Me.components)
+        Me.TurtleGrp2 = New System.Windows.Forms.Timer(Me.components)
+        Me.TurtleIntrv = New System.Windows.Forms.Timer(Me.components)
+        Me.TurtleGrp3 = New System.Windows.Forms.Timer(Me.components)
+        Me.TurtleGrp4 = New System.Windows.Forms.Timer(Me.components)
+        Me.TurtleGrp5 = New System.Windows.Forms.Timer(Me.components)
         Me.GroupBox1.SuspendLayout()
         CType(Me.heart5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.heart4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -231,33 +231,9 @@ Partial Class Form1
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         '
-        'TurtleGrp1
-        '
-        Me.TurtleGrp1.Interval = 500
-        '
-        'TurtleGrp2
-        '
-        Me.TurtleGrp2.Interval = 500
-        '
-        'TurtleIntrv
-        '
-        Me.TurtleIntrv.Enabled = True
-        Me.TurtleIntrv.Interval = 1000
-        '
-        'TurtleGrp3
-        '
-        Me.TurtleGrp3.Interval = 500
-        '
-        'TurtleGrp4
-        '
-        Me.TurtleGrp4.Interval = 500
-        '
-        'TurtleGrp5
-        '
-        Me.TurtleGrp5.Interval = 500
-        '
         'heart5
         '
+        Me.heart5.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.heart5.Image = Global.FROG_GAME___Beta.My.Resources.Resources.heart
         Me.heart5.Location = New System.Drawing.Point(132, 539)
         Me.heart5.Name = "heart5"
@@ -268,6 +244,7 @@ Partial Class Form1
         '
         'heart4
         '
+        Me.heart4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.heart4.Image = Global.FROG_GAME___Beta.My.Resources.Resources.heart
         Me.heart4.Location = New System.Drawing.Point(100, 540)
         Me.heart4.Name = "heart4"
@@ -278,6 +255,7 @@ Partial Class Form1
         '
         'heart3
         '
+        Me.heart3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.heart3.Image = Global.FROG_GAME___Beta.My.Resources.Resources.heart
         Me.heart3.Location = New System.Drawing.Point(68, 540)
         Me.heart3.Name = "heart3"
@@ -288,6 +266,7 @@ Partial Class Form1
         '
         'heart2
         '
+        Me.heart2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.heart2.Image = Global.FROG_GAME___Beta.My.Resources.Resources.heart
         Me.heart2.Location = New System.Drawing.Point(36, 540)
         Me.heart2.Name = "heart2"
@@ -298,6 +277,7 @@ Partial Class Form1
         '
         'heart1
         '
+        Me.heart1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.heart1.Image = Global.FROG_GAME___Beta.My.Resources.Resources.heart
         Me.heart1.Location = New System.Drawing.Point(4, 539)
         Me.heart1.Name = "heart1"
@@ -813,6 +793,31 @@ Partial Class Form1
         Me.picRiver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picRiver.TabIndex = 3
         Me.picRiver.TabStop = False
+        '
+        'TurtleGrp1
+        '
+        Me.TurtleGrp1.Interval = 500
+        '
+        'TurtleGrp2
+        '
+        Me.TurtleGrp2.Interval = 500
+        '
+        'TurtleIntrv
+        '
+        Me.TurtleIntrv.Enabled = True
+        Me.TurtleIntrv.Interval = 1000
+        '
+        'TurtleGrp3
+        '
+        Me.TurtleGrp3.Interval = 500
+        '
+        'TurtleGrp4
+        '
+        Me.TurtleGrp4.Interval = 500
+        '
+        'TurtleGrp5
+        '
+        Me.TurtleGrp5.Interval = 500
         '
         'Form1
         '
