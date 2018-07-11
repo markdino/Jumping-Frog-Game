@@ -43,6 +43,7 @@
         t16 = True
         t17 = True
 
+        Position_Answer()
     End Sub
 
     Private Sub Form1_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
@@ -618,5 +619,23 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
             MsgBox("Game over!")
             End
         End If
+    End Sub
+    Private Sub Position_Answer()
+        Dim f As Integer = AnsField.Width
+        Dim x As Integer = f / 4
+        Dim w As Integer = AnsA.Width
+        Dim position As Integer
+
+        position = (x / 2) - (w / 2)
+
+        AnsA.Left = position
+        AnsB.Left = position + x
+        AnsC.Left = position + x * 2
+        AnsD.Left = position + x * 3
+
+    End Sub
+
+    Private Sub Form1_Resize(sender As Object, e As EventArgs) Handles Me.Resize
+        Position_Answer()
     End Sub
 End Class
