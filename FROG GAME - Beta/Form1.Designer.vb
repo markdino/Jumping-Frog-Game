@@ -90,6 +90,7 @@ Partial Class Form1
         Me.TurtleGrp3 = New System.Windows.Forms.Timer(Me.components)
         Me.TurtleGrp4 = New System.Windows.Forms.Timer(Me.components)
         Me.TurtleGrp5 = New System.Windows.Forms.Timer(Me.components)
+        Me.tmrRespawn = New System.Windows.Forms.Timer(Me.components)
         Me.GroupBox1.SuspendLayout()
         CType(Me.AnsField, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.heart5, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -163,6 +164,7 @@ Partial Class Form1
         '
         'Label2
         '
+        Me.Label2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label2.BackColor = System.Drawing.Color.Green
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Yellow
@@ -179,11 +181,6 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox1.BackColor = System.Drawing.Color.PeachPuff
-        Me.GroupBox1.Controls.Add(Me.AnsD)
-        Me.GroupBox1.Controls.Add(Me.AnsC)
-        Me.GroupBox1.Controls.Add(Me.AnsB)
-        Me.GroupBox1.Controls.Add(Me.AnsA)
-        Me.GroupBox1.Controls.Add(Me.AnsField)
         Me.GroupBox1.Controls.Add(Me.heart5)
         Me.GroupBox1.Controls.Add(Me.heart4)
         Me.GroupBox1.Controls.Add(Me.heart3)
@@ -236,6 +233,11 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.picTurtle2)
         Me.GroupBox1.Controls.Add(Me.picTurtle1)
         Me.GroupBox1.Controls.Add(Me.picRiver)
+        Me.GroupBox1.Controls.Add(Me.AnsD)
+        Me.GroupBox1.Controls.Add(Me.AnsC)
+        Me.GroupBox1.Controls.Add(Me.AnsB)
+        Me.GroupBox1.Controls.Add(Me.AnsA)
+        Me.GroupBox1.Controls.Add(Me.AnsField)
         Me.GroupBox1.Location = New System.Drawing.Point(0, -6)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(676, 568)
@@ -877,6 +879,10 @@ Partial Class Form1
         '
         Me.TurtleGrp5.Interval = 500
         '
+        'tmrRespawn
+        '
+        Me.tmrRespawn.Interval = 1000
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1015,4 +1021,5 @@ Partial Class Form1
     Friend WithEvents AnsB As Label
     Friend WithEvents AnsA As Label
     Friend WithEvents AnsField As PictureBox
+    Friend WithEvents tmrRespawn As Timer
 End Class

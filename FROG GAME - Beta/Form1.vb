@@ -59,6 +59,7 @@
         Frog_Ride_To_Lag()
         Car_MoveLeft()
         Car_MoveRight()
+        Choose_Answer()
     End Sub
 
 
@@ -438,6 +439,7 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
             intrv2 = 0
         End If
     End Sub
+
     Private Sub TurtleGrp3_Tick(sender As Object, e As EventArgs) Handles TurtleGrp3.Tick
         intrv3 += 1
         'Turtle sink
@@ -584,11 +586,13 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
             alive = False
             life -= 1
             'TimerAll_Stop()
+            tmrRespawn.Enabled = True
         ElseIf sender.text = "Outside" Then
             picFrog.Image = My.Resources.frogDrown
             alive = False
             life -= 1
             'TimerAll_Stop()
+            tmrRespawn.Enabled = True
         End If
         Heart_Count()
 
@@ -598,7 +602,7 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
         picFrog.Top = GroupBox1.Height - picFrog.Height
     End Sub
 
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+    Public Sub Frog_respawn()
         'TimerAll_Start()
         alive = True
         Frog_BackToStart()
@@ -632,6 +636,45 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
         AnsB.Left = position + x
         AnsC.Left = position + x * 2
         AnsD.Left = position + x * 3
+
+    End Sub
+    Private Sub Choose_Answer()
+        If picFrog.Left + picFrog.Width - 5 >= AnsA.Left And picFrog.Left <= AnsA.Left + AnsA.Width And picFrog.Top + picFrog.Height >= AnsA.Top And
+        picFrog.Top <= AnsA.Top + AnsA.Height Then
+            'TimerAll_Stop()
+            tmrRespawn.Enabled = True
+            alive = False
+        ElseIf picFrog.Left + picFrog.Width - 5 >= AnsB.Left And picFrog.Left <= AnsB.Left + AnsB.Width And picFrog.Top + picFrog.Height >= AnsB.Top And
+                picFrog.Top <= AnsB.Top + AnsB.Height Then
+            'TimerAll_Stop()
+            tmrRespawn.Enabled = True
+            alive = False
+        ElseIf picFrog.Left + picFrog.Width - 5 >= AnsC.Left And picFrog.Left <= AnsC.Left + AnsC.Width And picFrog.Top + picFrog.Height >= AnsC.Top And
+                picFrog.Top <= AnsC.Top + AnsC.Height Then
+            'TimerAll_Stop()
+            tmrRespawn.Enabled = True
+            alive = False
+        ElseIf picFrog.Left + picFrog.Width - 5 >= AnsD.Left And picFrog.Left <= AnsD.Left + AnsD.Width And picFrog.Top + picFrog.Height >= AnsD.Top And
+                picFrog.Top <= AnsD.Top + AnsD.Height Then
+            'TimerAll_Stop()
+            tmrRespawn.Enabled = True
+            alive = False
+        ElseIf picFrog.Left + picFrog.Width - 5 >= AnsField.Left And picFrog.Left <= AnsField.Left + AnsField.Width And picFrog.Top + picFrog.Height >= AnsField.Top And
+                picFrog.Top <= AnsField.Top + AnsField.Height Then
+            lblStat.Text = "Squashed"
+
+        End If
+
+    End Sub
+    Dim TimeRespawn As Integer = 0
+    Private Sub tmrRespawn_Tick(sender As Object, e As EventArgs) Handles tmrRespawn.Tick
+
+        TimeRespawn += 1
+        If TimeRespawn = 4 Then
+            Frog_respawn()
+            TimeRespawn = 0
+            tmrRespawn.Enabled = False
+        End If
 
     End Sub
 
