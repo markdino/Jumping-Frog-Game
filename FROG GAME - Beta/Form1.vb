@@ -494,6 +494,11 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
             intrv4 = 0
         End If
     End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
     Private Sub TurtleGrp5_Tick(sender As Object, e As EventArgs) Handles TurtleGrp5.Tick
         intrv5 += 1
         'Turtle sink
