@@ -85,6 +85,11 @@ Partial Class Form1
         Me.TurtleGrp3 = New System.Windows.Forms.Timer(Me.components)
         Me.TurtleGrp4 = New System.Windows.Forms.Timer(Me.components)
         Me.TurtleGrp5 = New System.Windows.Forms.Timer(Me.components)
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.AnsA = New System.Windows.Forms.Label()
+        Me.AnsB = New System.Windows.Forms.Label()
+        Me.AnsC = New System.Windows.Forms.Label()
+        Me.AnsD = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         CType(Me.heart5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.heart4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -138,6 +143,7 @@ Partial Class Form1
         CType(Me.picTurtle2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picTurtle1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picRiver, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Timer1
@@ -173,6 +179,11 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox1.BackColor = System.Drawing.Color.PeachPuff
+        Me.GroupBox1.Controls.Add(Me.AnsD)
+        Me.GroupBox1.Controls.Add(Me.AnsC)
+        Me.GroupBox1.Controls.Add(Me.AnsB)
+        Me.GroupBox1.Controls.Add(Me.AnsA)
+        Me.GroupBox1.Controls.Add(Me.PictureBox1)
         Me.GroupBox1.Controls.Add(Me.heart5)
         Me.GroupBox1.Controls.Add(Me.heart4)
         Me.GroupBox1.Controls.Add(Me.heart3)
@@ -819,6 +830,53 @@ Partial Class Form1
         '
         Me.TurtleGrp5.Interval = 500
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 6)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(675, 27)
+        Me.PictureBox1.TabIndex = 7
+        Me.PictureBox1.TabStop = False
+        '
+        'AnsA
+        '
+        Me.AnsA.Location = New System.Drawing.Point(89, 6)
+        Me.AnsA.Name = "AnsA"
+        Me.AnsA.Size = New System.Drawing.Size(49, 31)
+        Me.AnsA.TabIndex = 8
+        Me.AnsA.Text = "A"
+        Me.AnsA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'AnsB
+        '
+        Me.AnsB.Location = New System.Drawing.Point(248, 6)
+        Me.AnsB.Name = "AnsB"
+        Me.AnsB.Size = New System.Drawing.Size(49, 31)
+        Me.AnsB.TabIndex = 8
+        Me.AnsB.Text = "B"
+        Me.AnsB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'AnsC
+        '
+        Me.AnsC.Location = New System.Drawing.Point(416, 6)
+        Me.AnsC.Name = "AnsC"
+        Me.AnsC.Size = New System.Drawing.Size(49, 31)
+        Me.AnsC.TabIndex = 8
+        Me.AnsC.Text = "C"
+        Me.AnsC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'AnsD
+        '
+        Me.AnsD.Location = New System.Drawing.Point(567, 6)
+        Me.AnsD.Name = "AnsD"
+        Me.AnsD.Size = New System.Drawing.Size(49, 31)
+        Me.AnsD.TabIndex = 8
+        Me.AnsD.Text = "D"
+        Me.AnsD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -883,6 +941,7 @@ Partial Class Form1
         CType(Me.picTurtle2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picTurtle1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picRiver, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -950,4 +1009,9 @@ Partial Class Form1
     Friend WithEvents heart4 As PictureBox
     Friend WithEvents heart3 As PictureBox
     Friend WithEvents heart2 As PictureBox
+    Friend WithEvents AnsD As Label
+    Friend WithEvents AnsC As Label
+    Friend WithEvents AnsB As Label
+    Friend WithEvents AnsA As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
