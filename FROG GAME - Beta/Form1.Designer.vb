@@ -433,7 +433,7 @@ Partial Class Form1
         Me.picLag14.Image = Global.FROG_GAME___Beta.My.Resources.Resources.log
         Me.picLag14.Location = New System.Drawing.Point(32, 50)
         Me.picLag14.Name = "picLag14"
-        Me.picLag14.Size = New System.Drawing.Size(66, 26)
+        Me.picLag14.Size = New System.Drawing.Size(118, 26)
         Me.picLag14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picLag14.TabIndex = 1
         Me.picLag14.TabStop = False
@@ -454,9 +454,9 @@ Partial Class Form1
         '
         Me.picLag13.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.picLag13.Image = Global.FROG_GAME___Beta.My.Resources.Resources.log
-        Me.picLag13.Location = New System.Drawing.Point(296, 50)
+        Me.picLag13.Location = New System.Drawing.Point(251, 50)
         Me.picLag13.Name = "picLag13"
-        Me.picLag13.Size = New System.Drawing.Size(66, 26)
+        Me.picLag13.Size = New System.Drawing.Size(111, 26)
         Me.picLag13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picLag13.TabIndex = 1
         Me.picLag13.TabStop = False
@@ -465,9 +465,9 @@ Partial Class Form1
         '
         Me.picLag12.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.picLag12.Image = Global.FROG_GAME___Beta.My.Resources.Resources.log
-        Me.picLag12.Location = New System.Drawing.Point(532, 50)
+        Me.picLag12.Location = New System.Drawing.Point(484, 50)
         Me.picLag12.Name = "picLag12"
-        Me.picLag12.Size = New System.Drawing.Size(66, 26)
+        Me.picLag12.Size = New System.Drawing.Size(114, 26)
         Me.picLag12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picLag12.TabIndex = 1
         Me.picLag12.TabStop = False
@@ -476,9 +476,9 @@ Partial Class Form1
         '
         Me.picLag11.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.picLag11.Image = Global.FROG_GAME___Beta.My.Resources.Resources.log
-        Me.picLag11.Location = New System.Drawing.Point(471, 140)
+        Me.picLag11.Location = New System.Drawing.Point(426, 140)
         Me.picLag11.Name = "picLag11"
-        Me.picLag11.Size = New System.Drawing.Size(66, 26)
+        Me.picLag11.Size = New System.Drawing.Size(111, 26)
         Me.picLag11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picLag11.TabIndex = 1
         Me.picLag11.TabStop = False
@@ -489,7 +489,7 @@ Partial Class Form1
         Me.picLag10.Image = Global.FROG_GAME___Beta.My.Resources.Resources.log
         Me.picLag10.Location = New System.Drawing.Point(543, 140)
         Me.picLag10.Name = "picLag10"
-        Me.picLag10.Size = New System.Drawing.Size(66, 26)
+        Me.picLag10.Size = New System.Drawing.Size(93, 26)
         Me.picLag10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picLag10.TabIndex = 1
         Me.picLag10.TabStop = False
@@ -509,9 +509,9 @@ Partial Class Form1
         '
         Me.picLag8.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.picLag8.Image = Global.FROG_GAME___Beta.My.Resources.Resources.log
-        Me.picLag8.Location = New System.Drawing.Point(440, 179)
+        Me.picLag8.Location = New System.Drawing.Point(404, 179)
         Me.picLag8.Name = "picLag8"
-        Me.picLag8.Size = New System.Drawing.Size(66, 26)
+        Me.picLag8.Size = New System.Drawing.Size(102, 26)
         Me.picLag8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picLag8.TabIndex = 1
         Me.picLag8.TabStop = False
@@ -520,9 +520,9 @@ Partial Class Form1
         '
         Me.picLag7.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.picLag7.Image = Global.FROG_GAME___Beta.My.Resources.Resources.log
-        Me.picLag7.Location = New System.Drawing.Point(332, 179)
+        Me.picLag7.Location = New System.Drawing.Point(283, 179)
         Me.picLag7.Name = "picLag7"
-        Me.picLag7.Size = New System.Drawing.Size(66, 26)
+        Me.picLag7.Size = New System.Drawing.Size(115, 26)
         Me.picLag7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picLag7.TabIndex = 1
         Me.picLag7.TabStop = False
@@ -555,7 +555,7 @@ Partial Class Form1
         Me.picLag4.Image = Global.FROG_GAME___Beta.My.Resources.Resources.log
         Me.picLag4.Location = New System.Drawing.Point(105, 258)
         Me.picLag4.Name = "picLag4"
-        Me.picLag4.Size = New System.Drawing.Size(66, 26)
+        Me.picLag4.Size = New System.Drawing.Size(112, 26)
         Me.picLag4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picLag4.TabIndex = 1
         Me.picLag4.TabStop = False
@@ -586,9 +586,9 @@ Partial Class Form1
         '
         Me.picLag1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.picLag1.Image = Global.FROG_GAME___Beta.My.Resources.Resources.log
-        Me.picLag1.Location = New System.Drawing.Point(335, 258)
+        Me.picLag1.Location = New System.Drawing.Point(290, 258)
         Me.picLag1.Name = "picLag1"
-        Me.picLag1.Size = New System.Drawing.Size(66, 26)
+        Me.picLag1.Size = New System.Drawing.Size(111, 26)
         Me.picLag1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picLag1.TabIndex = 1
         Me.picLag1.TabStop = False
