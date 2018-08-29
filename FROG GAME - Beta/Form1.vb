@@ -44,6 +44,9 @@
         t17 = True
 
         Position_Answer()
+
+        Load_Questions()
+
     End Sub
 
     Private Sub Form1_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
@@ -59,7 +62,7 @@
         Frog_Ride_To_Lag()
         Car_MoveLeft()
         Car_MoveRight()
-        Choose_Answer()
+        UnChoose_Answer()
     End Sub
 
 
@@ -439,7 +442,6 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
             intrv2 = 0
         End If
     End Sub
-
     Private Sub TurtleGrp3_Tick(sender As Object, e As EventArgs) Handles TurtleGrp3.Tick
         intrv3 += 1
         'Turtle sink
@@ -494,11 +496,6 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
             intrv4 = 0
         End If
     End Sub
-
-    Private Sub Label2_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
     Private Sub TurtleGrp5_Tick(sender As Object, e As EventArgs) Handles TurtleGrp5.Tick
         intrv5 += 1
         'Turtle sink
@@ -647,23 +644,67 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
         If picFrog.Left + picFrog.Width - 5 >= AnsA.Left And picFrog.Left <= AnsA.Left + AnsA.Width And picFrog.Top + picFrog.Height >= AnsA.Top And
         picFrog.Top <= AnsA.Top + AnsA.Height Then
             'TimerAll_Stop()
-            tmrRespawn.Enabled = True
             alive = False
+            lblAnsKey.Visible = True
+            If A = AnsCorrect Then
+                tmrRespawn.Enabled = True
+                lblScore.Text += 1
+            Else
+                lblStat.Text = "Squashed"
+            End If
         ElseIf picFrog.Left + picFrog.Width - 5 >= AnsB.Left And picFrog.Left <= AnsB.Left + AnsB.Width And picFrog.Top + picFrog.Height >= AnsB.Top And
                 picFrog.Top <= AnsB.Top + AnsB.Height Then
             'TimerAll_Stop()
-            tmrRespawn.Enabled = True
             alive = False
+            lblAnsKey.Visible = True
+            If B = AnsCorrect Then
+                tmrRespawn.Enabled = True
+                lblScore.Text += 1
+            Else
+                lblStat.Text = "Squashed"
+            End If
         ElseIf picFrog.Left + picFrog.Width - 5 >= AnsC.Left And picFrog.Left <= AnsC.Left + AnsC.Width And picFrog.Top + picFrog.Height >= AnsC.Top And
                 picFrog.Top <= AnsC.Top + AnsC.Height Then
             'TimerAll_Stop()
-            tmrRespawn.Enabled = True
             alive = False
+            lblAnsKey.Visible = True
+            If C = AnsCorrect Then
+                tmrRespawn.Enabled = True
+                lblScore.Text += 1
+            Else
+                lblStat.Text = "Squashed"
+            End If
         ElseIf picFrog.Left + picFrog.Width - 5 >= AnsD.Left And picFrog.Left <= AnsD.Left + AnsD.Width And picFrog.Top + picFrog.Height >= AnsD.Top And
                 picFrog.Top <= AnsD.Top + AnsD.Height Then
             'TimerAll_Stop()
-            tmrRespawn.Enabled = True
             alive = False
+            lblAnsKey.Visible = True
+            If D = AnsCorrect Then
+                tmrRespawn.Enabled = True
+                lblScore.Text += 1
+            Else
+                lblStat.Text = "Squashed"
+            End If
+            'ElseIf picFrog.Left + picFrog.Width - 5 >= AnsField.Left And picFrog.Left <= AnsField.Left + AnsField.Width And picFrog.Top + picFrog.Height >= AnsField.Top And
+            '        picFrog.Top <= AnsField.Top + AnsField.Height Then
+            '    lblStat.Text = "Squashed"
+
+        End If
+
+    End Sub
+    Private Sub UnChoose_Answer()
+        If picFrog.Left + picFrog.Width - 5 >= AnsA.Left And picFrog.Left <= AnsA.Left + AnsA.Width And picFrog.Top + picFrog.Height >= AnsA.Top And
+        picFrog.Top <= AnsA.Top + AnsA.Height Then
+            'EMPTY
+        ElseIf picFrog.Left + picFrog.Width - 5 >= AnsB.Left And picFrog.Left <= AnsB.Left + AnsB.Width And picFrog.Top + picFrog.Height >= AnsB.Top And
+                picFrog.Top <= AnsB.Top + AnsB.Height Then
+            'EMPTY
+        ElseIf picFrog.Left + picFrog.Width - 5 >= AnsC.Left And picFrog.Left <= AnsC.Left + AnsC.Width And picFrog.Top + picFrog.Height >= AnsC.Top And
+                picFrog.Top <= AnsC.Top + AnsC.Height Then
+            'EMPTY
+        ElseIf picFrog.Left + picFrog.Width - 5 >= AnsD.Left And picFrog.Left <= AnsD.Left + AnsD.Width And picFrog.Top + picFrog.Height >= AnsD.Top And
+                picFrog.Top <= AnsD.Top + AnsD.Height Then
+            'EMPTY
         ElseIf picFrog.Left + picFrog.Width - 5 >= AnsField.Left And picFrog.Left <= AnsField.Left + AnsField.Width And picFrog.Top + picFrog.Height >= AnsField.Top And
                 picFrog.Top <= AnsField.Top + AnsField.Height Then
             lblStat.Text = "Squashed"
@@ -679,11 +720,17 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
             Frog_respawn()
             TimeRespawn = 0
             tmrRespawn.Enabled = False
+            Load_Questions()
+            alive = True
         End If
 
     End Sub
 
     Private Sub Form1_Resize(sender As Object, e As EventArgs) Handles Me.Resize
         Position_Answer()
+    End Sub
+
+    Private Sub picFrog_Move(sender As Object, e As EventArgs) Handles picFrog.Move
+        Choose_Answer()
     End Sub
 End Class
