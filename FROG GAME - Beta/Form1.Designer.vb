@@ -90,6 +90,10 @@ Partial Class Form1
         Me.TurtleGrp4 = New System.Windows.Forms.Timer(Me.components)
         Me.TurtleGrp5 = New System.Windows.Forms.Timer(Me.components)
         Me.tmrRespawn = New System.Windows.Forms.Timer(Me.components)
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblScore = New System.Windows.Forms.Label()
+        Me.lblQuestion = New System.Windows.Forms.Label()
+        Me.lblAnsKey = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         CType(Me.heart5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.heart4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -154,7 +158,7 @@ Partial Class Form1
         'lblStat
         '
         Me.lblStat.AutoSize = True
-        Me.lblStat.Location = New System.Drawing.Point(769, 343)
+        Me.lblStat.Location = New System.Drawing.Point(686, 548)
         Me.lblStat.Name = "lblStat"
         Me.lblStat.Size = New System.Drawing.Size(39, 13)
         Me.lblStat.TabIndex = 2
@@ -869,11 +873,63 @@ Partial Class Form1
         '
         Me.tmrRespawn.Interval = 1000
         '
+        'Label1
+        '
+        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(682, 7)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(76, 20)
+        Me.Label1.TabIndex = 5
+        Me.Label1.Text = "SCORE:"
+        '
+        'lblScore
+        '
+        Me.lblScore.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblScore.AutoSize = True
+        Me.lblScore.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblScore.Location = New System.Drawing.Point(764, 7)
+        Me.lblScore.Name = "lblScore"
+        Me.lblScore.Size = New System.Drawing.Size(19, 20)
+        Me.lblScore.TabIndex = 5
+        Me.lblScore.Text = "0"
+        '
+        'lblQuestion
+        '
+        Me.lblQuestion.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblQuestion.BackColor = System.Drawing.Color.DarkGreen
+        Me.lblQuestion.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblQuestion.ForeColor = System.Drawing.Color.White
+        Me.lblQuestion.Location = New System.Drawing.Point(686, 34)
+        Me.lblQuestion.Name = "lblQuestion"
+        Me.lblQuestion.Padding = New System.Windows.Forms.Padding(3)
+        Me.lblQuestion.Size = New System.Drawing.Size(305, 292)
+        Me.lblQuestion.TabIndex = 5
+        Me.lblQuestion.Text = "SCORE:"
+        '
+        'lblAnsKey
+        '
+        Me.lblAnsKey.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblAnsKey.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.lblAnsKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblAnsKey.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAnsKey.Location = New System.Drawing.Point(689, 340)
+        Me.lblAnsKey.Name = "lblAnsKey"
+        Me.lblAnsKey.Padding = New System.Windows.Forms.Padding(3)
+        Me.lblAnsKey.Size = New System.Drawing.Size(301, 158)
+        Me.lblAnsKey.TabIndex = 6
+        Me.lblAnsKey.Text = "Label2"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1003, 565)
+        Me.Controls.Add(Me.lblAnsKey)
+        Me.Controls.Add(Me.lblScore)
+        Me.Controls.Add(Me.lblQuestion)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.lblStat)
         Me.MaximizeBox = False
@@ -1007,4 +1063,8 @@ Partial Class Form1
     Friend WithEvents AnsA As Label
     Friend WithEvents AnsField As PictureBox
     Friend WithEvents tmrRespawn As Timer
+    Friend WithEvents Label1 As Label
+    Friend WithEvents lblScore As Label
+    Friend WithEvents lblQuestion As Label
+    Friend WithEvents lblAnsKey As Label
 End Class
