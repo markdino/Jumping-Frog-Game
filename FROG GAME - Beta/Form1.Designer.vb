@@ -90,6 +90,10 @@ Partial Class Form1
         Me.TurtleGrp4 = New System.Windows.Forms.Timer(Me.components)
         Me.TurtleGrp5 = New System.Windows.Forms.Timer(Me.components)
         Me.tmrRespawn = New System.Windows.Forms.Timer(Me.components)
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblScore = New System.Windows.Forms.Label()
+        Me.lblQuestion = New System.Windows.Forms.Label()
+        Me.lblAnsKey = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         CType(Me.heart5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.heart4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -154,7 +158,7 @@ Partial Class Form1
         'lblStat
         '
         Me.lblStat.AutoSize = True
-        Me.lblStat.Location = New System.Drawing.Point(769, 343)
+        Me.lblStat.Location = New System.Drawing.Point(686, 548)
         Me.lblStat.Name = "lblStat"
         Me.lblStat.Size = New System.Drawing.Size(39, 13)
         Me.lblStat.TabIndex = 2
@@ -433,7 +437,7 @@ Partial Class Form1
         Me.picLag14.Image = Global.FROG_GAME___Beta.My.Resources.Resources.log
         Me.picLag14.Location = New System.Drawing.Point(32, 50)
         Me.picLag14.Name = "picLag14"
-        Me.picLag14.Size = New System.Drawing.Size(66, 26)
+        Me.picLag14.Size = New System.Drawing.Size(111, 26)
         Me.picLag14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picLag14.TabIndex = 1
         Me.picLag14.TabStop = False
@@ -454,9 +458,9 @@ Partial Class Form1
         '
         Me.picLag13.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.picLag13.Image = Global.FROG_GAME___Beta.My.Resources.Resources.log
-        Me.picLag13.Location = New System.Drawing.Point(296, 50)
+        Me.picLag13.Location = New System.Drawing.Point(251, 50)
         Me.picLag13.Name = "picLag13"
-        Me.picLag13.Size = New System.Drawing.Size(66, 26)
+        Me.picLag13.Size = New System.Drawing.Size(111, 26)
         Me.picLag13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picLag13.TabIndex = 1
         Me.picLag13.TabStop = False
@@ -465,9 +469,9 @@ Partial Class Form1
         '
         Me.picLag12.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.picLag12.Image = Global.FROG_GAME___Beta.My.Resources.Resources.log
-        Me.picLag12.Location = New System.Drawing.Point(532, 50)
+        Me.picLag12.Location = New System.Drawing.Point(484, 50)
         Me.picLag12.Name = "picLag12"
-        Me.picLag12.Size = New System.Drawing.Size(66, 26)
+        Me.picLag12.Size = New System.Drawing.Size(111, 26)
         Me.picLag12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picLag12.TabIndex = 1
         Me.picLag12.TabStop = False
@@ -476,9 +480,9 @@ Partial Class Form1
         '
         Me.picLag11.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.picLag11.Image = Global.FROG_GAME___Beta.My.Resources.Resources.log
-        Me.picLag11.Location = New System.Drawing.Point(471, 140)
+        Me.picLag11.Location = New System.Drawing.Point(426, 140)
         Me.picLag11.Name = "picLag11"
-        Me.picLag11.Size = New System.Drawing.Size(66, 26)
+        Me.picLag11.Size = New System.Drawing.Size(111, 26)
         Me.picLag11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picLag11.TabIndex = 1
         Me.picLag11.TabStop = False
@@ -489,7 +493,7 @@ Partial Class Form1
         Me.picLag10.Image = Global.FROG_GAME___Beta.My.Resources.Resources.log
         Me.picLag10.Location = New System.Drawing.Point(543, 140)
         Me.picLag10.Name = "picLag10"
-        Me.picLag10.Size = New System.Drawing.Size(66, 26)
+        Me.picLag10.Size = New System.Drawing.Size(111, 26)
         Me.picLag10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picLag10.TabIndex = 1
         Me.picLag10.TabStop = False
@@ -500,7 +504,7 @@ Partial Class Form1
         Me.picLag9.Image = Global.FROG_GAME___Beta.My.Resources.Resources.log
         Me.picLag9.Location = New System.Drawing.Point(73, 140)
         Me.picLag9.Name = "picLag9"
-        Me.picLag9.Size = New System.Drawing.Size(66, 26)
+        Me.picLag9.Size = New System.Drawing.Size(111, 26)
         Me.picLag9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picLag9.TabIndex = 1
         Me.picLag9.TabStop = False
@@ -509,9 +513,9 @@ Partial Class Form1
         '
         Me.picLag8.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.picLag8.Image = Global.FROG_GAME___Beta.My.Resources.Resources.log
-        Me.picLag8.Location = New System.Drawing.Point(440, 179)
+        Me.picLag8.Location = New System.Drawing.Point(404, 179)
         Me.picLag8.Name = "picLag8"
-        Me.picLag8.Size = New System.Drawing.Size(66, 26)
+        Me.picLag8.Size = New System.Drawing.Size(111, 26)
         Me.picLag8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picLag8.TabIndex = 1
         Me.picLag8.TabStop = False
@@ -520,9 +524,9 @@ Partial Class Form1
         '
         Me.picLag7.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.picLag7.Image = Global.FROG_GAME___Beta.My.Resources.Resources.log
-        Me.picLag7.Location = New System.Drawing.Point(332, 179)
+        Me.picLag7.Location = New System.Drawing.Point(283, 179)
         Me.picLag7.Name = "picLag7"
-        Me.picLag7.Size = New System.Drawing.Size(66, 26)
+        Me.picLag7.Size = New System.Drawing.Size(111, 26)
         Me.picLag7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picLag7.TabIndex = 1
         Me.picLag7.TabStop = False
@@ -555,7 +559,7 @@ Partial Class Form1
         Me.picLag4.Image = Global.FROG_GAME___Beta.My.Resources.Resources.log
         Me.picLag4.Location = New System.Drawing.Point(105, 258)
         Me.picLag4.Name = "picLag4"
-        Me.picLag4.Size = New System.Drawing.Size(66, 26)
+        Me.picLag4.Size = New System.Drawing.Size(111, 26)
         Me.picLag4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picLag4.TabIndex = 1
         Me.picLag4.TabStop = False
@@ -566,7 +570,7 @@ Partial Class Form1
         Me.picLag3.Image = Global.FROG_GAME___Beta.My.Resources.Resources.log
         Me.picLag3.Location = New System.Drawing.Point(570, 258)
         Me.picLag3.Name = "picLag3"
-        Me.picLag3.Size = New System.Drawing.Size(66, 26)
+        Me.picLag3.Size = New System.Drawing.Size(111, 26)
         Me.picLag3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picLag3.TabIndex = 1
         Me.picLag3.TabStop = False
@@ -575,9 +579,9 @@ Partial Class Form1
         '
         Me.picLag2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.picLag2.Image = Global.FROG_GAME___Beta.My.Resources.Resources.log
-        Me.picLag2.Location = New System.Drawing.Point(498, 258)
+        Me.picLag2.Location = New System.Drawing.Point(457, 258)
         Me.picLag2.Name = "picLag2"
-        Me.picLag2.Size = New System.Drawing.Size(66, 26)
+        Me.picLag2.Size = New System.Drawing.Size(111, 26)
         Me.picLag2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picLag2.TabIndex = 1
         Me.picLag2.TabStop = False
@@ -586,9 +590,9 @@ Partial Class Form1
         '
         Me.picLag1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.picLag1.Image = Global.FROG_GAME___Beta.My.Resources.Resources.log
-        Me.picLag1.Location = New System.Drawing.Point(335, 258)
+        Me.picLag1.Location = New System.Drawing.Point(290, 258)
         Me.picLag1.Name = "picLag1"
-        Me.picLag1.Size = New System.Drawing.Size(66, 26)
+        Me.picLag1.Size = New System.Drawing.Size(111, 26)
         Me.picLag1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picLag1.TabIndex = 1
         Me.picLag1.TabStop = False
@@ -869,13 +873,66 @@ Partial Class Form1
         '
         Me.tmrRespawn.Interval = 1000
         '
+        'Label1
+        '
+        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(682, 7)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(76, 20)
+        Me.Label1.TabIndex = 5
+        Me.Label1.Text = "SCORE:"
+        '
+        'lblScore
+        '
+        Me.lblScore.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblScore.AutoSize = True
+        Me.lblScore.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblScore.Location = New System.Drawing.Point(764, 7)
+        Me.lblScore.Name = "lblScore"
+        Me.lblScore.Size = New System.Drawing.Size(19, 20)
+        Me.lblScore.TabIndex = 5
+        Me.lblScore.Text = "0"
+        '
+        'lblQuestion
+        '
+        Me.lblQuestion.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblQuestion.BackColor = System.Drawing.Color.DarkGreen
+        Me.lblQuestion.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblQuestion.ForeColor = System.Drawing.Color.White
+        Me.lblQuestion.Location = New System.Drawing.Point(686, 34)
+        Me.lblQuestion.Name = "lblQuestion"
+        Me.lblQuestion.Padding = New System.Windows.Forms.Padding(3)
+        Me.lblQuestion.Size = New System.Drawing.Size(305, 292)
+        Me.lblQuestion.TabIndex = 5
+        Me.lblQuestion.Text = "SCORE:"
+        '
+        'lblAnsKey
+        '
+        Me.lblAnsKey.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblAnsKey.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.lblAnsKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblAnsKey.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAnsKey.Location = New System.Drawing.Point(689, 340)
+        Me.lblAnsKey.Name = "lblAnsKey"
+        Me.lblAnsKey.Padding = New System.Windows.Forms.Padding(3)
+        Me.lblAnsKey.Size = New System.Drawing.Size(301, 158)
+        Me.lblAnsKey.TabIndex = 6
+        Me.lblAnsKey.Text = "Label2"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1003, 565)
+        Me.Controls.Add(Me.lblAnsKey)
+        Me.Controls.Add(Me.lblScore)
+        Me.Controls.Add(Me.lblQuestion)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.lblStat)
+        Me.MaximizeBox = False
         Me.MinimumSize = New System.Drawing.Size(1019, 604)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -1006,4 +1063,8 @@ Partial Class Form1
     Friend WithEvents AnsA As Label
     Friend WithEvents AnsField As PictureBox
     Friend WithEvents tmrRespawn As Timer
+    Friend WithEvents Label1 As Label
+    Friend WithEvents lblScore As Label
+    Friend WithEvents lblQuestion As Label
+    Friend WithEvents lblAnsKey As Label
 End Class
