@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,9 +20,10 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.lblStat = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
@@ -94,6 +95,33 @@ Partial Class Form1
         Me.lblScore = New System.Windows.Forms.Label()
         Me.lblQuestion = New System.Windows.Forms.Label()
         Me.lblAnsKey = New System.Windows.Forms.Label()
+        Me.MathquizDataSet = New FROG_GAME___Beta.mathquizDataSet()
+        Me.MathBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.MathTableAdapter = New FROG_GAME___Beta.mathquizDataSetTableAdapters.MathTableAdapter()
+        Me.TableAdapterManager = New FROG_GAME___Beta.mathquizDataSetTableAdapters.TableAdapterManager()
+        Me.MathBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
+        Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
+        Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox()
+        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
+        Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
+        Me.MathBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
+        Me.MathDataGridView = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewCheckBoxColumn1 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox1.SuspendLayout()
         CType(Me.heart5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.heart4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -148,6 +176,11 @@ Partial Class Form1
         CType(Me.picTurtle1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picRiver, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AnsField, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MathquizDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MathBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MathBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MathBindingNavigator.SuspendLayout()
+        CType(Me.MathDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Timer1
@@ -230,7 +263,7 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.AnsField)
         Me.GroupBox1.Location = New System.Drawing.Point(0, -6)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(676, 568)
+        Me.GroupBox1.Size = New System.Drawing.Size(700, 585)
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         '
@@ -238,7 +271,7 @@ Partial Class Form1
         '
         Me.heart5.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.heart5.Image = Global.FROG_GAME___Beta.My.Resources.Resources.heart
-        Me.heart5.Location = New System.Drawing.Point(132, 539)
+        Me.heart5.Location = New System.Drawing.Point(132, 556)
         Me.heart5.Name = "heart5"
         Me.heart5.Size = New System.Drawing.Size(30, 28)
         Me.heart5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -249,7 +282,7 @@ Partial Class Form1
         '
         Me.heart4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.heart4.Image = Global.FROG_GAME___Beta.My.Resources.Resources.heart
-        Me.heart4.Location = New System.Drawing.Point(100, 540)
+        Me.heart4.Location = New System.Drawing.Point(100, 557)
         Me.heart4.Name = "heart4"
         Me.heart4.Size = New System.Drawing.Size(30, 28)
         Me.heart4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -260,7 +293,7 @@ Partial Class Form1
         '
         Me.heart3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.heart3.Image = Global.FROG_GAME___Beta.My.Resources.Resources.heart
-        Me.heart3.Location = New System.Drawing.Point(68, 540)
+        Me.heart3.Location = New System.Drawing.Point(68, 557)
         Me.heart3.Name = "heart3"
         Me.heart3.Size = New System.Drawing.Size(30, 28)
         Me.heart3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -271,7 +304,7 @@ Partial Class Form1
         '
         Me.heart2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.heart2.Image = Global.FROG_GAME___Beta.My.Resources.Resources.heart
-        Me.heart2.Location = New System.Drawing.Point(36, 540)
+        Me.heart2.Location = New System.Drawing.Point(36, 557)
         Me.heart2.Name = "heart2"
         Me.heart2.Size = New System.Drawing.Size(30, 28)
         Me.heart2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -282,7 +315,7 @@ Partial Class Form1
         '
         Me.heart1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.heart1.Image = Global.FROG_GAME___Beta.My.Resources.Resources.heart
-        Me.heart1.Location = New System.Drawing.Point(4, 539)
+        Me.heart1.Location = New System.Drawing.Point(4, 556)
         Me.heart1.Name = "heart1"
         Me.heart1.Size = New System.Drawing.Size(30, 28)
         Me.heart1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -449,7 +482,7 @@ Partial Class Form1
         Me.picRoad.Image = Global.FROG_GAME___Beta.My.Resources.Resources.road
         Me.picRoad.Location = New System.Drawing.Point(3, 338)
         Me.picRoad.Name = "picRoad"
-        Me.picRoad.Size = New System.Drawing.Size(672, 177)
+        Me.picRoad.Size = New System.Drawing.Size(696, 177)
         Me.picRoad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picRoad.TabIndex = 5
         Me.picRoad.TabStop = False
@@ -792,7 +825,7 @@ Partial Class Form1
         Me.picRiver.Image = Global.FROG_GAME___Beta.My.Resources.Resources.water
         Me.picRiver.Location = New System.Drawing.Point(0, 40)
         Me.picRiver.Name = "picRiver"
-        Me.picRiver.Size = New System.Drawing.Size(675, 253)
+        Me.picRiver.Size = New System.Drawing.Size(699, 253)
         Me.picRiver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picRiver.TabIndex = 3
         Me.picRiver.TabStop = False
@@ -840,7 +873,7 @@ Partial Class Form1
         Me.AnsField.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.AnsField.Location = New System.Drawing.Point(0, 6)
         Me.AnsField.Name = "AnsField"
-        Me.AnsField.Size = New System.Drawing.Size(675, 27)
+        Me.AnsField.Size = New System.Drawing.Size(699, 27)
         Me.AnsField.TabIndex = 7
         Me.AnsField.TabStop = False
         '
@@ -878,7 +911,7 @@ Partial Class Form1
         Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(682, 7)
+        Me.Label1.Location = New System.Drawing.Point(706, 7)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(76, 20)
         Me.Label1.TabIndex = 5
@@ -889,7 +922,7 @@ Partial Class Form1
         Me.lblScore.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblScore.AutoSize = True
         Me.lblScore.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblScore.Location = New System.Drawing.Point(764, 7)
+        Me.lblScore.Location = New System.Drawing.Point(788, 7)
         Me.lblScore.Name = "lblScore"
         Me.lblScore.Size = New System.Drawing.Size(19, 20)
         Me.lblScore.TabIndex = 5
@@ -901,7 +934,7 @@ Partial Class Form1
         Me.lblQuestion.BackColor = System.Drawing.Color.DarkGreen
         Me.lblQuestion.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblQuestion.ForeColor = System.Drawing.Color.White
-        Me.lblQuestion.Location = New System.Drawing.Point(686, 34)
+        Me.lblQuestion.Location = New System.Drawing.Point(710, 34)
         Me.lblQuestion.Name = "lblQuestion"
         Me.lblQuestion.Padding = New System.Windows.Forms.Padding(3)
         Me.lblQuestion.Size = New System.Drawing.Size(305, 292)
@@ -914,18 +947,218 @@ Partial Class Form1
         Me.lblAnsKey.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.lblAnsKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblAnsKey.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAnsKey.Location = New System.Drawing.Point(689, 340)
+        Me.lblAnsKey.Location = New System.Drawing.Point(713, 340)
         Me.lblAnsKey.Name = "lblAnsKey"
         Me.lblAnsKey.Padding = New System.Windows.Forms.Padding(3)
         Me.lblAnsKey.Size = New System.Drawing.Size(301, 158)
         Me.lblAnsKey.TabIndex = 6
         Me.lblAnsKey.Text = "Label2"
         '
+        'MathquizDataSet
+        '
+        Me.MathquizDataSet.DataSetName = "mathquizDataSet"
+        Me.MathquizDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'MathBindingSource
+        '
+        Me.MathBindingSource.DataMember = "Math"
+        Me.MathBindingSource.DataSource = Me.MathquizDataSet
+        '
+        'MathTableAdapter
+        '
+        Me.MathTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.MathTableAdapter = Me.MathTableAdapter
+        Me.TableAdapterManager.UpdateOrder = FROG_GAME___Beta.mathquizDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        '
+        'MathBindingNavigator
+        '
+        Me.MathBindingNavigator.AddNewItem = Me.BindingNavigatorAddNewItem
+        Me.MathBindingNavigator.BindingSource = Me.MathBindingSource
+        Me.MathBindingNavigator.CountItem = Me.BindingNavigatorCountItem
+        Me.MathBindingNavigator.DeleteItem = Me.BindingNavigatorDeleteItem
+        Me.MathBindingNavigator.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BindingNavigatorMoveFirstItem, Me.BindingNavigatorMovePreviousItem, Me.BindingNavigatorSeparator, Me.BindingNavigatorPositionItem, Me.BindingNavigatorCountItem, Me.BindingNavigatorSeparator1, Me.BindingNavigatorMoveNextItem, Me.BindingNavigatorMoveLastItem, Me.BindingNavigatorSeparator2, Me.BindingNavigatorAddNewItem, Me.BindingNavigatorDeleteItem, Me.MathBindingNavigatorSaveItem})
+        Me.MathBindingNavigator.Location = New System.Drawing.Point(0, 0)
+        Me.MathBindingNavigator.MoveFirstItem = Me.BindingNavigatorMoveFirstItem
+        Me.MathBindingNavigator.MoveLastItem = Me.BindingNavigatorMoveLastItem
+        Me.MathBindingNavigator.MoveNextItem = Me.BindingNavigatorMoveNextItem
+        Me.MathBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
+        Me.MathBindingNavigator.Name = "MathBindingNavigator"
+        Me.MathBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
+        Me.MathBindingNavigator.Size = New System.Drawing.Size(1027, 25)
+        Me.MathBindingNavigator.TabIndex = 7
+        Me.MathBindingNavigator.Text = "BindingNavigator1"
+        Me.MathBindingNavigator.Visible = False
+        '
+        'BindingNavigatorMoveFirstItem
+        '
+        Me.BindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
+        Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorMoveFirstItem.Text = "Move first"
+        '
+        'BindingNavigatorMovePreviousItem
+        '
+        Me.BindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
+        Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorMovePreviousItem.Text = "Move previous"
+        '
+        'BindingNavigatorSeparator
+        '
+        Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
+        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 25)
+        '
+        'BindingNavigatorPositionItem
+        '
+        Me.BindingNavigatorPositionItem.AccessibleName = "Position"
+        Me.BindingNavigatorPositionItem.AutoSize = False
+        Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
+        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 23)
+        Me.BindingNavigatorPositionItem.Text = "0"
+        Me.BindingNavigatorPositionItem.ToolTipText = "Current position"
+        '
+        'BindingNavigatorCountItem
+        '
+        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 15)
+        Me.BindingNavigatorCountItem.Text = "of {0}"
+        Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
+        '
+        'BindingNavigatorSeparator1
+        '
+        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator"
+        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 6)
+        '
+        'BindingNavigatorMoveNextItem
+        '
+        Me.BindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
+        Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(23, 20)
+        Me.BindingNavigatorMoveNextItem.Text = "Move next"
+        '
+        'BindingNavigatorMoveLastItem
+        '
+        Me.BindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
+        Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(23, 20)
+        Me.BindingNavigatorMoveLastItem.Text = "Move last"
+        '
+        'BindingNavigatorSeparator2
+        '
+        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator"
+        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 6)
+        '
+        'BindingNavigatorAddNewItem
+        '
+        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
+        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorAddNewItem.Text = "Add new"
+        '
+        'BindingNavigatorDeleteItem
+        '
+        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
+        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(23, 20)
+        Me.BindingNavigatorDeleteItem.Text = "Delete"
+        '
+        'MathBindingNavigatorSaveItem
+        '
+        Me.MathBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.MathBindingNavigatorSaveItem.Image = CType(resources.GetObject("MathBindingNavigatorSaveItem.Image"), System.Drawing.Image)
+        Me.MathBindingNavigatorSaveItem.Name = "MathBindingNavigatorSaveItem"
+        Me.MathBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 23)
+        Me.MathBindingNavigatorSaveItem.Text = "Save Data"
+        '
+        'MathDataGridView
+        '
+        Me.MathDataGridView.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.MathDataGridView.AutoGenerateColumns = False
+        Me.MathDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.MathDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewCheckBoxColumn1, Me.DataGridViewTextBoxColumn8})
+        Me.MathDataGridView.DataSource = Me.MathBindingSource
+        Me.MathDataGridView.Location = New System.Drawing.Point(1036, 417)
+        Me.MathDataGridView.Name = "MathDataGridView"
+        Me.MathDataGridView.Size = New System.Drawing.Size(300, 144)
+        Me.MathDataGridView.TabIndex = 7
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "ID"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "ID"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "Quiz"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "Quiz"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "A"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "A"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "B"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "B"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "C"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "C"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "D"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "D"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "Notes"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "Notes"
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        '
+        'DataGridViewCheckBoxColumn1
+        '
+        Me.DataGridViewCheckBoxColumn1.DataPropertyName = "take"
+        Me.DataGridViewCheckBoxColumn1.HeaderText = "take"
+        Me.DataGridViewCheckBoxColumn1.Name = "DataGridViewCheckBoxColumn1"
+        '
+        'DataGridViewTextBoxColumn8
+        '
+        Me.DataGridViewTextBoxColumn8.DataPropertyName = "Correct"
+        Me.DataGridViewTextBoxColumn8.HeaderText = "Correct"
+        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1003, 565)
+        Me.ClientSize = New System.Drawing.Size(1027, 582)
+        Me.Controls.Add(Me.MathDataGridView)
+        Me.Controls.Add(Me.MathBindingNavigator)
         Me.Controls.Add(Me.lblAnsKey)
         Me.Controls.Add(Me.lblScore)
         Me.Controls.Add(Me.lblQuestion)
@@ -991,6 +1224,12 @@ Partial Class Form1
         CType(Me.picTurtle1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picRiver, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AnsField, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MathquizDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MathBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MathBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MathBindingNavigator.ResumeLayout(False)
+        Me.MathBindingNavigator.PerformLayout()
+        CType(Me.MathDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1067,4 +1306,31 @@ Partial Class Form1
     Friend WithEvents lblScore As Label
     Friend WithEvents lblQuestion As Label
     Friend WithEvents lblAnsKey As Label
+    Friend WithEvents MathquizDataSet As mathquizDataSet
+    Friend WithEvents MathBindingSource As BindingSource
+    Friend WithEvents MathTableAdapter As mathquizDataSetTableAdapters.MathTableAdapter
+    Friend WithEvents TableAdapterManager As mathquizDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents MathBindingNavigator As BindingNavigator
+    Friend WithEvents BindingNavigatorAddNewItem As ToolStripButton
+    Friend WithEvents BindingNavigatorCountItem As ToolStripLabel
+    Friend WithEvents BindingNavigatorDeleteItem As ToolStripButton
+    Friend WithEvents BindingNavigatorMoveFirstItem As ToolStripButton
+    Friend WithEvents BindingNavigatorMovePreviousItem As ToolStripButton
+    Friend WithEvents BindingNavigatorSeparator As ToolStripSeparator
+    Friend WithEvents BindingNavigatorPositionItem As ToolStripTextBox
+    Friend WithEvents BindingNavigatorSeparator1 As ToolStripSeparator
+    Friend WithEvents BindingNavigatorMoveNextItem As ToolStripButton
+    Friend WithEvents BindingNavigatorMoveLastItem As ToolStripButton
+    Friend WithEvents BindingNavigatorSeparator2 As ToolStripSeparator
+    Friend WithEvents MathBindingNavigatorSaveItem As ToolStripButton
+    Friend WithEvents MathDataGridView As DataGridView
+    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn7 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewCheckBoxColumn1 As DataGridViewCheckBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn8 As DataGridViewTextBoxColumn
 End Class

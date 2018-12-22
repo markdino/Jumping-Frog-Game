@@ -10,6 +10,10 @@
     Dim alive As Boolean = True
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'MathquizDataSet.Math' table. You can move, or remove it, as needed.
+        Me.MathTableAdapter.Fill(Me.MathquizDataSet.Math)
+        'TODO: This line of code loads data into the 'MathquizDataSet.Math' table. You can move, or remove it, as needed.
+        Me.MathTableAdapter.Fill(Me.MathquizDataSet.Math)
         'Fix the position of naugthy turtles
         picTurtle1.Left = 245
         picTurtle2.Left = 206
@@ -45,8 +49,8 @@
 
         Position_Answer()
 
-        Load_Questions()
-
+        checkQuizCount()
+        frmMngrQuiz.Show()
     End Sub
 
     Private Sub Form1_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
@@ -535,6 +539,21 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
         picCar11.Left -= 4
         picCar12.Left -= 4
     End Sub
+
+    Private Sub MathBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs)
+        Me.Validate()
+        Me.MathBindingSource.EndEdit()
+        Me.TableAdapterManager.UpdateAll(Me.MathquizDataSet)
+
+    End Sub
+
+    Private Sub MathBindingNavigatorSaveItem_Click_1(sender As Object, e As EventArgs) Handles MathBindingNavigatorSaveItem.Click
+        Me.Validate()
+        Me.MathBindingSource.EndEdit()
+        Me.TableAdapterManager.UpdateAll(Me.MathquizDataSet)
+
+    End Sub
+
     Private Sub Car_MoveRight()
         picCar6.Left += 7
         picCar7.Left += 7
@@ -647,8 +666,7 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
             alive = False
             lblAnsKey.Visible = True
             If A = AnsCorrect Then
-                tmrRespawn.Enabled = True
-                lblScore.Text += 1
+                Correct_selected()
             Else
                 lblStat.Text = "Squashed"
             End If
@@ -658,8 +676,7 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
             alive = False
             lblAnsKey.Visible = True
             If B = AnsCorrect Then
-                tmrRespawn.Enabled = True
-                lblScore.Text += 1
+                Correct_selected()
             Else
                 lblStat.Text = "Squashed"
             End If
@@ -669,8 +686,7 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
             alive = False
             lblAnsKey.Visible = True
             If C = AnsCorrect Then
-                tmrRespawn.Enabled = True
-                lblScore.Text += 1
+                Correct_selected()
             Else
                 lblStat.Text = "Squashed"
             End If
@@ -680,8 +696,7 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
             alive = False
             lblAnsKey.Visible = True
             If D = AnsCorrect Then
-                tmrRespawn.Enabled = True
-                lblScore.Text += 1
+                Correct_selected()
             Else
                 lblStat.Text = "Squashed"
             End If
@@ -720,7 +735,8 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
             Frog_respawn()
             TimeRespawn = 0
             tmrRespawn.Enabled = False
-            Load_Questions()
+            MathBindingSource.MoveNext()
+            checkQuizCount()
             alive = True
         End If
 
@@ -732,5 +748,21 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
 
     Private Sub picFrog_Move(sender As Object, e As EventArgs) Handles picFrog.Move
         Choose_Answer()
+    End Sub
+
+    Private Sub Correct_selected()
+        tmrRespawn.Enabled = True
+        lblScore.Text += 1
+        MathDataGridView.CurrentRow.Cells(7).Value = True
+        MathBindingNavigatorSaveItem.PerformClick()
+    End Sub
+    Private Sub checkQuizCount()
+        Dim rowCountCheck As Integer = MathDataGridView.RowCount
+        If rowCountCheck > 2 Then
+            Load_Questions()
+        Else
+            MsgBox("Not enough quiz to load." & vbCrLf & "Please contact administrator to fix and load more quiz.", vbExclamation, "Warning")
+            Close()
+        End If
     End Sub
 End Class

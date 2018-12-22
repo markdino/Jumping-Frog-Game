@@ -6,7 +6,7 @@
         For x = 1 To 50
             QNum = Format(((Rnd(x) * 4) + 1), "0")
         Next
-        'QNum = 1
+
         If QNum = 1 Then
             Q = "Mr. Brown went grocery shopping to buy meat for his annual office picnic. He bought 7 3/4 pounds of hamburger, 17.85 pounds of chicken, and 6 1/2 pounds of steak. How many pounds of meat did Mr. Brown buy?"
             A = "A. 32.10"
@@ -50,9 +50,18 @@
 
         End If
     End Sub
-
+    Public Sub Pick_Quiz()
+        Q = Form1.MathDataGridView.CurrentRow.Cells(1).Value.ToString
+        A = Form1.MathDataGridView.CurrentRow.Cells(2).Value.ToString
+        B = Form1.MathDataGridView.CurrentRow.Cells(3).Value.ToString
+        C = Form1.MathDataGridView.CurrentRow.Cells(4).Value.ToString
+        D = Form1.MathDataGridView.CurrentRow.Cells(5).Value.ToString
+        AnsCorrect = Form1.MathDataGridView.CurrentRow.Cells(8).Value.ToString
+        AnsKey = AnsCorrect & vbCrLf & vbCrLf & Form1.MathDataGridView.CurrentRow.Cells(6).Value.ToString
+    End Sub
     Public Sub Load_Questions()
-        Pick_Questions()
+        'Pick_Questions()
+        Pick_Quiz()
         Form1.lblQuestion.Text = "QUESTION:" & vbCrLf & vbCrLf & Q & vbCrLf & vbCrLf & A & vbCrLf & B & vbCrLf & C & vbCrLf & D
         Form1.lblAnsKey.Text = "THE CORRECT ANSWER IS LETTER " & AnsKey
         Form1.lblAnsKey.Visible = False
