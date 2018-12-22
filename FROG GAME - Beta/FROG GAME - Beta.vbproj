@@ -79,6 +79,11 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="mathquizDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mathquizDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="mQuestions.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -108,6 +113,17 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="mathquizDataSet.xsc">
+      <DependentUpon>mathquizDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="mathquizDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mathquizDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="mathquizDataSet.xss">
+      <DependentUpon>mathquizDataSet.xsd</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -181,6 +197,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\frogDrown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="mathquiz.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
