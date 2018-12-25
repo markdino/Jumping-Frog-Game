@@ -24,8 +24,10 @@
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         Dim userReady As Boolean = False
         If cboUser.Text = "Admin" Then
-            frmMngrQuiz.Show()
-            frmMngrQuiz.WindowState = FormWindowState.Maximized
+            'frmMngrQuiz.Show()
+            'frmMngrQuiz.WindowState = FormWindowState.Maximized
+            frmSplash.Show()
+            frmSplash.btnQMngr.Visible = True
             'Form1.lblUser.Text = cboUser.Text
             Close()
         ElseIf cboUser.Text.Length > 1 Then
@@ -48,7 +50,8 @@
             End If
             If userReady = True Then
                 'Form1.lblUser.Text = cboUser.Text
-                Form1.Show()
+                frmSplash.Show()
+                frmSplash.btnQMngr.Visible = False
                 Close()
             End If
 
