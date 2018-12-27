@@ -50,7 +50,7 @@
         Position_Answer()
 
         checkQuizCount()
-        frmMngrQuiz.Show()
+        'frmMngrQuiz.Show()
     End Sub
 
     Private Sub Form1_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
@@ -762,6 +762,7 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
             Load_Questions()
         Else
             MsgBox("Not enough quiz to load." & vbCrLf & "Please contact administrator to fix and load more quiz.", vbExclamation, "Warning")
+            frmSplash.Show()
             Close()
         End If
     End Sub
