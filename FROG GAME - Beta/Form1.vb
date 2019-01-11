@@ -732,11 +732,13 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
 
         TimeRespawn += 1
         If TimeRespawn = 4 Then
+            If lblAnsKey.Visible = True Then
+                checkQuizCount()
+            End If
             Frog_respawn()
             TimeRespawn = 0
             tmrRespawn.Enabled = False
             MathBindingSource.MoveNext()
-            checkQuizCount()
             alive = True
         End If
 
