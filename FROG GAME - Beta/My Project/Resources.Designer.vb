@@ -61,6 +61,15 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property brake() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("brake", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property car1() As System.Drawing.Bitmap
@@ -97,6 +106,15 @@ Namespace My.Resources
             Get
                 Dim obj As Object = ResourceManager.GetObject("car4", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property correct() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("correct", resourceCulture)
             End Get
         End Property
         
@@ -181,6 +199,15 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property jump() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("jump", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property log() As System.Drawing.Bitmap
@@ -197,6 +224,15 @@ Namespace My.Resources
             Get
                 Dim obj As Object = ResourceManager.GetObject("road", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property splat() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("splat", resourceCulture)
             End Get
         End Property
         
@@ -267,6 +303,15 @@ Namespace My.Resources
             Get
                 Dim obj As Object = ResourceManager.GetObject("water", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property waterSplash() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("waterSplash", resourceCulture)
             End Get
         End Property
     End Module

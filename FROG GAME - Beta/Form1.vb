@@ -342,21 +342,25 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
                 If picFrog.Top > 5 Then
                     picFrog.Top -= 20
                 End If
+                sfx_jump()
             ElseIf e.KeyCode = Keys.Down Then
                 picFrog.Image = My.Resources.frog1Down
                 If picFrog.Top + picFrog.Height < GroupBox1.Height Then
                     picFrog.Top += 20
                 End If
+                sfx_jump()
             ElseIf e.KeyCode = Keys.Left Then
                 picFrog.Image = My.Resources.frog1Left
                 If picFrog.Left - 5 > 0 Then
                     picFrog.Left -= 20
                 End If
+                sfx_jump()
             ElseIf e.KeyCode = Keys.Right Then
                 picFrog.Image = My.Resources.frog1Right
                 If picFrog.Left + picFrog.Width + 8 < picRiver.Width Then
                     picFrog.Left += 20
                 End If
+                sfx_jump()
             End If
         End If
 
@@ -608,12 +612,15 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
             life -= 1
             'TimerAll_Stop()
             tmrRespawn.Enabled = True
+            sfx_splat()
+            sfx_brake()
         ElseIf sender.text = "Outside" Then
             picFrog.Image = My.Resources.frogDrown
             alive = False
             life -= 1
             'TimerAll_Stop()
             tmrRespawn.Enabled = True
+            sfx_splash()
         End If
         Heart_Count()
 
@@ -757,6 +764,7 @@ picFrog.Top <= picLag12.Top + picLag12.Height Then
         lblScore.Text += 1
         MathDataGridView.CurrentRow.Cells(7).Value = True
         MathBindingNavigatorSaveItem.PerformClick()
+        sfx_correct()
     End Sub
     Private Sub checkQuizCount()
         Dim rowCountCheck As Integer = MathDataGridView.RowCount

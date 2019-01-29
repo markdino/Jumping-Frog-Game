@@ -102,6 +102,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>mathquizDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="modSFX.vb" />
     <Compile Include="mQuestions.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -229,6 +230,11 @@
     <Content Include="mathquiz.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\sfx\correct.wav" />
+    <None Include="Resources\sfx\brake.wav" />
+    <None Include="Resources\sfx\waterSplash.wav" />
+    <None Include="Resources\sfx\splat.wav" />
+    <None Include="Resources\sfx\jump.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
