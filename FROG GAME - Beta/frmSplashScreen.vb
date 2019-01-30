@@ -22,7 +22,7 @@
             ProgressBar1.Value = intnum
         ElseIf intnum = 110 Then
             Timer1.Enabled = False
-            frmSplash.Show()
+            frmLogin.Show()
             Close()
         End If
     End Sub

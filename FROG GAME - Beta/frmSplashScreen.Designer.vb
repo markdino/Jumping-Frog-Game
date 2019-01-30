@@ -38,12 +38,11 @@ Partial Class frmSplashScreen
         '
         'lblProgress
         '
-        Me.lblProgress.AutoSize = True
         Me.lblProgress.BackColor = System.Drawing.Color.Transparent
         Me.lblProgress.ForeColor = System.Drawing.Color.White
-        Me.lblProgress.Location = New System.Drawing.Point(125, 451)
+        Me.lblProgress.Location = New System.Drawing.Point(125, 452)
         Me.lblProgress.Name = "lblProgress"
-        Me.lblProgress.Size = New System.Drawing.Size(83, 17)
+        Me.lblProgress.Size = New System.Drawing.Size(100, 23)
         Me.lblProgress.TabIndex = 1
         Me.lblProgress.Text = "Loading . . ."
         '
@@ -70,9 +69,9 @@ Partial Class frmSplashScreen
         Me.BackgroundImage = Global.FROG_GAME___Beta.My.Resources.Resources.splashScreen
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(992, 526)
+        Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.lblPercent)
         Me.Controls.Add(Me.lblProgress)
-        Me.Controls.Add(Me.ProgressBar1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frmSplashScreen"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
