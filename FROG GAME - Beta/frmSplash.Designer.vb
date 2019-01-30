@@ -22,11 +22,14 @@ Partial Class frmSplash
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmSplash))
         Me.btnPlay = New System.Windows.Forms.Button()
         Me.btnQMngr = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.AxWMP = New AxWMPLib.AxWindowsMediaPlayer()
+        CType(Me.AxWMP, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnPlay
@@ -65,7 +68,7 @@ Partial Class frmSplash
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(434, 72)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(206, 39)
+        Me.Label1.Size = New System.Drawing.Size(199, 38)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Welcome to"
         '
@@ -80,12 +83,23 @@ Partial Class frmSplash
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Jumping Frog Math Quiz"
         '
+        'AxWMP
+        '
+        Me.AxWMP.Enabled = True
+        Me.AxWMP.Location = New System.Drawing.Point(2, 3)
+        Me.AxWMP.Name = "AxWMP"
+        Me.AxWMP.OcxState = CType(resources.GetObject("AxWMP.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.AxWMP.Size = New System.Drawing.Size(218, 35)
+        Me.AxWMP.TabIndex = 2
+        Me.AxWMP.Visible = False
+        '
         'frmSplash
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1087, 617)
+        Me.Controls.Add(Me.AxWMP)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnQMngr)
@@ -94,6 +108,7 @@ Partial Class frmSplash
         Me.Name = "frmSplash"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        CType(Me.AxWMP, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -104,4 +119,5 @@ Partial Class frmSplash
     Friend WithEvents btnExit As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents AxWMP As AxWMPLib.AxWindowsMediaPlayer
 End Class

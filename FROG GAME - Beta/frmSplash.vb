@@ -1,4 +1,6 @@
-﻿Public Class frmSplash
+﻿Imports AxWMPLib
+
+Public Class frmSplash
     Private Sub btnQMngr_Click(sender As Object, e As EventArgs) Handles btnQMngr.Click
         frmMngrQuiz.Show()
     End Sub
@@ -11,4 +13,11 @@
         frmLogin.Show()
         Close()
     End Sub
+
+    Private Sub frmSplash_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        AxWMP.URL = Application.StartupPath & "\sfx.wav"
+        AxWMP.Ctlcontrols.play()
+        AxWMP.settings.setMode("Loop", True)
+    End Sub
+
 End Class

@@ -14,4 +14,8 @@
     Public Sub sfx_correct()
         My.Computer.Audio.Play(My.Resources.correct, AudioPlayMode.Background)
     End Sub
+    Public Sub sfx_music()
+        My.Computer.Audio.Play(My.Resources.music, AudioPlayMode.Background)
+    End Sub
+
 End Module
