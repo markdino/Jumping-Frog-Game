@@ -17,5 +17,7 @@
     Public Sub sfx_music()
         My.Computer.Audio.Play(My.Resources.music, AudioPlayMode.Background)
     End Sub
-
+    Public Sub sfx_mute()
+        My.Computer.Audio.Stop()
+    End Sub
 End Module

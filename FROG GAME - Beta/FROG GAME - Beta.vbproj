@@ -230,6 +230,12 @@
     <Content Include="mathquiz.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\assets\less.png" />
+    <None Include="Resources\assets\add.png" />
+    <None Include="Resources\assets\sound-on.png" />
+    <None Include="Resources\assets\sound-off.png" />
+    <None Include="Resources\assets\music-on.png" />
+    <None Include="Resources\assets\music-off.png" />
     <None Include="Resources\sfx\music.wav" />
     <None Include="Resources\sfx\correct.wav" />
     <None Include="Resources\sfx\brake.wav" />
