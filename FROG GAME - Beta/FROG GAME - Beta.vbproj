@@ -230,6 +230,7 @@
     <Content Include="mathquiz.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\assets\90.png" />
     <None Include="Resources\assets\80.png" />
     <None Include="Resources\assets\50.png" />
     <None Include="Resources\assets\30.png" />

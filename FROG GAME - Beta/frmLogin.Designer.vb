@@ -34,7 +34,7 @@ Partial Class frmLogin
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Transparent
-        Me.Panel1.BackgroundImage = Global.FROG_GAME___Beta.My.Resources.Resources._80
+        Me.Panel1.BackgroundImage = Global.FROG_GAME___Beta.My.Resources.Resources._90
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.btnLogin)
