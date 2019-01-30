@@ -71,23 +71,27 @@ Partial Class frmSplash
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(434, 72)
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Ravie", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.Gold
+        Me.Label1.Location = New System.Drawing.Point(376, 66)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(199, 38)
+        Me.Label1.Size = New System.Drawing.Size(406, 63)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Welcome to"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Cooper Black", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.Green
-        Me.Label2.Location = New System.Drawing.Point(173, 111)
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Cooper Black", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(259, 129)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(787, 69)
+        Me.Label2.Size = New System.Drawing.Size(612, 182)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Jumping Frog Math Quiz"
+        Me.Label2.Text = "Jumping Frog" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Math Quiz"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'AxWMP
         '
@@ -111,6 +115,7 @@ Partial Class frmSplash
         'btnSound
         '
         Me.btnSound.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btnSound.BackColor = System.Drawing.Color.Transparent
         Me.btnSound.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnSound.Image = Global.FROG_GAME___Beta.My.Resources.Resources.sound_on
         Me.btnSound.Location = New System.Drawing.Point(12, 433)
@@ -123,6 +128,7 @@ Partial Class frmSplash
         'btnMusic
         '
         Me.btnMusic.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btnMusic.BackColor = System.Drawing.Color.Transparent
         Me.btnMusic.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnMusic.Image = Global.FROG_GAME___Beta.My.Resources.Resources.music_on
         Me.btnMusic.Location = New System.Drawing.Point(12, 493)
@@ -135,6 +141,7 @@ Partial Class frmSplash
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.DarkOrange
         Me.Label3.Location = New System.Drawing.Point(12, 555)
@@ -148,6 +155,8 @@ Partial Class frmSplash
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BackgroundImage = Global.FROG_GAME___Beta.My.Resources.Resources.bg
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1087, 617)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.HScrollBar1)
