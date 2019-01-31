@@ -1,7 +1,7 @@
 ﻿Imports AxWMPLib
 
 Public Class frmSplash
-    Dim sound, music As Boolean
+
     Private Sub btnQMngr_Click(sender As Object, e As EventArgs) Handles btnQMngr.Click
         frmMngrQuiz.Show()
     End Sub
