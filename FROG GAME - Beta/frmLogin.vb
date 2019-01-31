@@ -17,7 +17,6 @@
         If cboUser.Text = "<Add new user>" Then
             newUser = True
             cboUser.Text = ""
-            btnExit.Text = "true"
         End If
     End Sub
 

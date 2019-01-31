@@ -97,11 +97,18 @@
     <Compile Include="frmSplash.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmSplashScreen.Designer.vb">
+      <DependentUpon>frmSplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="mathquizDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>mathquizDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="modSFX.vb" />
     <Compile Include="mQuestions.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -131,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSplash.resx">
       <DependentUpon>frmSplash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplashScreen.resx">
+      <DependentUpon>frmSplashScreen.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -229,6 +239,44 @@
     <Content Include="mathquiz.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\assets\splashScreen.jpg" />
+    <None Include="Resources\assets\90.png" />
+    <None Include="Resources\assets\80.png" />
+    <None Include="Resources\assets\50.png" />
+    <None Include="Resources\assets\30.png" />
+    <None Include="Resources\assets\bgLogin.jpg" />
+    <None Include="Resources\assets\bg.jpg" />
+    <None Include="Resources\assets\less.png" />
+    <None Include="Resources\assets\add.png" />
+    <None Include="Resources\assets\sound-on.png" />
+    <None Include="Resources\assets\sound-off.png" />
+    <None Include="Resources\assets\music-on.png" />
+    <None Include="Resources\assets\music-off.png" />
+    <None Include="Resources\sfx\music.wav" />
+    <None Include="Resources\sfx\correct.wav" />
+    <None Include="Resources\sfx\brake.wav" />
+    <None Include="Resources\sfx\waterSplash.wav" />
+    <None Include="Resources\sfx\splat.wav" />
+    <None Include="Resources\sfx\jump.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
