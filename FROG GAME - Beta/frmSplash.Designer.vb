@@ -168,6 +168,7 @@ Partial Class frmSplash
         Me.Controls.Add(Me.btnQMngr)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnPlay)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MaximumSize = New System.Drawing.Size(1105, 664)
         Me.MinimumSize = New System.Drawing.Size(1105, 664)
